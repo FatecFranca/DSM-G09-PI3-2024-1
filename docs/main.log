@@ -1,4 +1,4 @@
-This is pdfTeX, Version 3.141592653-2.6-1.40.26 (MiKTeX 24.3) (preloaded format=pdflatex 2024.3.20)  4 APR 2024 14:27
+This is pdfTeX, Version 3.141592653-2.6-1.40.26 (MiKTeX 24.3) (preloaded format=pdflatex 2024.3.20)  4 APR 2024 15:55
 entering extended mode
  restricted \write18 enabled.
  file:line:error style messages enabled.
@@ -46,6 +46,15 @@ File: l3backend-pdftex.def 2024-03-14 L3 backend support: PDF output (pdfTeX)
 \l__color_backend_stack_int=\count196
 \l__pdf_internal_box=\box51
 ) (main.aux
+
+LaTeX Warning: Label `fig:imagem' multiply defined.
+
+
+LaTeX Warning: Label `fig:imagem' multiply defined.
+
+
+LaTeX Warning: Label `fig:imagem' multiply defined.
+
 
 LaTeX Warning: Label `fig:imagem' multiply defined.
 
@@ -135,7 +144,32 @@ File: IMGDOC/AnaliseMochileiros2.png Graphic file (type png)
 <use IMGDOC/AnaliseMochileiros2.png>
 Package pdftex.def Info: IMGDOC/AnaliseMochileiros2.png  used on input line 112.
 (pdftex.def)             Requested size: 310.4979pt x 164.78033pt.
- [5 <./IMGDOC/AnaliseMochileiros1.png> <./IMGDOC/AnaliseMochileiros2.png>] (main.aux)
+<IMGDOC/MapaSemA1.png, id=29, 598.48593pt x 471.26062pt>
+File: IMGDOC/MapaSemA1.png Graphic file (type png)
+<use IMGDOC/MapaSemA1.png>
+Package pdftex.def Info: IMGDOC/MapaSemA1.png  used on input line 121.
+(pdftex.def)             Requested size: 310.4979pt x 244.49605pt.
+
+
+LaTeX Warning: `h' float specifier changed to `ht'.
+
+<IMGDOC/MapaSemA2.png, id=30, 562.35094pt x 467.49657pt>
+File: IMGDOC/MapaSemA2.png Graphic file (type png)
+<use IMGDOC/MapaSemA2.png>
+Package pdftex.def Info: IMGDOC/MapaSemA2.png  used on input line 126.
+(pdftex.def)             Requested size: 310.4979pt x 258.12257pt.
+
+LaTeX Warning: `h' float specifier changed to `ht'.
+
+<IMGDOC/MapaSemA3.png, id=31, 439.6425pt x 471.26062pt>
+File: IMGDOC/MapaSemA3.png Graphic file (type png)
+<use IMGDOC/MapaSemA3.png>
+Package pdftex.def Info: IMGDOC/MapaSemA3.png  used on input line 130.
+(pdftex.def)             Requested size: 310.4979pt x 332.83563pt.
+
+LaTeX Warning: `h' float specifier changed to `ht'.
+
+[5 <./IMGDOC/AnaliseMochileiros1.png> <./IMGDOC/AnaliseMochileiros2.png>] [6 <./IMGDOC/MapaSemA1.png> <./IMGDOC/MapaSemA2.png>] [7 <./IMGDOC/MapaSemA3.png>] (main.aux)
  ***********
 LaTeX2e <2023-11-01> patch level 1
 L3 programming layer <2024-03-14>
@@ -146,17 +180,17 @@ LaTeX Warning: There were multiply-defined labels.
 
  ) 
 Here is how much of TeX's memory you used:
- 1348 strings out of 474424
- 23136 string characters out of 5741739
+ 1369 strings out of 474424
+ 23700 string characters out of 5741739
  1935496 words of memory out of 5000000
- 23731 multiletter control sequences out of 15000+600000
+ 23752 multiletter control sequences out of 15000+600000
  562351 words of font info for 50 fonts, out of 8000000 for 9000
  1141 hyphenation exceptions out of 8191
  57i,7n,65p,953b,230s stack positions out of 10000i,1000n,20000p,200000b,200000s
  <C:\Users\jkaue\AppData\Local\MiKTeX\fonts/pk/ljfour/jknappen/ec/dpi600\tcrm1000.pk><C:/Users/jkaue/AppData/Local/Programs/MiKTeX/fonts/type1/public/amsfonts/cm/cmbx12.pfb><C:/Users/jkaue/AppData/Local/Programs/MiKTeX/fonts/type1/public/amsfonts/cm/cmr10.pfb><C:/Users/jkaue/AppData/Local/Programs/MiKTeX/fonts/type1/public/amsfonts/cm/cmr12.pfb><C:/Users/jkaue/AppData/Local/Programs/MiKTeX/fonts/type1/public/amsfonts/cm/cmr17.pfb><C:/Users/jkaue/AppData/Local/Programs/MiKTeX/fonts/type1/public/amsfonts/cm/cmsy10.pfb>
-Output written on main.pdf (5 pages, 437617 bytes).
+Output written on main.pdf (7 pages, 550876 bytes).
 PDF statistics:
- 59 PDF objects out of 1000 (max. 8388607)
+ 73 PDF objects out of 1000 (max. 8388607)
  0 named destinations out of 1000 (max. 500000)
- 26 words of extra memory for PDF output out of 10000 (max. 10000000)
+ 41 words of extra memory for PDF output out of 10000 (max. 10000000)
 
