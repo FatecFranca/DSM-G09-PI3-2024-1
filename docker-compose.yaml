@@ -9,9 +9,7 @@ services:
   backend:
     build: ./api
     ports:
-      - "8080:8080"
-    volumes:
-      - db-data:/data/db
+      - "3000:8080"
     depends_on:
       - mongodb
     environment:
