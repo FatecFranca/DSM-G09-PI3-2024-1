@@ -1,0 +1,4 @@
+CONTAINER ID   IMAGE                  COMMAND                  CREATED          STATUS         PORTS                                           NAMES
+7f9c455fdf61   traveldiary_frontend   "/docker-entrypoint.…"   10 minutes ago   Up 5 minutes   0.0.0.0:80->80/tcp, :::80->80/tcp               traveldiary_frontend_1
+ef582b843199   traveldiary_backend    "./api"                  10 minutes ago   Up 5 minutes   0.0.0.0:8080->8080/tcp, :::8080->8080/tcp       traveldiary_backend_1
+cd2aad3428e5   mongo                  "docker-entrypoint.s…"   10 minutes ago   Up 5 minutes   0.0.0.0:27017->27017/tcp, :::27017->27017/tcp   traveldiary_mongodb_1

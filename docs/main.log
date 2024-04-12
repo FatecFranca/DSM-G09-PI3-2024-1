@@ -1,0 +1,196 @@
+This is pdfTeX, Version 3.141592653-2.6-1.40.26 (MiKTeX 24.3) (preloaded format=pdflatex 2024.3.20)  4 APR 2024 15:55
+entering extended mode
+ restricted \write18 enabled.
+ file:line:error style messages enabled.
+ %&-line parsing enabled.
+**c:/Users/jkaue/OneDrive/Documentos/PI3/docs/docs/main.tex
+(c:/Users/jkaue/OneDrive/Documentos/PI3/docs/docs/main.tex
+LaTeX2e <2023-11-01> patch level 1
+L3 programming layer <2024-03-14>
+(C:\Users\jkaue\AppData\Local\Programs\MiKTeX\tex/latex/base\article.cls
+Document Class: article 2023/05/17 v1.4n Standard LaTeX document class
+(C:\Users\jkaue\AppData\Local\Programs\MiKTeX\tex/latex/base\size10.clo
+File: size10.clo 2023/05/17 v1.4n Standard LaTeX file (size option)
+)
+\c@part=\count188
+\c@section=\count189
+\c@subsection=\count190
+\c@subsubsection=\count191
+\c@paragraph=\count192
+\c@subparagraph=\count193
+\c@figure=\count194
+\c@table=\count195
+\abovecaptionskip=\skip48
+\belowcaptionskip=\skip49
+\bibindent=\dimen140
+) (C:\Users\jkaue\AppData\Local\Programs\MiKTeX\tex/latex/graphics\graphicx.sty
+Package: graphicx 2021/09/16 v1.2d Enhanced LaTeX Graphics (DPC,SPQR)
+ (C:\Users\jkaue\AppData\Local\Programs\MiKTeX\tex/latex/graphics\keyval.sty
+Package: keyval 2022/05/29 v1.15 key=value parser (DPC)
+\KV@toks@=\toks17
+) (C:\Users\jkaue\AppData\Local\Programs\MiKTeX\tex/latex/graphics\graphics.sty
+Package: graphics 2022/03/10 v1.4e Standard LaTeX Graphics (DPC,SPQR)
+ (C:\Users\jkaue\AppData\Local\Programs\MiKTeX\tex/latex/graphics\trig.sty
+Package: trig 2021/08/11 v1.11 sin cos tan (DPC)
+) (C:\Users\jkaue\AppData\Local\Programs\MiKTeX\tex/latex/graphics-cfg\graphics.cfg
+File: graphics.cfg 2016/06/04 v1.11 sample graphics configuration
+)
+Package graphics Info: Driver file: pdftex.def on input line 107.
+ (C:\Users\jkaue\AppData\Local\Programs\MiKTeX\tex/latex/graphics-def\pdftex.def
+File: pdftex.def 2022/09/22 v1.2b Graphics/color driver for pdftex
+))
+\Gin@req@height=\dimen141
+\Gin@req@width=\dimen142
+) (C:\Users\jkaue\AppData\Local\Programs\MiKTeX\tex/latex/l3backend\l3backend-pdftex.def
+File: l3backend-pdftex.def 2024-03-14 L3 backend support: PDF output (pdfTeX)
+\l__color_backend_stack_int=\count196
+\l__pdf_internal_box=\box51
+) (main.aux
+
+LaTeX Warning: Label `fig:imagem' multiply defined.
+
+
+LaTeX Warning: Label `fig:imagem' multiply defined.
+
+
+LaTeX Warning: Label `fig:imagem' multiply defined.
+
+
+LaTeX Warning: Label `fig:imagem' multiply defined.
+
+
+LaTeX Warning: Label `fig:imagem' multiply defined.
+
+
+LaTeX Warning: Label `fig:imagem' multiply defined.
+
+
+LaTeX Warning: Label `fig:imagem' multiply defined.
+
+)
+\openout1 = `main.aux'.
+
+LaTeX Font Info:    Checking defaults for OML/cmm/m/it on input line 4.
+LaTeX Font Info:    ... okay on input line 4.
+LaTeX Font Info:    Checking defaults for OMS/cmsy/m/n on input line 4.
+LaTeX Font Info:    ... okay on input line 4.
+LaTeX Font Info:    Checking defaults for OT1/cmr/m/n on input line 4.
+LaTeX Font Info:    ... okay on input line 4.
+LaTeX Font Info:    Checking defaults for T1/cmr/m/n on input line 4.
+LaTeX Font Info:    ... okay on input line 4.
+LaTeX Font Info:    Checking defaults for TS1/cmr/m/n on input line 4.
+LaTeX Font Info:    ... okay on input line 4.
+LaTeX Font Info:    Checking defaults for OMX/cmex/m/n on input line 4.
+LaTeX Font Info:    ... okay on input line 4.
+LaTeX Font Info:    Checking defaults for U/cmr/m/n on input line 4.
+LaTeX Font Info:    ... okay on input line 4.
+ (C:\Users\jkaue\AppData\Local\Programs\MiKTeX\tex/context/base/mkii\supp-pdf.mkii
+[Loading MPS to PDF converter (version 2006.09.02).]
+\scratchcounter=\count197
+\scratchdimen=\dimen143
+\scratchbox=\box52
+\nofMPsegments=\count198
+\nofMParguments=\count199
+\everyMPshowfont=\toks18
+\MPscratchCnt=\count266
+\MPscratchDim=\dimen144
+\MPnumerator=\count267
+\makeMPintoPDFobject=\count268
+\everyMPtoPDFconversion=\toks19
+) (C:\Users\jkaue\AppData\Local\Programs\MiKTeX\tex/latex/epstopdf-pkg\epstopdf-base.sty
+Package: epstopdf-base 2020-01-24 v2.11 Base part for package epstopdf
+Package epstopdf-base Info: Redefining graphics rule for `.eps' on input line 485.
+ (C:\Users\jkaue\AppData\Local\Programs\MiKTeX\tex/latex/00miktex\epstopdf-sys.cfg
+File: epstopdf-sys.cfg 2021/03/18 v2.0 Configuration of epstopdf for MiKTeX
+))
+LaTeX Font Info:    External font `cmex10' loaded for size
+(Font)              <12> on input line 10.
+LaTeX Font Info:    External font `cmex10' loaded for size
+(Font)              <8> on input line 10.
+LaTeX Font Info:    External font `cmex10' loaded for size
+(Font)              <6> on input line 10.
+ [1
+
+{C:/Users/jkaue/AppData/Local/MiKTeX/fonts/map/pdftex/pdftex.map}]
+LaTeX Font Info:    External font `cmex10' loaded for size
+(Font)              <7> on input line 58.
+LaTeX Font Info:    External font `cmex10' loaded for size
+(Font)              <5> on input line 58.
+ [2]
+<IMGDOC/Matriz CSD.png, id=13, 1179.65718pt x 517.18219pt>
+File: IMGDOC/Matriz CSD.png Graphic file (type png)
+<use IMGDOC/Matriz CSD.png>
+Package pdftex.def Info: IMGDOC/Matriz CSD.png  used on input line 82.
+(pdftex.def)             Requested size: 207.0021pt x 90.75287pt.
+ [3 <./IMGDOC/Matriz CSD.png>]
+<IMGDOC/AnaliseTrivago1.png, id=20, 774.64406pt x 422.32782pt>
+File: IMGDOC/AnaliseTrivago1.png Graphic file (type png)
+<use IMGDOC/AnaliseTrivago1.png>
+Package pdftex.def Info: IMGDOC/AnaliseTrivago1.png  used on input line 94.
+(pdftex.def)             Requested size: 345.0pt x 188.09317pt.
+<IMGDOC/AnaliseTrivago2.png, id=21, 779.16093pt x 350.05782pt>
+File: IMGDOC/AnaliseTrivago2.png Graphic file (type png)
+<use IMGDOC/AnaliseTrivago2.png>
+Package pdftex.def Info: IMGDOC/AnaliseTrivago2.png  used on input line 99.
+(pdftex.def)             Requested size: 345.0pt x 154.99805pt.
+<IMGDOC/AnaliseMochileiros1.png, id=22, 776.9025pt x 476.53032pt>
+File: IMGDOC/AnaliseMochileiros1.png Graphic file (type png)
+<use IMGDOC/AnaliseMochileiros1.png>
+Package pdftex.def Info: IMGDOC/AnaliseMochileiros1.png  used on input line 107.
+(pdftex.def)             Requested size: 345.0pt x 211.61542pt.
+ [4 <./IMGDOC/AnaliseTrivago1.png> <./IMGDOC/AnaliseTrivago2.png>]
+<IMGDOC/AnaliseMochileiros2.png, id=28, 760.34062pt x 403.5075pt>
+File: IMGDOC/AnaliseMochileiros2.png Graphic file (type png)
+<use IMGDOC/AnaliseMochileiros2.png>
+Package pdftex.def Info: IMGDOC/AnaliseMochileiros2.png  used on input line 112.
+(pdftex.def)             Requested size: 310.4979pt x 164.78033pt.
+<IMGDOC/MapaSemA1.png, id=29, 598.48593pt x 471.26062pt>
+File: IMGDOC/MapaSemA1.png Graphic file (type png)
+<use IMGDOC/MapaSemA1.png>
+Package pdftex.def Info: IMGDOC/MapaSemA1.png  used on input line 121.
+(pdftex.def)             Requested size: 310.4979pt x 244.49605pt.
+
+
+LaTeX Warning: `h' float specifier changed to `ht'.
+
+<IMGDOC/MapaSemA2.png, id=30, 562.35094pt x 467.49657pt>
+File: IMGDOC/MapaSemA2.png Graphic file (type png)
+<use IMGDOC/MapaSemA2.png>
+Package pdftex.def Info: IMGDOC/MapaSemA2.png  used on input line 126.
+(pdftex.def)             Requested size: 310.4979pt x 258.12257pt.
+
+LaTeX Warning: `h' float specifier changed to `ht'.
+
+<IMGDOC/MapaSemA3.png, id=31, 439.6425pt x 471.26062pt>
+File: IMGDOC/MapaSemA3.png Graphic file (type png)
+<use IMGDOC/MapaSemA3.png>
+Package pdftex.def Info: IMGDOC/MapaSemA3.png  used on input line 130.
+(pdftex.def)             Requested size: 310.4979pt x 332.83563pt.
+
+LaTeX Warning: `h' float specifier changed to `ht'.
+
+[5 <./IMGDOC/AnaliseMochileiros1.png> <./IMGDOC/AnaliseMochileiros2.png>] [6 <./IMGDOC/MapaSemA1.png> <./IMGDOC/MapaSemA2.png>] [7 <./IMGDOC/MapaSemA3.png>] (main.aux)
+ ***********
+LaTeX2e <2023-11-01> patch level 1
+L3 programming layer <2024-03-14>
+ ***********
+
+
+LaTeX Warning: There were multiply-defined labels.
+
+ ) 
+Here is how much of TeX's memory you used:
+ 1369 strings out of 474424
+ 23700 string characters out of 5741739
+ 1935496 words of memory out of 5000000
+ 23752 multiletter control sequences out of 15000+600000
+ 562351 words of font info for 50 fonts, out of 8000000 for 9000
+ 1141 hyphenation exceptions out of 8191
+ 57i,7n,65p,953b,230s stack positions out of 10000i,1000n,20000p,200000b,200000s
+ <C:\Users\jkaue\AppData\Local\MiKTeX\fonts/pk/ljfour/jknappen/ec/dpi600\tcrm1000.pk><C:/Users/jkaue/AppData/Local/Programs/MiKTeX/fonts/type1/public/amsfonts/cm/cmbx12.pfb><C:/Users/jkaue/AppData/Local/Programs/MiKTeX/fonts/type1/public/amsfonts/cm/cmr10.pfb><C:/Users/jkaue/AppData/Local/Programs/MiKTeX/fonts/type1/public/amsfonts/cm/cmr12.pfb><C:/Users/jkaue/AppData/Local/Programs/MiKTeX/fonts/type1/public/amsfonts/cm/cmr17.pfb><C:/Users/jkaue/AppData/Local/Programs/MiKTeX/fonts/type1/public/amsfonts/cm/cmsy10.pfb>
+Output written on main.pdf (7 pages, 550876 bytes).
+PDF statistics:
+ 73 PDF objects out of 1000 (max. 8388607)
+ 0 named destinations out of 1000 (max. 500000)
+ 41 words of extra memory for PDF output out of 10000 (max. 10000000)
+
