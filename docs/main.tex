@@ -1,24 +1,27 @@
 \documentclass{article}
 \usepackage{graphicx}
-
-\begin{document}
+\usepackage{float}
 
 \title{Documentação do PI}
 \author{Kauê José Abdalla Leal}
-\date{04/04/2024}
+\date{16/04/2024}
+
+\begin{document}
 
 \maketitle
 
 \begin{center}
-      Izabela Tayná Reis Coimbra (PO)
+Izabela Tayná Reis Coimbra (PO)\\
+Kauê José Abdalla Leal (Design e Documentação)\\
+Isabela Maria de Oliveira (Back-End)\\
+Pedro Victor Virgino da Cunha (Front-End)\\
+Victor Ferreira Neves (Front-End e Back-End)
+\end{center}
 
-      Kauê José Abdalla Leal (Design e Documentação)
+\newpage
 
-      Isabela Maria de Oliveira (Back-End)
-
-      Pedro Victor Virgino da Cunha (Front-End)
-
-      Victor Ferreira Neves (Front-End e Back-End)
+\begin{center}
+\textbf{Documentação}
 \end{center}
 
 
@@ -66,69 +69,180 @@ Nossa escolha pela área de negócio do turismo e viagens é respaldada por uma 
       \item[] Esta é a comunidade virtual de usuários da plataforma, composta por viajantes individuais e grupos que interagem, compartilham experiências e dicas.
             Eles desempenham um papel crucial na geração de conteúdo gerado pelo usuário, fornecendo avaliações, recomendações e feedback.
             Sua participação é essencial para a construção de uma base de conhecimento confiável e atualizada sobre destinos, acomodações, atividades e muito mais.
-            \vspace{\baselineskip}
-            \vspace{\baselineskip}
       \item {\subsection {Outras Personas}}
       \item[] Hotéis
       \item[] Companhias Aéreas
       \item[] Agências de Turismo
       \item[] Anunciantes Interessados
 \end{itemize}
+{\subsection{Personagens}}
+Viajante Individual:
+
+- Identificação: Maria Silva, 32 anos, escritora freelancer apaixonada por viagens e culturas diversas.
+
+- Objetivo: Maria busca constantemente inspiração para seus escritos através de novas experiências e lugares. Ela deseja explorar destinos autênticos, longe do turismo convencional, e compartilhar suas descobertas com seus leitores.
+
+- Tarefas: Maria pesquisa intensamente sobre cada destino, procurando informações detalhadas sobre a cultura local, gastronomia, pontos turísticos menos conhecidos e meios de transporte acessíveis. Ela elabora itinerários personalizados, focados em experiências autênticas e imersivas.
+
+- Dores e Frustrações: Maria muitas vezes se sente sobrecarregada com a quantidade de informações disponíveis e tem dificuldade em filtrar o que é relevante. Ela também enfrenta desafios ao tentar viajar com um orçamento limitado, especialmente quando se trata de encontrar hospedagem acessível em áreas menos turísticas.
+
+- Possíveis Soluções: Maria poderia se beneficiar de uma plataforma que ofereça conteúdo detalhado e confiável sobre destinos, incluindo dicas de economia e sugestões de itinerários fora do comum. Um sistema de recomendação personalizado, baseado em suas preferências e interesses, poderia simplificar sua pesquisa. Além disso, acesso a uma comunidade online de viajantes onde ela possa trocar experiências e receber sugestões de outros viajantes individuais seria valioso para ela.
+
+\bigskip
+Grupo de Viajantes:
+
+- Identificação: Família Santos, composta por João (pai), Ana (mãe), e seus dois filhos, Pedro (10 anos) e Sofia (7 anos).
+
+- Objetivo: A família Santos procura criar memórias inesquecíveis juntos, explorando novos lugares e compartilhando experiências significativas. Eles buscam destinos que ofereçam uma variedade de atividades adequadas para diferentes idades, garantindo diversão para todos os membros da família.
+
+- Tarefas: João e Ana pesquisam destinos familiares que ofereçam uma combinação de atrações culturais, recreativas e educacionais. Eles organizam atividades familiares, como visitas a museus, parques temáticos e trilhas naturais, e procuram opções de hospedagem que acomodem confortavelmente toda a família.
+
+- Dores e Frustrações: A família Santos enfrenta desafios ao tentar equilibrar as preferências e interesses de todos os membros. Eles também podem ter dificuldade em encontrar acomodações espaçosas o suficiente para uma família grande, especialmente em destinos populares durante períodos de alta temporada.
+
+- Possíveis Soluções: Uma plataforma que ofereça informações sobre destinos familiares, incluindo atividades recomendadas para diferentes faixas etárias, seria útil para a família Santos. Recursos que facilitem a coordenação de itinerários entre os membros da família, como listas compartilhadas e calendários integrados, também seriam bem-vindos. Além disso, opções de hospedagem que ofereçam quartos familiares ou apartamentos espaçosos seriam ideais para eles.
+
+\bigskip
+Comunidade Online de Viajantes:
+
+- Identificação: Carlos Mendes, 28 anos, entusiasta de viagens e fotografia, ativo em várias comunidades online de viajantes.
+
+- Objetivo: Carlos adora compartilhar suas experiências de viagem com os outros e receber insights e dicas de outros viajantes. Ele vê a comunidade online como uma fonte valiosa de conhecimento e inspiração para suas próximas aventuras.
+
+- Tarefas: Carlos participa ativamente de fóruns de viagem, compartilhando relatos detalhados de suas viagens, recomendações de lugares para visitar, e dicas práticas para outros viajantes. Ele também lê avaliações e comentários de outros membros da comunidade sobre destinos, acomodações e atividades.
+
+- Dores e Frustrações: Carlos pode se sentir sobrecarregado com a quantidade de informações disponíveis e pode ter dificuldade em discernir entre opiniões e recomendações confiáveis e menos confiáveis. Ele também pode ficar frustrado com a falta de interação genuína e engajamento em algumas comunidades online.
+
+- Possíveis Soluções: Carlos poderia se beneficiar de uma plataforma que facilite a descoberta de conteúdo relevante e confiável, utilizando algoritmos de recomendação e sistemas de classificação de usuários. Recursos de filtragem avançada também seriam úteis para ele encontrar informações específicas sobre destinos, atividades ou tipos de hospedagem. Além disso, uma comunidade online que incentive a interação genuína e o engajamento entre os membros seria ideal para ele.
 
 \section{Matriz CSD}
+ {\subsection{Imagem}}
 
-\begin{figure}[h]
+\begin{figure}[H]
       \centering
-      \includegraphics [width=0.6\textwidth]{IMGDOC/Matriz CSD.png}
-      \label{fig:imagem}
+      \includegraphics [width=1\textwidth]{IMGDOC/Matriz CSD.png}
+      \label{csd imagem}
 \end{figure}
+
+{\subsection{Pesquisa com Google Forms / Pesquisa Quantitativa}}
+Baseado na Matriz CSD, fizemos as seguintes perguntas para a pesquisa com o Forms:
+\bigskip
+
+O quanto você gosta de viajar?
+\begin{figure}[H]
+      \centering
+      \includegraphics [width=1\textwidth]{IMGDOC/Quanto Gosta.png}
+      \label{Pesquisa1}
+\end{figure}
+
+Quando você viaja, você posta nas redes sociais?
+\begin{figure}[H]
+      \centering
+      \includegraphics [width=1\textwidth]{IMGDOC/Redes sociais.png}
+      \label{Pesquisa2}
+\end{figure}
+
+Você já teve dificuldades para planejar uma viagem?
+\begin{figure}[H]
+      \centering
+      \includegraphics [width=1\textwidth]{IMGDOC/Dificuldades planejar.png}
+      \label{Pesquisa3}
+\end{figure}
+
+Quando planejou a viagem, você demorou muito para planejar?
+\begin{figure}[H]
+      \centering
+      \includegraphics [width=1\textwidth]{IMGDOC/Demora planejar.png}
+      \label{Pesquisa4}
+\end{figure}
+
+Você já teve muitas dificuldades para achar lugares baratos e confiáveis quando estava viajando?
+\begin{figure}[H]
+      \centering
+      \includegraphics [width=1\textwidth]{IMGDOC/Dificuldades achar.png}
+      \label{Pesquisa5}
+\end{figure}
+
+Baseado nas perguntas que você respondeu, você gostaria e acharia útil um site ou um app para uma comunidade de viajantes, feito para todos se ajudarem?
+\begin{figure}[H]
+      \centering
+      \includegraphics [width=1\textwidth]{IMGDOC/Fim pesquisa.png}
+      \label{Pesquisa6}
+\end{figure}
+
+Algumas pessoas que participaram:
+\begin{figure}[H]
+      \centering
+      \includegraphics [width=0.5\textwidth]{IMGDOC/participantes.png}
+      \label{Pesquisa7}
+\end{figure}
+
+
+{\subsection{Entrevista / Pesquisa Qualitativa}}
+Pesquisa feita no dia 15/04, às 15:36. Nome do participante: Kayk Cesar
+
+Resumo:
+
+"- Você gosta muito de viajar?"
+
+"- Gosto bastante. Para mim, é uma das melhores experiências que podemos ter, explorar novos lugares e culturas."
+
+"- Você já passou por algum desafio quando foi planejar alguma viagem?"
+
+"- Sim, já tive algumas dificuldades ao planejar viagens. Às vezes, é complicado conciliar horários, encontrar acomodações adequadas e decidir quais atividades incluir no itinerário.
+Já passei por algumas experiências em que eu não conseguia achar lugares baratos. Especialmente em destinos desconhecidos, pode ser difícil discernir entre opções que oferecem um bom custo-benefício e aqueles que são apenas uma armadilha para turistas."
+
+"- Você acha que deveria ter algo para ajudar pessoas a não passar por essas dificuldades?"
+
+" -Com base nas minhas experiências, acho que um site ou aplicativo para a comunidade de viajantes seria extremamente útil. Seria ótimo ter um espaço onde as pessoas possam compartilhar dicas, recomendações, experiências e até mesmo oferecer ajuda mútua durante o processo de planejamento de viagens."
+
+\bigskip
 
 \section{Benchmark}
 De acordo com pesquisas feitas em sites e redes sociais, os concorrentes tem dificuldades em alguns aspectos, trivago e mochileiros.com não postam muito em suas redes sociais.
 Trivago tem problemas com o desempenho de seus sites, já mochileiros.com tem problemas com o desempenho e com sua acessibilidade em seu site.
 
-\subsection{Exemplo Trivago}
+\subsection{Gráficos Trivago}
 
-\begin{figure}[h]
+\begin{figure}[H]
       \centering
       \includegraphics [width=1\textwidth]{IMGDOC/AnaliseTrivago1.png}
-      \label{fig:imagem}
+      \label{pesq1 tri}
 \end{figure}
-\begin{figure}[h]
+\begin{figure}[H]
       \centering
       \includegraphics [width=1\textwidth]{IMGDOC/AnaliseTrivago2.png}
-      \label{fig:imagem}
+      \label{pesq2 tri}
 \end{figure}
 
-\subsection{Exemplo Mochileiros.com}
+\subsection{Gráficos Mochileiros.com}
 
-\begin{figure}[h]
+\begin{figure}[H]
       \centering
       \includegraphics [width=1\textwidth]{IMGDOC/AnaliseMochileiros1.png}
-      \label{fig:imagem}
+      \label{pesq1 mochi}
 \end{figure}
-\begin{figure}[h]
+\begin{figure}[H]
       \centering
-      \includegraphics [width=0.9\textwidth]{IMGDOC/AnaliseMochileiros2.png}
-      \label{fig:imagem}
+      \includegraphics [width=1\textwidth]{IMGDOC/AnaliseMochileiros2.png}
+      \label{pesq2 mochi}
 \end{figure}
 
 \section{Mapa da jornada do usuário}
 \subsection{Sem a aplicação}
 
-\begin{figure}[h]
+\begin{figure}[H]
       \centering
-      \includegraphics [width=0.9\textwidth]{IMGDOC/MapaSemA1.png}
-      \label{fig:imagem}
+      \includegraphics [width=1\textwidth]{IMGDOC/MapaSemA1.png}
+      \label{mapa sem a1}
 \end{figure}
-\begin{figure}[h]
+\begin{figure}[H]
       \centering
-      \includegraphics [width=0.9\textwidth]{IMGDOC/MapaSemA2.png}
-      \label{fig:imagem}
-\end{figure}\begin{figure}[h]
+      \includegraphics [width=1\textwidth]{IMGDOC/MapaSemA2.png}
+      \label{mapa sem a2}
+\end{figure}\begin{figure}[H]
       \centering
-      \includegraphics [width=0.9\textwidth]{IMGDOC/MapaSemA3.png}
-      \label{fig:imagem}
+      \includegraphics [width=1\textwidth]{IMGDOC/MapaSemA3.png}
+      \label{mapa sem a3}
 \end{figure}
 
 \end{document}

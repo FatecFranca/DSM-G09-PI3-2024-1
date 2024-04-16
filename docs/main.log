@@ -1,4 +1,4 @@
-This is pdfTeX, Version 3.141592653-2.6-1.40.26 (MiKTeX 24.3) (preloaded format=pdflatex 2024.3.20)  4 APR 2024 15:55
+This is pdfTeX, Version 3.141592653-2.6-1.40.26 (MiKTeX 24.3) (preloaded format=pdflatex 2024.3.20)  16 APR 2024 15:57
 entering extended mode
  restricted \write18 enabled.
  file:line:error style messages enabled.
@@ -41,62 +41,47 @@ File: pdftex.def 2022/09/22 v1.2b Graphics/color driver for pdftex
 ))
 \Gin@req@height=\dimen141
 \Gin@req@width=\dimen142
+) (C:\Users\jkaue\AppData\Local\Programs\MiKTeX\tex/latex/float\float.sty
+Package: float 2001/11/08 v1.3d Float enhancements (AL)
+\c@float@type=\count196
+\float@exts=\toks18
+\float@box=\box51
+\@float@everytoks=\toks19
+\@floatcapt=\box52
 ) (C:\Users\jkaue\AppData\Local\Programs\MiKTeX\tex/latex/l3backend\l3backend-pdftex.def
 File: l3backend-pdftex.def 2024-03-14 L3 backend support: PDF output (pdfTeX)
-\l__color_backend_stack_int=\count196
-\l__pdf_internal_box=\box51
-) (main.aux
-
-LaTeX Warning: Label `fig:imagem' multiply defined.
-
-
-LaTeX Warning: Label `fig:imagem' multiply defined.
-
-
-LaTeX Warning: Label `fig:imagem' multiply defined.
-
-
-LaTeX Warning: Label `fig:imagem' multiply defined.
-
-
-LaTeX Warning: Label `fig:imagem' multiply defined.
-
-
-LaTeX Warning: Label `fig:imagem' multiply defined.
-
-
-LaTeX Warning: Label `fig:imagem' multiply defined.
-
-)
+\l__color_backend_stack_int=\count197
+\l__pdf_internal_box=\box53
+) (main.aux)
 \openout1 = `main.aux'.
 
-LaTeX Font Info:    Checking defaults for OML/cmm/m/it on input line 4.
-LaTeX Font Info:    ... okay on input line 4.
-LaTeX Font Info:    Checking defaults for OMS/cmsy/m/n on input line 4.
-LaTeX Font Info:    ... okay on input line 4.
-LaTeX Font Info:    Checking defaults for OT1/cmr/m/n on input line 4.
-LaTeX Font Info:    ... okay on input line 4.
-LaTeX Font Info:    Checking defaults for T1/cmr/m/n on input line 4.
-LaTeX Font Info:    ... okay on input line 4.
-LaTeX Font Info:    Checking defaults for TS1/cmr/m/n on input line 4.
-LaTeX Font Info:    ... okay on input line 4.
-LaTeX Font Info:    Checking defaults for OMX/cmex/m/n on input line 4.
-LaTeX Font Info:    ... okay on input line 4.
-LaTeX Font Info:    Checking defaults for U/cmr/m/n on input line 4.
-LaTeX Font Info:    ... okay on input line 4.
+LaTeX Font Info:    Checking defaults for OML/cmm/m/it on input line 9.
+LaTeX Font Info:    ... okay on input line 9.
+LaTeX Font Info:    Checking defaults for OMS/cmsy/m/n on input line 9.
+LaTeX Font Info:    ... okay on input line 9.
+LaTeX Font Info:    Checking defaults for OT1/cmr/m/n on input line 9.
+LaTeX Font Info:    ... okay on input line 9.
+LaTeX Font Info:    Checking defaults for T1/cmr/m/n on input line 9.
+LaTeX Font Info:    ... okay on input line 9.
+LaTeX Font Info:    Checking defaults for TS1/cmr/m/n on input line 9.
+LaTeX Font Info:    ... okay on input line 9.
+LaTeX Font Info:    Checking defaults for OMX/cmex/m/n on input line 9.
+LaTeX Font Info:    ... okay on input line 9.
+LaTeX Font Info:    Checking defaults for U/cmr/m/n on input line 9.
+LaTeX Font Info:    ... okay on input line 9.
  (C:\Users\jkaue\AppData\Local\Programs\MiKTeX\tex/context/base/mkii\supp-pdf.mkii
 [Loading MPS to PDF converter (version 2006.09.02).]
-\scratchcounter=\count197
+\scratchcounter=\count198
 \scratchdimen=\dimen143
-\scratchbox=\box52
-\nofMPsegments=\count198
-\nofMParguments=\count199
-\everyMPshowfont=\toks18
-\MPscratchCnt=\count266
+\scratchbox=\box54
+\nofMPsegments=\count199
+\nofMParguments=\count266
+\everyMPshowfont=\toks20
+\MPscratchCnt=\count267
 \MPscratchDim=\dimen144
-\MPnumerator=\count267
-\makeMPintoPDFobject=\count268
-\everyMPtoPDFconversion=\toks19
+\MPnumerator=\count268
+\makeMPintoPDFobject=\count269
+\everyMPtoPDFconversion=\toks21
 ) (C:\Users\jkaue\AppData\Local\Programs\MiKTeX\tex/latex/epstopdf-pkg\epstopdf-base.sty
 Package: epstopdf-base 2020-01-24 v2.11 Base part for package epstopdf
 Package epstopdf-base Info: Redefining graphics rule for `.eps' on input line 485.
@@ -104,93 +89,118 @@ Package epstopdf-base Info: Redefining graphics rule for `.eps' on input line 48
 File: epstopdf-sys.cfg 2021/03/18 v2.0 Configuration of epstopdf for MiKTeX
 ))
 LaTeX Font Info:    External font `cmex10' loaded for size
-(Font)              <12> on input line 10.
+(Font)              <12> on input line 11.
 LaTeX Font Info:    External font `cmex10' loaded for size
-(Font)              <8> on input line 10.
+(Font)              <8> on input line 11.
 LaTeX Font Info:    External font `cmex10' loaded for size
-(Font)              <6> on input line 10.
+(Font)              <6> on input line 11.
  [1
 
-{C:/Users/jkaue/AppData/Local/MiKTeX/fonts/map/pdftex/pdftex.map}]
+{C:/Users/jkaue/AppData/Local/MiKTeX/fonts/map/pdftex/pdftex.map}] [2]
 LaTeX Font Info:    External font `cmex10' loaded for size
-(Font)              <7> on input line 58.
+(Font)              <7> on input line 61.
 LaTeX Font Info:    External font `cmex10' loaded for size
-(Font)              <5> on input line 58.
- [2]
-<IMGDOC/Matriz CSD.png, id=13, 1179.65718pt x 517.18219pt>
+(Font)              <5> on input line 61.
+ [3] [4]
+<IMGDOC/Matriz CSD.png, id=21, 1179.65718pt x 517.18219pt>
 File: IMGDOC/Matriz CSD.png Graphic file (type png)
 <use IMGDOC/Matriz CSD.png>
-Package pdftex.def Info: IMGDOC/Matriz CSD.png  used on input line 82.
-(pdftex.def)             Requested size: 207.0021pt x 90.75287pt.
- [3 <./IMGDOC/Matriz CSD.png>]
-<IMGDOC/AnaliseTrivago1.png, id=20, 774.64406pt x 422.32782pt>
+Package pdftex.def Info: IMGDOC/Matriz CSD.png  used on input line 122.
+(pdftex.def)             Requested size: 345.0pt x 151.25742pt.
+ [5]
+<IMGDOC/Quanto Gosta.png, id=26, 484.05844pt x 170.88844pt>
+File: IMGDOC/Quanto Gosta.png Graphic file (type png)
+<use IMGDOC/Quanto Gosta.png>
+Package pdftex.def Info: IMGDOC/Quanto Gosta.png  used on input line 133.
+(pdftex.def)             Requested size: 345.0pt x 121.801pt.
+<IMGDOC/Redes sociais.png, id=27, 368.87813pt x 167.87718pt>
+File: IMGDOC/Redes sociais.png Graphic file (type png)
+<use IMGDOC/Redes sociais.png>
+Package pdftex.def Info: IMGDOC/Redes sociais.png  used on input line 140.
+(pdftex.def)             Requested size: 345.0pt x 157.01047pt.
+ [6 <./IMGDOC/Matriz CSD.png> <./IMGDOC/Quanto Gosta.png>]
+<IMGDOC/Dificuldades planejar.png, id=33, 413.29407pt x 176.15813pt>
+File: IMGDOC/Dificuldades planejar.png Graphic file (type png)
+<use IMGDOC/Dificuldades planejar.png>
+Package pdftex.def Info: IMGDOC/Dificuldades planejar.png  used on input line 147.
+(pdftex.def)             Requested size: 345.0pt x 147.05252pt.
+<IMGDOC/Demora planejar.png, id=34, 430.60875pt x 173.14688pt>
+File: IMGDOC/Demora planejar.png Graphic file (type png)
+<use IMGDOC/Demora planejar.png>
+Package pdftex.def Info: IMGDOC/Demora planejar.png  used on input line 154.
+(pdftex.def)             Requested size: 345.0pt x 138.7264pt.
+<IMGDOC/Dificuldades achar.png, id=35, 348.55219pt x 162.6075pt>
+File: IMGDOC/Dificuldades achar.png Graphic file (type png)
+<use IMGDOC/Dificuldades achar.png>
+Package pdftex.def Info: IMGDOC/Dificuldades achar.png  used on input line 161.
+(pdftex.def)             Requested size: 345.0pt x 160.95958pt.
+ [7 <./IMGDOC/Redes sociais.png> <./IMGDOC/Dificuldades planejar.png> <./IMGDOC/Demora planejar.png>]
+<IMGDOC/Fim pesquisa.png, id=43, 340.27126pt x 174.6525pt>
+File: IMGDOC/Fim pesquisa.png Graphic file (type png)
+<use IMGDOC/Fim pesquisa.png>
+Package pdftex.def Info: IMGDOC/Fim pesquisa.png  used on input line 168.
+(pdftex.def)             Requested size: 345.0pt x 177.08784pt.
+<IMGDOC/participantes.png, id=44, 179.92218pt x 313.17pt>
+File: IMGDOC/participantes.png Graphic file (type png)
+<use IMGDOC/participantes.png>
+Package pdftex.def Info: IMGDOC/participantes.png  used on input line 175.
+(pdftex.def)             Requested size: 172.5pt x 300.2766pt.
+ [8 <./IMGDOC/Dificuldades achar.png> <./IMGDOC/Fim pesquisa.png>] [9 <./IMGDOC/participantes.png>]
+<IMGDOC/AnaliseTrivago1.png, id=54, 774.64406pt x 422.32782pt>
 File: IMGDOC/AnaliseTrivago1.png Graphic file (type png)
 <use IMGDOC/AnaliseTrivago1.png>
-Package pdftex.def Info: IMGDOC/AnaliseTrivago1.png  used on input line 94.
+Package pdftex.def Info: IMGDOC/AnaliseTrivago1.png  used on input line 208.
 (pdftex.def)             Requested size: 345.0pt x 188.09317pt.
-<IMGDOC/AnaliseTrivago2.png, id=21, 779.16093pt x 350.05782pt>
+<IMGDOC/AnaliseTrivago2.png, id=55, 779.16093pt x 350.05782pt>
 File: IMGDOC/AnaliseTrivago2.png Graphic file (type png)
 <use IMGDOC/AnaliseTrivago2.png>
-Package pdftex.def Info: IMGDOC/AnaliseTrivago2.png  used on input line 99.
+Package pdftex.def Info: IMGDOC/AnaliseTrivago2.png  used on input line 213.
 (pdftex.def)             Requested size: 345.0pt x 154.99805pt.
-<IMGDOC/AnaliseMochileiros1.png, id=22, 776.9025pt x 476.53032pt>
+<IMGDOC/AnaliseMochileiros1.png, id=56, 776.9025pt x 476.53032pt>
 File: IMGDOC/AnaliseMochileiros1.png Graphic file (type png)
 <use IMGDOC/AnaliseMochileiros1.png>
-Package pdftex.def Info: IMGDOC/AnaliseMochileiros1.png  used on input line 107.
+Package pdftex.def Info: IMGDOC/AnaliseMochileiros1.png  used on input line 221.
 (pdftex.def)             Requested size: 345.0pt x 211.61542pt.
- [4 <./IMGDOC/AnaliseTrivago1.png> <./IMGDOC/AnaliseTrivago2.png>]
-<IMGDOC/AnaliseMochileiros2.png, id=28, 760.34062pt x 403.5075pt>
+<IMGDOC/AnaliseMochileiros2.png, id=57, 760.34062pt x 403.5075pt>
 File: IMGDOC/AnaliseMochileiros2.png Graphic file (type png)
 <use IMGDOC/AnaliseMochileiros2.png>
-Package pdftex.def Info: IMGDOC/AnaliseMochileiros2.png  used on input line 112.
-(pdftex.def)             Requested size: 310.4979pt x 164.78033pt.
-<IMGDOC/MapaSemA1.png, id=29, 598.48593pt x 471.26062pt>
+Package pdftex.def Info: IMGDOC/AnaliseMochileiros2.png  used on input line 226.
+(pdftex.def)             Requested size: 345.0pt x 183.09132pt.
+ [10 <./IMGDOC/AnaliseTrivago1.png> <./IMGDOC/AnaliseTrivago2.png>]
+<IMGDOC/MapaSemA1.png, id=63, 598.48593pt x 471.26062pt>
 File: IMGDOC/MapaSemA1.png Graphic file (type png)
 <use IMGDOC/MapaSemA1.png>
-Package pdftex.def Info: IMGDOC/MapaSemA1.png  used on input line 121.
-(pdftex.def)             Requested size: 310.4979pt x 244.49605pt.
-
-
-LaTeX Warning: `h' float specifier changed to `ht'.
-
-<IMGDOC/MapaSemA2.png, id=30, 562.35094pt x 467.49657pt>
+Package pdftex.def Info: IMGDOC/MapaSemA1.png  used on input line 235.
+(pdftex.def)             Requested size: 345.0pt x 271.66307pt.
+<IMGDOC/MapaSemA2.png, id=64, 562.35094pt x 467.49657pt>
 File: IMGDOC/MapaSemA2.png Graphic file (type png)
 <use IMGDOC/MapaSemA2.png>
-Package pdftex.def Info: IMGDOC/MapaSemA2.png  used on input line 126.
-(pdftex.def)             Requested size: 310.4979pt x 258.12257pt.
-
-LaTeX Warning: `h' float specifier changed to `ht'.
-
-<IMGDOC/MapaSemA3.png, id=31, 439.6425pt x 471.26062pt>
+Package pdftex.def Info: IMGDOC/MapaSemA2.png  used on input line 240.
+(pdftex.def)             Requested size: 345.0pt x 286.80603pt.
+ [11 <./IMGDOC/AnaliseMochileiros1.png> <./IMGDOC/AnaliseMochileiros2.png>]
+<IMGDOC/MapaSemA3.png, id=70, 439.6425pt x 471.26062pt>
 File: IMGDOC/MapaSemA3.png Graphic file (type png)
 <use IMGDOC/MapaSemA3.png>
-Package pdftex.def Info: IMGDOC/MapaSemA3.png  used on input line 130.
-(pdftex.def)             Requested size: 310.4979pt x 332.83563pt.
-
-LaTeX Warning: `h' float specifier changed to `ht'.
-
-[5 <./IMGDOC/AnaliseMochileiros1.png> <./IMGDOC/AnaliseMochileiros2.png>] [6 <./IMGDOC/MapaSemA1.png> <./IMGDOC/MapaSemA2.png>] [7 <./IMGDOC/MapaSemA3.png>] (main.aux)
+Package pdftex.def Info: IMGDOC/MapaSemA3.png  used on input line 244.
+(pdftex.def)             Requested size: 345.0pt x 369.82535pt.
+ [12 <./IMGDOC/MapaSemA1.png>] [13 <./IMGDOC/MapaSemA2.png>] [14 <./IMGDOC/MapaSemA3.png>] (main.aux)
  ***********
 LaTeX2e <2023-11-01> patch level 1
 L3 programming layer <2024-03-14>
  ***********
-
-
-LaTeX Warning: There were multiply-defined labels.
-
  ) 
 Here is how much of TeX's memory you used:
- 1369 strings out of 474424
- 23700 string characters out of 5741739
+ 1506 strings out of 474424
+ 26607 string characters out of 5741739
  1935496 words of memory out of 5000000
- 23752 multiletter control sequences out of 15000+600000
- 562351 words of font info for 50 fonts, out of 8000000 for 9000
+ 23884 multiletter control sequences out of 15000+600000
+ 562659 words of font info for 51 fonts, out of 8000000 for 9000
  1141 hyphenation exceptions out of 8191
  57i,7n,65p,953b,230s stack positions out of 10000i,1000n,20000p,200000b,200000s
- <C:\Users\jkaue\AppData\Local\MiKTeX\fonts/pk/ljfour/jknappen/ec/dpi600\tcrm1000.pk><C:/Users/jkaue/AppData/Local/Programs/MiKTeX/fonts/type1/public/amsfonts/cm/cmbx12.pfb><C:/Users/jkaue/AppData/Local/Programs/MiKTeX/fonts/type1/public/amsfonts/cm/cmr10.pfb><C:/Users/jkaue/AppData/Local/Programs/MiKTeX/fonts/type1/public/amsfonts/cm/cmr12.pfb><C:/Users/jkaue/AppData/Local/Programs/MiKTeX/fonts/type1/public/amsfonts/cm/cmr17.pfb><C:/Users/jkaue/AppData/Local/Programs/MiKTeX/fonts/type1/public/amsfonts/cm/cmsy10.pfb>
-Output written on main.pdf (7 pages, 550876 bytes).
+ <C:\Users\jkaue\AppData\Local\MiKTeX\fonts/pk/ljfour/jknappen/ec/dpi600\tcrm1000.pk><C:/Users/jkaue/AppData/Local/Programs/MiKTeX/fonts/type1/public/amsfonts/cm/cmbx10.pfb><C:/Users/jkaue/AppData/Local/Programs/MiKTeX/fonts/type1/public/amsfonts/cm/cmbx12.pfb><C:/Users/jkaue/AppData/Local/Programs/MiKTeX/fonts/type1/public/amsfonts/cm/cmr10.pfb><C:/Users/jkaue/AppData/Local/Programs/MiKTeX/fonts/type1/public/amsfonts/cm/cmr12.pfb><C:/Users/jkaue/AppData/Local/Programs/MiKTeX/fonts/type1/public/amsfonts/cm/cmr17.pfb><C:/Users/jkaue/AppData/Local/Programs/MiKTeX/fonts/type1/public/amsfonts/cm/cmsy10.pfb>
+Output written on main.pdf (14 pages, 621740 bytes).
 PDF statistics:
- 73 PDF objects out of 1000 (max. 8388607)
+ 114 PDF objects out of 1000 (max. 8388607)
  0 named destinations out of 1000 (max. 500000)
- 41 words of extra memory for PDF output out of 10000 (max. 10000000)
+ 76 words of extra memory for PDF output out of 10000 (max. 10000000)
 

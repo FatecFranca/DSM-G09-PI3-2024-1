@@ -21,6 +21,8 @@ INPUT C:\Users\jkaue\AppData\Local\Programs\MiKTeX\tex\latex\graphics-cfg\graphi
 INPUT C:\Users\jkaue\AppData\Local\Programs\MiKTeX\tex\latex\graphics-def\pdftex.def
 INPUT C:\Users\jkaue\AppData\Local\Programs\MiKTeX\tex\latex\graphics-def\pdftex.def
 INPUT C:\Users\jkaue\AppData\Local\Programs\MiKTeX\tex\latex\graphics-def\pdftex.def
+INPUT C:\Users\jkaue\AppData\Local\Programs\MiKTeX\tex\latex\float\float.sty
+INPUT C:\Users\jkaue\AppData\Local\Programs\MiKTeX\tex\latex\float\float.sty
 INPUT C:\Users\jkaue\AppData\Local\Programs\MiKTeX\tex\latex\l3backend\l3backend-pdftex.def
 INPUT C:\Users\jkaue\AppData\Local\Programs\MiKTeX\tex\latex\l3backend\l3backend-pdftex.def
 INPUT .\main.aux
@@ -45,10 +47,11 @@ INPUT C:\Users\jkaue\AppData\Local\Programs\MiKTeX\fonts\tfm\public\cm\cmmi6.tfm
 INPUT C:\Users\jkaue\AppData\Local\Programs\MiKTeX\fonts\tfm\public\cm\cmsy10.tfm
 INPUT C:\Users\jkaue\AppData\Local\Programs\MiKTeX\fonts\tfm\public\cm\cmsy8.tfm
 INPUT C:\Users\jkaue\AppData\Local\Programs\MiKTeX\fonts\tfm\public\cm\cmsy6.tfm
-INPUT C:\Users\jkaue\AppData\Local\Programs\MiKTeX\fonts\tfm\public\cm\cmr12.tfm
-INPUT C:\Users\jkaue\AppData\Local\Programs\MiKTeX\fonts\tfm\public\cm\cmbx12.tfm
 OUTPUT main.pdf
 INPUT C:\Users\jkaue\AppData\Local\MiKTeX\fonts\map\pdftex\pdftex.map
+INPUT C:\Users\jkaue\AppData\Local\Programs\MiKTeX\fonts\tfm\public\cm\cmbx10.tfm
+INPUT C:\Users\jkaue\AppData\Local\Programs\MiKTeX\fonts\tfm\public\cm\cmr12.tfm
+INPUT C:\Users\jkaue\AppData\Local\Programs\MiKTeX\fonts\tfm\public\cm\cmbx12.tfm
 INPUT C:\Users\jkaue\AppData\Local\Programs\MiKTeX\fonts\tfm\jknappen\ec\tcrm1000.tfm
 INPUT C:\Users\jkaue\AppData\Local\Programs\MiKTeX\fonts\tfm\public\cm\cmbx12.tfm
 INPUT .\IMGDOC\Matriz CSD.png
@@ -58,6 +61,55 @@ INPUT .\IMGDOC\Matriz CSD.png
 INPUT .\IMGDOC\Matriz CSD.png
 INPUT .\IMGDOC\Matriz CSD.png
 INPUT .\IMGDOC\Matriz CSD.png
+INPUT .\IMGDOC\Quanto Gosta.png
+INPUT .\IMGDOC\Quanto Gosta.png
+INPUT .\IMGDOC\Quanto Gosta.png
+INPUT .\IMGDOC\Quanto Gosta.png
+INPUT .\IMGDOC\Quanto Gosta.png
+INPUT .\IMGDOC\Quanto Gosta.png
+INPUT .\IMGDOC\Quanto Gosta.png
+INPUT .\IMGDOC\Redes sociais.png
+INPUT .\IMGDOC\Redes sociais.png
+INPUT .\IMGDOC\Redes sociais.png
+INPUT .\IMGDOC\Redes sociais.png
+INPUT .\IMGDOC\Redes sociais.png
+INPUT .\IMGDOC\Redes sociais.png
+INPUT .\IMGDOC\Redes sociais.png
+INPUT .\IMGDOC\Dificuldades planejar.png
+INPUT .\IMGDOC\Dificuldades planejar.png
+INPUT .\IMGDOC\Dificuldades planejar.png
+INPUT .\IMGDOC\Dificuldades planejar.png
+INPUT .\IMGDOC\Dificuldades planejar.png
+INPUT .\IMGDOC\Dificuldades planejar.png
+INPUT .\IMGDOC\Dificuldades planejar.png
+INPUT .\IMGDOC\Demora planejar.png
+INPUT .\IMGDOC\Demora planejar.png
+INPUT .\IMGDOC\Demora planejar.png
+INPUT .\IMGDOC\Demora planejar.png
+INPUT .\IMGDOC\Demora planejar.png
+INPUT .\IMGDOC\Demora planejar.png
+INPUT .\IMGDOC\Demora planejar.png
+INPUT .\IMGDOC\Dificuldades achar.png
+INPUT .\IMGDOC\Dificuldades achar.png
+INPUT .\IMGDOC\Dificuldades achar.png
+INPUT .\IMGDOC\Dificuldades achar.png
+INPUT .\IMGDOC\Dificuldades achar.png
+INPUT .\IMGDOC\Dificuldades achar.png
+INPUT .\IMGDOC\Dificuldades achar.png
+INPUT .\IMGDOC\Fim pesquisa.png
+INPUT .\IMGDOC\Fim pesquisa.png
+INPUT .\IMGDOC\Fim pesquisa.png
+INPUT .\IMGDOC\Fim pesquisa.png
+INPUT .\IMGDOC\Fim pesquisa.png
+INPUT .\IMGDOC\Fim pesquisa.png
+INPUT .\IMGDOC\Fim pesquisa.png
+INPUT .\IMGDOC\participantes.png
+INPUT .\IMGDOC\participantes.png
+INPUT .\IMGDOC\participantes.png
+INPUT .\IMGDOC\participantes.png
+INPUT .\IMGDOC\participantes.png
+INPUT .\IMGDOC\participantes.png
+INPUT .\IMGDOC\participantes.png
 INPUT .\IMGDOC\AnaliseTrivago1.png
 INPUT .\IMGDOC\AnaliseTrivago1.png
 INPUT .\IMGDOC\AnaliseTrivago1.png
@@ -110,6 +162,8 @@ INPUT .\IMGDOC\MapaSemA3.png
 INPUT main.aux
 INPUT C:\Users\jkaue\AppData\Local\MiKTeX\fonts\pk\ljfour\jknappen\ec\dpi600\tcrm1000.pk
 INPUT C:\Users\jkaue\AppData\Local\MiKTeX\fonts\pk\ljfour\jknappen\ec\dpi600\tcrm1000.pk
+INPUT C:\Users\jkaue\AppData\Local\Programs\MiKTeX\fonts\type1\public\amsfonts\cm\cmbx10.pfb
+INPUT C:\Users\jkaue\AppData\Local\Programs\MiKTeX\fonts\type1\public\amsfonts\cm\cmbx10.pfb
 INPUT C:\Users\jkaue\AppData\Local\Programs\MiKTeX\fonts\type1\public\amsfonts\cm\cmbx12.pfb
 INPUT C:\Users\jkaue\AppData\Local\Programs\MiKTeX\fonts\type1\public\amsfonts\cm\cmbx12.pfb
 INPUT C:\Users\jkaue\AppData\Local\Programs\MiKTeX\fonts\type1\public\amsfonts\cm\cmr10.pfb
