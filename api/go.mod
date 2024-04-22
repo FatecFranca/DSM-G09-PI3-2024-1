@@ -1,4 +1,4 @@
-module github.com/FatecFranca/DSM-G09-PI3-2024-1
+module github.com/FatecFranca/DSM-G09-PI3-2024-1/api
 
 go 1.22
 
