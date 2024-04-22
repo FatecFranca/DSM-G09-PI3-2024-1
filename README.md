@@ -10,5 +10,6 @@ Repositório do GRUPO 09 do Projeto Interdisciplinar do 3º semestre DSM 2024/1.
     * Atentar para virtualização habilitada no processador do computador
 
 ## Comandos
-1. Na pasta root do projeto (`travel_diary`), `docker-compose up`
+1. Na pasta root do projeto, `docker-compose up`
 2. Se o daemon não estiver rodando, no windows é só abrir o docker desktop, já no linux `sudo systemctl start docker`
+3. Ao fazer alguma alteração no back ou front, `docker-compose down && docker-compose up -d --build` deve resolver

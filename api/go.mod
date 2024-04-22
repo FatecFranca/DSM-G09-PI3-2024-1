@@ -1,4 +1,4 @@
-module github.com/bodelha/travelDiary
+module github.com/FatecFranca/DSM-G09-PI3-2024-1
 
 go 1.22
 
