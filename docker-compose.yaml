@@ -15,7 +15,7 @@ services:
     environment:
       - MONGO_HOST=mongodb
       - MONGO_PORT=27017
-      - MONGO_database=travel_diary
+      - MONGO_DATABASE=travel_diary
 
   mongodb:
     image: mongo

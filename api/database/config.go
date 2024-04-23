@@ -31,5 +31,8 @@ func Connect(ctx context.Context) error {
 	}
 
 	fmt.Println("Conectado ao MongoDB!")
+
+	userCollection = client.Database(MONGO_DATABASE).Collection("usuarios")
+
 	return nil
 }
