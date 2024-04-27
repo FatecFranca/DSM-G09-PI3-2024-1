@@ -24,4 +24,7 @@ func SetupRoutes(router *gin.Engine) {
 
 	router.GET("/healthcheck", controllers.HealthCheckHandler)
 	router.POST("/usuarios", controllers.CreateUser)
+	router.GET("/usuarios/:userID", controllers.GetUserByID)
+	router.POST("/usuarios/:userID", controllers.UpdateUser)
+	router.DELETE("/usuarios/:userID", controllers.UpdateUser)
 }

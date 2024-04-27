@@ -51,3 +51,69 @@ func CreateUser(c *gin.Context) {
 
 	c.JSON(http.StatusCreated, result)
 }
+
+func GetUserByID(c *gin.Context) {
+	userID := c.Param("userID")
+
+	if userID == "" {
+		c.JSON(http.StatusBadRequest, gin.H{"error": "ID do usuário não fornecido"})
+		return
+	}
+
+	user, err := database.GetUserByID(context.Background(), userID)
+	if err != nil {
+		c.JSON(http.StatusInternalServerError, gin.H{"error": "Erro ao buscar usuário"})
+		return
+	}
+
+	if user == nil || user.Deleted {
+		c.JSON(http.StatusNotFound, gin.H{"error": "Usuário não encontrado"})
+		return
+	}
+
+	c.JSON(http.StatusOK, user)
+}
+
+func UpdateUser(c *gin.Context) {
+	userID := c.Param("userID")
+
+	if userID == "" {
+		c.JSON(http.StatusBadRequest, gin.H{"error": "ID do usuário não fornecido"})
+		return
+	}
+
+	var updatedUser models.Usuario
+	if err := c.BindJSON(&updatedUser); err != nil {
+		c.JSON(http.StatusBadRequest, gin.H{"error": err.Error()})
+		return
+	}
+
+	existingUser, err := database.GetUserByID(context.Background(), userID)
+	if err != nil {
+		c.JSON(http.StatusInternalServerError, gin.H{"error": "Erro ao buscar usuário"})
+		return
+	}
+	if existingUser == nil {
+		c.JSON(http.StatusNotFound, gin.H{"error": "Usuário não encontrado"})
+		return
+	}
+
+	if c.Request.Method == "DELETE" {
+		existingUser.Deleted = true
+	} else {
+		existingUser.Nome = updatedUser.Nome
+		existingUser.DataNascimento = updatedUser.DataNascimento
+		existingUser.Municipio = updatedUser.Municipio
+		existingUser.UF = updatedUser.UF
+		existingUser.Telefone = updatedUser.Telefone
+		existingUser.Bio = updatedUser.Bio
+	}
+
+	result, err := database.UpdateUser(context.Background(), userID, existingUser)
+	if err != nil {
+		c.JSON(http.StatusInternalServerError, gin.H{"error": "Erro ao atualizar usuário"})
+		return
+	}
+
+	c.JSON(http.StatusOK, result)
+}
