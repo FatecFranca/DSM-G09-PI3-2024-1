@@ -1,13 +1,11 @@
-FROM golang:1.22.1-alpine3.19
-
-# ENV GIN_MODE=release
+FROM node:14
 
 WORKDIR /api
 
-RUN apk update && apk add git
+COPY api/package*.json ./
 
-COPY . .
+RUN npm install
 
-RUN go build -o api main.go
+COPY api/ .
 
-ENTRYPOINT ["./api"]
+CMD [ "node", "index.js" ]
