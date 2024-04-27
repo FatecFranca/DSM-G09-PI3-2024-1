@@ -1,0 +1,27 @@
+{
+  "name": "api",
+  "version": "1.0.0",
+  "description": "API to serve a application were travellers can plan their trips, make a diary during it, control expenses and then share the experience in a blog",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/FatecFranca/DSM-G09-PI3-2024-1.git"
+  },
+  "keywords": [
+    "travel-diary",
+    "travel-planning"
+  ],
+  "author": "bodelha",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/FatecFranca/DSM-G09-PI3-2024-1/issues"
+  },
+  "homepage": "https://github.com/FatecFranca/DSM-G09-PI3-2024-1#readme",
+  "dependencies": {
+    "cors": "^2.8.5",
+    "express": "^4.19.2"
+  }
+}

@@ -2,10 +2,10 @@ FROM node:14
 
 WORKDIR /api
 
-COPY api/package*.json ./
+COPY ./package*.json ./
 
 RUN npm install
 
-COPY api/ .
+COPY . .
 
 CMD [ "node", "index.js" ]
