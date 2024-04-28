@@ -23,9 +23,9 @@ print de tela
 
 - Jira: Para planejar o desenvolvimento do projeto, gerenciar backlog e gerar sprints. Foi utilizado modelo Scrum. <br/>
   [Jira - PI 3 - Wonderlust](https://izabelatrc-fatec.atlassian.net/jira/software/projects/P3DV/boards/2) <br/>
-- Notion: Para registrar o processo de desenvolvimento do projeto.
-  \*\* Contém as pesquisas realizadas, detalhes dos códigos, relatórios de cada entrega, rabiscoframe, wireframe, moodboard, styleguide, personas, etc. <br/>
-  [Notion - PI 3 - Wonderlust](https://melted-leopard-c49.notion.site/PI-3-b7dc3f7aa566467ba521f355c52619a3?pvs=4)
+- Notion: Para registrar o processo de desenvolvimento do projeto.<br/>
+  - Contém as pesquisas realizadas, detalhes dos códigos, relatórios de cada entrega, rabiscoframe, wireframe, moodboard, styleguide, personas, etc. <br/>
+    [Notion - PI 3 - Wonderlust](https://melted-leopard-c49.notion.site/PI-3-b7dc3f7aa566467ba521f355c52619a3?pvs=4)
 
 ### Documentação
 
@@ -35,7 +35,7 @@ print de tela
 ### Design
 
 \*Figma: para criar wireframes, styleguide e o protótipo de alta resolução. <br/>
-[Figma - Wireframe e Styleguide](https://www.figma.com/file/moQhturIxW4SQgz3IZib6S/Wireframe-e-Styleguide?type=design&mode=design&t=YWvq7GdMrqkutfuo-1)
+[Figma - Wireframe e Styleguide](https://www.figma.com/file/moQhturIxW4SQgz3IZib6S/Wireframe-e-Styleguide?type=design&mode=design&t=YWvq7GdMrqkutfuo-1) <br/>
 [Figma - Protótipo de Alta Resolução](https://www.figma.com/file/PQnKKkcY3oaeLRCQjt7QCQ/Prot%C3%B3tipo-de-alta-resolu%C3%A7%C3%A3o?type=design&node-id=0%3A1&mode=design&t=gnKAqLHKD7itqJGN-1)
 
 ### Front end
@@ -75,17 +75,17 @@ print de tela
 
 # Autores
 
-## PO
+### PO
 
 Izabela Tayná Reis Coimbra <br/>
 GitHub: https://github.com/izabelatrc
 
-## Design e Documentação
+### Design e Documentação
 
 Kauê José Abdalla Leal <br/>
 GitHub: https://github.com/Kaue404
 
-## Frot-End
+### Frot-End
 
 Pedro Victor Virgino da Cunha <br/>
 GitHub: <br/><br/>
@@ -93,7 +93,7 @@ GitHub: <br/><br/>
 Victor Ferreira Neves <br/>
 GitHub: https://github.com/McPlayerV2
 
-## Back-End
+### Back-End
 
 Isabela Maria de Oliveira <br/>
 GitHub: https://github.com/bodelha <br/><br/>
