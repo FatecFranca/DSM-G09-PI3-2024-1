@@ -3,21 +3,21 @@
 Repositório do GRUPO 09 do Projeto Interdisciplinar do 3º semestre DSM 2024/1. <br/>
 Alunos: Isabela Maria de Oliveira, Izabela Tayná Reis Coimbra, Kauê José Abdalla Leal, Pedro Victor Virgino da Cunha e Victor Ferreira Neves.
 
-# Wonderlust
+# Wonderlust :baggage:
 
-## Link do site
+## Link do site :fire:
 
-## Sobre o projeto
+## Sobre o projeto :bookmark_tabs:
 
 Uma aplicação web para viagens, onde o usuário poderá se planejar, documentar, registrar os gastos, compartilhar momentos e trocar experiências. O objetivo é tornar o processo de viagem mais fácil, reunindo em um só lugar atividades como escolher o destino, descobrir as melhores rotas, realizar estimativas de custos, ver dicas, criar anotações e publicar sobre os lugares. Queremos criar uma comunidade de viajantes, onde todos possam compartilhar dicas e histórias sobre suas viagens. A aplicação é gratuita para todos os usuários e o sistema de monetização se dará através de parcerias e propagandas. Viajar está cada vez mais popular e muitas pessoas precisam desse tipo de ajuda!
 
-## Layout
+## Layout :sparkles:
 
 ### Nome página
 
-print de tela
+- Print de tela
 
-## Tecnologias utilizadas
+## Tecnologias utilizadas :zap:
 
 ### Planejamento (PO)
 
@@ -50,7 +50,7 @@ print de tela
   \*\* Mongoose.
 - Node.Js: para executar a aplicação.
 
-# Como executar o projeto
+# Como executar o projeto :computer:
 
 #### Pré-requisitos:
 
