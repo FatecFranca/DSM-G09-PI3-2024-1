@@ -27,10 +27,10 @@ print de tela
   \*\* Contém as pesquisas realizadas, detalhes dos códigos, relatórios de cada entrega, rabiscoframe, wireframe, moodboard, styleguide, personas, etc. <br/>
   [Notion - PI 3 - Wonderlust](https://melted-leopard-c49.notion.site/PI-3-b7dc3f7aa566467ba521f355c52619a3?pvs=4)
 
-### DOcumentação
+### Documentação
 
-*Latex: Para criar a documentação oficial do projeto; <br/>
-*Miro: Para criar os diagramas.
+- Latex: Para criar a documentação oficial do projeto; <br/>
+- Miro: Para criar os diagramas.
 
 ### Design
 
