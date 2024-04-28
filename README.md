@@ -3,7 +3,7 @@
 Repositório do GRUPO 09 do Projeto Interdisciplinar do 3º semestre DSM 2024/1. <br/>
 Alunos: Isabela Maria de Oliveira, Izabela Tayná Reis Coimbra, Kauê José Abdalla Leal, Pedro Victor Virgino da Cunha e Victor Ferreira Neves.
 
-# Wonderlust :baggage:
+# Wonderlust :luggage:
 
 ## Link do site :fire:
 
@@ -73,7 +73,7 @@ Uma aplicação web para viagens, onde o usuário poderá se planejar, documenta
 2. Se o daemon não estiver rodando, no windows é só abrir o docker desktop, já no linux `sudo systemctl start docker`
 3. Ao fazer alguma alteração no back ou front, `docker-compose down && docker-compose up -d --build` deve resolver-->
 
-# Autores
+# Autores :woman_technologist::man_technologist:
 
 ### PO
 
