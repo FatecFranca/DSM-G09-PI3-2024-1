@@ -3,7 +3,7 @@
 Repositório do GRUPO 09 do Projeto Interdisciplinar do 3º semestre DSM 2024/1. <br/>
 Alunos: Isabela Maria de Oliveira, Izabela Tayná Reis Coimbra, Kauê José Abdalla Leal, Pedro Victor Virgino da Cunha e Victor Ferreira Neves.
 
-# Wonderlust :luggage:
+# Wanderlust :luggage:
 
 ## Link do site :fire:
 
