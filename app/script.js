@@ -2,7 +2,7 @@ document.addEventListener('DOMContentLoaded', function () {
     var outputDiv = document.getElementById('output');
     
     function fetchData() {
-        var url = 'http://localhost:3000/';
+        var url = 'http://localhost:3000/healthcheck';
 
         var xhr = new XMLHttpRequest();
         xhr.open('GET', url, true);

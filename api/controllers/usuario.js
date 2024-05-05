@@ -1,19 +1,34 @@
 const { hashPassword } = require('./utils');
+const { ObjectId } = require('mongodb');
+const Usuario = require('../models/usuario');
 const {
-    getUserByID,
-    upsertUser,
-} = require('../database/usuario');
+    exists,
+    retrieve,
+    upsert
+} = require('../database/general');
+
+const USER_COLLECTION = Usuario;
+
 
 async function createUser(req, res) {
     const user = req.body;
 
     try {
-        
-        const hashedPassword = await hashPassword(user.senha);
-        user.senha = hashedPassword;
 
-        const result = await upsertUser(user);
-        res.status(201).json(result);
+        const existingEmail = await exists(USER_COLLECTION, "email", user.email)
+        const existingCpf = await exists(USER_COLLECTION, "cpf", user.cpf)
+
+        if (existingEmail || existingCpf) {
+            console.error('Usuário com este Email ou CPF já existe');
+            res.status(422).json({ error: 'Usuário com este Email ou CPF já existe' });
+        } else {
+
+            const hashedPassword = await hashPassword(user.senha);
+            user.senha = hashedPassword;
+
+            const result = await upsert(USER_COLLECTION, user);
+            res.status(201).json(result);
+        }
     } catch (error) {
         console.error('Erro ao criar usuário:', error);
         res.status(500).json({ error: 'Erro ao criar usuário' });
@@ -28,7 +43,7 @@ async function getUserById(req, res) {
     }
 
     try {
-        const user = await getUserByID(userID);
+        const user = await retrieve(USER_COLLECTION, "_id",new ObjectId(userID));
         if (!user || user.deleted) {
             return res.status(404).json({ error: 'Usuário não encontrado' });
         }
@@ -49,7 +64,7 @@ async function updateUser(req, res) {
     const updatedUser = req.body;
 
     try {
-        let existingUser = await getUserByID(userID);
+        let existingUser = await retrieve(USER_COLLECTION, "_id", new ObjectId(userID));
         if (!existingUser) {
             return res.status(404).json({ error: 'Usuário não encontrado' });
         }
@@ -65,7 +80,7 @@ async function updateUser(req, res) {
             existingUser.bio = updatedUser.bio;
         }
 
-        const result = await upsertUser(existingUser);
+        const result = await upsert(USER_COLLECTION, existingUser);
         res.status(200).json(result);
     } catch (error) {
         console.error('Erro ao atualizar usuário:', error);
