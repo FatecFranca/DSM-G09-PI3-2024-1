@@ -17,7 +17,7 @@ const postSchema = new mongoose.Schema({
         type: String,
         required: true
     },
-    url_imagem: Array[String],
+    url_imagem: Array,
     local: String,
     valor_gasto: Number,
     publico: { type: Boolean, default: false },
@@ -31,4 +31,4 @@ const postSchema = new mongoose.Schema({
 
 const Post = mongoose.model('Post', postSchema);
 
-module.exports = Post;
+module.exports = Post.collection;

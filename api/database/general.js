@@ -27,6 +27,20 @@ async function retrieve(collection, attribute, value) {
     }
 }
 
+async function retrieveAll(collection, attribute=null, value=null) {
+    try {
+        let query = {}
+        if (attribute && value) {
+            query[attribute] = value;
+        }
+        const result = await collection.find(query).toArray();
+        return result;
+    } catch (error) {
+        console.error('Erro ao obter todos os documentos da coleção com filtro', error);
+        throw error;
+    }
+}
+
 async function upsert(collection, entity) {
     console.log("gcofgr", entity)
     try {
@@ -48,5 +62,6 @@ async function upsert(collection, entity) {
 module.exports = {
     exists,
     retrieve,
-    upsert
+    upsert,
+    retrieveAll
 };

@@ -1,9 +1,9 @@
 const { ObjectId } = require('mongodb');
 const Post = require('../models/post');
 const {
-    exists,
     retrieve,
-    upsert
+    upsert,
+    retrieveAll
 } = require('../database/general');
 
 const POST_COLLECTION = Post;
@@ -12,7 +12,7 @@ async function createPost(req, res) {
     const post = req.body;
 
     post.data_criacao = new Date();
-    post.usuario = new ObjectId(usuario)
+    post.usuario = new ObjectId(post.usuario)
 
     try {
         const result = await upsert(POST_COLLECTION, post);
@@ -25,7 +25,7 @@ async function createPost(req, res) {
 };
 
 async function getPostById(req, res) {
-    const postId = req.params.postID;
+    const postID = req.params.postID;
 
     if (!postID) {
         return res.status(400).json({
@@ -34,8 +34,8 @@ async function getPostById(req, res) {
     }
 
     try {
-        const post = await retrieve(POST_COLLECTION, { _id: new ObjectId(postID) })
-        if (!post || post.deleted) {
+        const post = await retrieve(POST_COLLECTION, "_id", new ObjectId(postID))
+        if (!post) {
             return res.status(404).json({
                 error: "Post não encontrado"
             });
@@ -58,7 +58,7 @@ async function updatePost(req, res) {
     const updatedPost = req.body;
 
     try {
-        let existingPost = await exists(POST_COLLECTION, { _id: new ObjectId(postID) });
+        let existingPost = await retrieve(POST_COLLECTION, "_id", new ObjectId(postID));
         if (!existingPost) {
             return res.status(404).json({
                 error: "Post não encontrado"
@@ -82,7 +82,7 @@ async function updatePost(req, res) {
     }
 };
 
-async function getPostsByUsuario(req, res) {
+async function getPostsByUser(req, res) {
     const userID = req.params.userID;
 
     if (!userID) {
@@ -91,7 +91,7 @@ async function getPostsByUsuario(req, res) {
         });
     }
     try {
-        const posts = await retrieve(POST_COLLECTION, { usuario: new ObjectId(userID) });
+        const posts = await retrieveAll(POST_COLLECTION, { usuario: new ObjectId(userID) });
         res.status(200).json(posts);
     } catch (error) {
         console.error('Erro ao buscar posts do usuário:', error);
@@ -99,9 +99,9 @@ async function getPostsByUsuario(req, res) {
     }
 }
 
-export {
+module.exports = {
     createPost,
     getPostById,
     updatePost,
-    getPostsByUsuario
+    getPostsByUser
 }
