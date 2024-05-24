@@ -1,7 +1,7 @@
 const express = require('express');
 const healthCheckController = require('./controllers/health-check');
 const userControllers = require('./controllers/usuario');
-const postControllers = require('./controllers/post')
+const registerControllers = require('./controllers/register')
 
 const router = express.Router();
 
@@ -22,10 +22,10 @@ router.post('/usuarios', userControllers.createUser);
 router.get('/usuarios/:userID', userControllers.getUserById);
 router.post('/usuarios/:userID', userControllers.updateUser);
 router.delete('/usuarios/:userID', userControllers.updateUser);
-router.post('/posts', postControllers.createPost);
-router.get('/posts/:postID', postControllers.getPostById);
-router.post('/posts/:postID', postControllers.updatePost);
-router.delete('/posts/:postID', postControllers.updatePost);
-router.get('/posts-by-user/:userID', postControllers.getPostsByUser)
+router.post('/registros', registerControllers.createRegister);
+router.get('/registros/:postID', registerControllers.getRegisterById);
+router.post('/registros/:postID', registerControllers.updateRegister);
+router.delete('/registros/:postID', registerControllers.updateRegister);
+router.get('/registros-by-user/:userID', registerControllers.getRegistersByUser)
 
 module.exports = router;

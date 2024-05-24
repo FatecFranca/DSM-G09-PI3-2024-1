@@ -27,6 +27,7 @@ async function createUser(req, res) {
             user.senha = hashedPassword;
 
             const result = await upsert(USER_COLLECTION, user);
+            console.info(result)
             res.status(201).json(result);
         }
     } catch (error) {

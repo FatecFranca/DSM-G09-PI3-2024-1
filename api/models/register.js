@@ -1,6 +1,6 @@
 const mongoose = require('mongoose');
 
-const postSchema = new mongoose.Schema({
+const registerSchema = new mongoose.Schema({
     data_criacao: {
         type: Date,
         required: true
@@ -29,6 +29,6 @@ const postSchema = new mongoose.Schema({
     }
 });
 
-const Post = mongoose.model('Post', postSchema);
+const Register = mongoose.model('Register', registerSchema);
 
-module.exports = Post.collection;
+module.exports = Register.collection;

@@ -71,7 +71,10 @@ Uma aplicação web para viagens, onde o usuário poderá se planejar, documenta
 
 <!--1. Na pasta root do projeto, `docker-compose up`
 2. Se o daemon não estiver rodando, no windows é só abrir o docker desktop, já no linux `sudo systemctl start docker`
-3. Ao fazer alguma alteração no back ou front, `docker-compose down && docker-compose up -d --build` deve resolver-->
+3. Ao fazer alguma alteração no back ou front, `docker-compose down && docker-compose up -d --build` deve resolver
+4. Para carregar dados genéricos para desenvolvimento, além de ter `jq` na máquina:  `sh api/bootstrap.sh`
+-->
+
 
 # Autores :woman_technologist::man_technologist:
 
