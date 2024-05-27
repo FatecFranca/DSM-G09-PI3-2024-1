@@ -23,9 +23,9 @@ router.get('/usuarios/:userID', userControllers.getUserById);
 router.post('/usuarios/:userID', userControllers.updateUser);
 router.delete('/usuarios/:userID', userControllers.updateUser);
 router.post('/registros', registerControllers.createRegister);
-router.get('/registros/:postID', registerControllers.getRegisterById);
-router.post('/registros/:postID', registerControllers.updateRegister);
-router.delete('/registros/:postID', registerControllers.updateRegister);
+router.get('/registros/:registerID', registerControllers.getRegisterById);
+router.post('/registros/:registerID', registerControllers.updateRegister);
+router.delete('/registros/:registerID', registerControllers.updateRegister);
 router.get('/registros-by-user/:userID', registerControllers.getRegistersByUser)
 
 module.exports = router;

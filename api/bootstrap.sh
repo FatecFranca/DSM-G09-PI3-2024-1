@@ -6,12 +6,12 @@ BASE_URL="http://localhost:3000"
 # Dados para criar um novo usuário
 USER_DATA='{
   "nome": "Isabela",
-  "cpf": "113.604.789-00",
+  "cpf": "147.456.789-00",
   "dataNascimento": "1990-01-01",
   "municipio": "São Paulo",
   "uf": "SP",
   "telefone": "11999999999",
-  "email": "isb@example.com",
+  "email": "isla@example.com",
   "senha": "senha123",
   "bio": "Bio de Isabela"
 }'
@@ -42,49 +42,56 @@ UPDATED_USER_DATA='{
 echo "Updating the user..."
 curl -s -X POST -H "Content-Type: application/json" -d "$UPDATED_USER_DATA" "$BASE_URL/usuarios/$USER_ID"
 
-# # Dados para criar um novo registro
-# REGISTER_DATA='{
-#   "titulo": "Primeiro Registro",
-#   "descricao": "Descrição do primeiro registro",
-#   "url_imagem": ["url1", "url2"],
-#   "local": "São Paulo",
-#   "valor_gasto": 100,
-#   "usuario": "'$USER_ID'"
-# }'
 
-# # Criar um novo registro
-# echo "Creating a new register..."
-# REGISTER_RESPONSE=$(curl -s -X POST -H "Content-Type: application/json" -d "$REGISTER_DATA" "$BASE_URL/registros")
-# REGISTER_ID=$(echo $REGISTER_RESPONSE | jq -r '._id')
+# Obter o usuário criado pelo ID
+echo "Getting the user by ID..."
+$USER_RESPONSE_RECOVER =$(curl -s "$BASE_URL/usuarios/$USER_ID")
+echo "Response recover: $USER_RESPONSE_RECOVER"
 
-# if [ "$REGISTER_ID" == "null" ]; then
-#   echo "Error creating register: $REGISTER_RESPONSE"
-#   exit 1
-# fi
-# echo "Register created with ID: $REGISTER_ID"
 
-# # Obter o registro criado pelo ID
-# echo "Getting the register by ID..."
-# curl -s "$BASE_URL/registros/$REGISTER_ID" | jq
+# Dados para criar um novo registro
+REGISTER_DATA='{
+  "titulo": "Primeiro Registro",
+  "descricao": "Descrição do primeiro registro",
+  "url_imagem": ["url1", "url2"],
+  "local": "São Paulo",
+  "valor_gasto": 100,
+  "usuario": "'$USER_ID'"
+}'
 
-# # Atualizar o registro criado
-# UPDATED_REGISTER_DATA='{
-#   "titulo": "Registro Atualizado",
-#   "descricao": "Descrição atualizada"
-# }'
-# echo "Updating the register..."
-# curl -s -X POST -H "Content-Type: application/json" -d "$UPDATED_REGISTER_DATA" "$BASE_URL/registros/$REGISTER_ID"
+# Criar um novo registro
+echo "Creating a new register..."
+REGISTER_RESPONSE=$(curl -s -X POST -H "Content-Type: application/json" -d "$REGISTER_DATA" "$BASE_URL/registros")
+REGISTER_ID=$(echo $REGISTER_RESPONSE | jq -r '..insertedId')
 
-# # Obter todos os registros de um usuário específico
-# echo "Getting all registers by user ID..."
-# curl -s "$BASE_URL/registros-by-user/$USER_ID" | jq
+if [ "$REGISTER_ID" == "null" ]; then
+  echo "Error creating register: $REGISTER_RESPONSE"
+  exit 1
+fi
+echo "Register created with ID: $REGISTER_ID"
 
-# # Deletar o registro criado
-# echo "Deleting the register..."
-# curl -s -X DELETE "$BASE_URL/registros/$REGISTER_ID"
+# Obter o registro criado pelo ID
+echo "Getting the register by ID..."
+curl -s "$BASE_URL/registros/$REGISTER_ID" | jq
 
-# # Deletar o usuário criado
-# echo "Deleting the user..."
-# curl -s -X DELETE "$BASE_URL/usuarios/$USER_ID"
+# Atualizar o registro criado
+UPDATED_REGISTER_DATA='{
+  "titulo": "Registro Atualizado",
+  "descricao": "Descrição atualizada"
+}'
+echo "Updating the register..."
+curl -s -X POST -H "Content-Type: application/json" -d "$UPDATED_REGISTER_DATA" "$BASE_URL/registros/$REGISTER_ID"
 
-# echo "Script completed."
+# Obter todos os registros de um usuário específico
+echo "Getting all registers by user ID..."
+curl -s "$BASE_URL/registros-by-user/$USER_ID" | jq
+
+# Deletar o registro criado
+echo "Deleting the register..."
+curl -s -X DELETE "$BASE_URL/registros/$REGISTER_ID"
+
+# Deletar o usuário criado
+echo "Deleting the user..."
+curl -s -X DELETE "$BASE_URL/usuarios/$USER_ID"
+
+echo "Script completed."
