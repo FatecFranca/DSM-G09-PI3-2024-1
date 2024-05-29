@@ -1,10 +1,10 @@
 services:
-  frontend:
-    build: ./app
-    ports:
-      - "80:80"
-    depends_on:
-      - backend
+  # frontend:
+  #   build: ./app
+  #   ports:
+  #     - "80:80"
+  #   depends_on:
+  #     - backend
 
   backend:
     build: ./api
