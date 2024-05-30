@@ -6,12 +6,12 @@ BASE_URL="http://localhost:3000"
 # Dados para criar um novo usuário
 USER_DATA='{
   "nome": "Isabela",
-  "cpf": "147.456.789-00",
+  "cpf": "178.575.789-00",
   "dataNascimento": "1990-01-01",
   "municipio": "São Paulo",
   "uf": "SP",
   "telefone": "11999999999",
-  "email": "isla@example.com",
+  "email": "icdsczla@example.com",
   "senha": "senha123",
   "bio": "Bio de Isabela"
 }'
@@ -31,7 +31,7 @@ echo "User created with ID: $USER_ID"
 
 # Obter o usuário criado pelo ID
 echo "Getting the user by ID..."
-$USER_RESPONSE_RECOVER =$(curl -s "$BASE_URL/usuarios/$USER_ID")
+USER_RESPONSE_RECOVER=$(curl -s "$BASE_URL/usuarios/$USER_ID")
 echo "Response recover: $USER_RESPONSE_RECOVER"
 
 # Atualizar o usuário criado
@@ -45,53 +45,46 @@ curl -s -X POST -H "Content-Type: application/json" -d "$UPDATED_USER_DATA" "$BA
 
 # Obter o usuário criado pelo ID
 echo "Getting the user by ID..."
-$USER_RESPONSE_RECOVER =$(curl -s "$BASE_URL/usuarios/$USER_ID")
+USER_RESPONSE_RECOVER=$(curl -s "$BASE_URL/usuarios/$USER_ID")
 echo "Response recover: $USER_RESPONSE_RECOVER"
 
+# Create an itinerary using the correct quote usage for ITINERARY_DATA
+ITINERARY_DATA=$(cat <<EOF
+{
+  "usuario": "$USER_ID",
+  "titulo": "Viagem a Rio de Janeiro",
+  "descricao": "Roteiro turístico de 5 dias pela cidade maravilhosa",
+  "pontosTuristicos": [
+    { "nome": "Cristo Redentor" },
+    { "nome": "Pão de Açúcar" }
+  ],
+  "hospedagens": [
+    { "nome": "Ipanema Beach Hotel" }
+  ],
+  "lugaresComer": [
+    { "nome": "Barraca do Zé" },
+    { "nome": "Academia de Cachaça" }
+  ]
+}
+EOF
+)
+echo "ITINERARY_DATA value: $ITINERARY_DATA"
 
-# Dados para criar um novo registro
-REGISTER_DATA='{
-  "titulo": "Primeiro Registro",
-  "descricao": "Descrição do primeiro registro",
-  "url_imagem": ["url1", "url2"],
-  "local": "São Paulo",
-  "valor_gasto": 100,
-  "usuario": "'$USER_ID'"
-}'
+# Create a new itinerary
+echo "Creating a new itinerary..."
+ITINERARY_RESPONSE_CREATE=$(curl -s -X POST -H "Content-Type: application/json" -d "$ITINERARY_DATA" "$BASE_URL/roteiros")
 
-# Criar um novo registro
-echo "Creating a new register..."
-REGISTER_RESPONSE=$(curl -s -X POST -H "Content-Type: application/json" -d "$REGISTER_DATA" "$BASE_URL/registros")
-REGISTER_ID=$(echo $REGISTER_RESPONSE | jq -r '..insertedId')
-
-if [ "$REGISTER_ID" == "null" ]; then
-  echo "Error creating register: $REGISTER_RESPONSE"
+if [[ ! $ITINERARY_RESPONSE_CREATE ]]; then
+  echo "Error creating itinerary: $ITINERARY_RESPONSE_CREATE"
   exit 1
 fi
-echo "Register created with ID: $REGISTER_ID"
 
-# Obter o registro criado pelo ID
-echo "Getting the register by ID..."
-curl -s "$BASE_URL/registros/$REGISTER_ID" | jq
+ITINERARY_ID=$(echo $ITINERARY_RESPONSE_CREATE | jq -r '.insertedId')
 
-# Atualizar o registro criado
-UPDATED_REGISTER_DATA='{
-  "titulo": "Registro Atualizado",
-  "descricao": "Descrição atualizada"
-}'
-echo "Updating the register..."
-curl -s -X POST -H "Content-Type: application/json" -d "$UPDATED_REGISTER_DATA" "$BASE_URL/registros/$REGISTER_ID"
+if [ "$ITINERARY_ID" = "null" ]; then
+  echo "Error creating itinerary: $ITINERARY_RESPONSE_CREATE"
+  exit 1
+fi
+echo "Itinerary created successfully with ID $ITINERARY_ID."
 
-# Obter todos os registros de um usuário específico
-echo "Getting all registers by user ID..."
-curl -s "$BASE_URL/registros-by-user/$USER_ID" | jq
 
-# Deletar o registro criado
-echo "Deleting the register..."
-curl -s -X DELETE "$BASE_URL/registros/$REGISTER_ID"
-
-# Deletar o usuário criado
-echo "Deleting the user..."
-curl -s -X DELETE "$BASE_URL/usuarios/$USER_ID"
-
-echo "Script completed."

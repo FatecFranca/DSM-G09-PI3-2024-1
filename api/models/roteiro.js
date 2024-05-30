@@ -1,17 +1,8 @@
 const mongoose = require('mongoose');
+const { registerSchema, RegisterType } = require('./base-register');    
 
 const itinerarySchema = new mongoose.Schema({
-    id: {
-        type: mongoose.Schema.Types.ObjectId,
-        required: true,
-    },
-    titulo: {
-        type: String,
-        required: true,
-    },
-    descricao: {
-        type: String,
-    },
+  ...registerSchema.obj,
     pontosTuristicos: [
         {
             nome: {
@@ -34,8 +25,11 @@ const itinerarySchema = new mongoose.Schema({
         },
     ]
 });
-
+itinerarySchema.pre('save', function(next) {
+    this.tipo = RegisterType.ITINERARY_STEP;
+    next();
+  });
 
 const Itinerary = mongoose.model('Itinerary', itinerarySchema);
 
-module.exports = Itinerary;
+module.exports = Itinerary; 

@@ -1,6 +1,7 @@
 const mongoose = require('mongoose');
 
 const RegisterType = {
+    ITINERARY: "ITINERARY",
     ITINERARY_STEP: "ITINERARY_STEP",
     DIARY_PAGE: "DIARY_PAGE",
     BLOG_POST: "BLOG_POST",
@@ -18,11 +19,9 @@ const registerSchema = new mongoose.Schema({
     },
     titulo: {
         type: String,
-        required: true
     },
     descricao: {
         type: String,
-        required: true
     },
     deleted: { type: Boolean, default: false },
     tipo: {
@@ -36,7 +35,10 @@ const registerSchema = new mongoose.Schema({
         required: true
     }
 });
-
 const Register = mongoose.model('Register', registerSchema);
 
-module.exports = Register.collection;
+module.exports = {
+    Register,
+    registerSchema,
+    RegisterType
+};
