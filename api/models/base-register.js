@@ -1,5 +1,12 @@
 const mongoose = require('mongoose');
 
+const RegisterType = {
+    ITINERARY_STEP: "ITINERARY_STEP",
+    DIARY_PAGE: "DIARY_PAGE",
+    BLOG_POST: "BLOG_POST",
+  }
+  
+
 const registerSchema = new mongoose.Schema({
     data_criacao: {
         type: Date,
@@ -17,11 +24,12 @@ const registerSchema = new mongoose.Schema({
         type: String,
         required: true
     },
-    url_imagem: Array,
-    local: String,
-    valor_gasto: Number,
-    publico: { type: Boolean, default: false },
     deleted: { type: Boolean, default: false },
+    tipo: {
+        type: String,
+        enum: Object.values(RegisterType),
+        required: true,
+      },
     usuario: {
         type: mongoose.Schema.Types.ObjectId,
         ref: 'Usuario',
