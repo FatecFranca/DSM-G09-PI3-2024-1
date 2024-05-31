@@ -26,12 +26,10 @@ router.post('/usuarios/:userID', userControllers.updateUser);
 router.delete('/usuarios/:userID', userControllers.updateUser);
 
 router.post('/roteiros', itineraryControllers.createItinerary);
-router.get('/roteiros/:userID', itineraryControllers.listItineraries);
 router.get('/roteiros/:itineraryID', itineraryControllers.getItineraryById);
 router.post('/roteiros/:itineraryID', itineraryControllers.updateItinerary);
 router.delete('/roteiros/:itineraryID', itineraryControllers.updateItinerary);
 
-router.post('/despesas/', expenseControllers.createExpense);
 router.post('/despesas/:itineraryID', expenseControllers.createExpense);
 router.get('/despesas/:itineraryID', expenseControllers.listExpenses);
 router.get('/despesas/:itineraryID/:expenseID', expenseControllers.getExpenseById);

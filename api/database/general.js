@@ -2,6 +2,7 @@
 
 async function exists(collection, attribute, value) {
     try {
+        console.info("Verificando se existe", collection.modelName, attribute = attribute, value = value)
         const query = {};
         query[attribute] = value;
         const result = await collection.findOne(query, { projection: { _id: 1 } });
@@ -14,6 +15,7 @@ async function exists(collection, attribute, value) {
 
 async function retrieve(collection, attribute, value) {
     try {
+        console.info("Buscando um", collection.modelName, attribute, value)
         const query = {};
         query[attribute] = value;
         const result = await collection.findOne(query);
@@ -27,8 +29,9 @@ async function retrieve(collection, attribute, value) {
     }
 }
 
-async function retrieveAll(collection, attribute=null, value=null) {
+async function retrieveAll(collection, attribute = null, value = null) {
     try {
+        console.info("Buscando vários", collection.modelName, attribute, value)
         let query = {}
         if (attribute && value) {
             query[attribute] = value;
@@ -36,13 +39,13 @@ async function retrieveAll(collection, attribute=null, value=null) {
         const result = await collection.find(query).toArray();
         return result;
     } catch (error) {
-        console.error('Erro ao obter todos os documentos da coleção com filtro', error);
+        console.error('Erro ao obter documentos da coleção com filtro', error);
         throw error;
     }
 }
 
 async function upsert(collection, entity) {
-    console.log("gcofgr", entity)
+    console.info("Criando/alterando", collection.modelName, entity)
     try {
         if (entity._id) {
             result = await collection.updateOne(

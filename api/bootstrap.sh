@@ -6,12 +6,12 @@ BASE_URL="http://localhost:3000"
 # Dados para criar um novo usuário
 USER_DATA='{
   "nome": "Isabela",
-  "cpf": "178.575.789-00",
+  "cpf": "178.955.789-00",
   "dataNascimento": "1990-01-01",
   "municipio": "São Paulo",
   "uf": "SP",
   "telefone": "11999999999",
-  "email": "icdsczla@example.com",
+  "email": "idfrz@example.com",
   "senha": "senha123",
   "bio": "Bio de Isabela"
 }'
@@ -68,7 +68,6 @@ ITINERARY_DATA=$(cat <<EOF
 }
 EOF
 )
-echo "ITINERARY_DATA value: $ITINERARY_DATA"
 
 # Create a new itinerary
 echo "Creating a new itinerary..."
@@ -87,4 +86,19 @@ if [ "$ITINERARY_ID" = "null" ]; then
 fi
 echo "Itinerary created successfully with ID $ITINERARY_ID."
 
+# Retrieve the newly created itinerary
+echo "Retrieving the created itinerary..."
+ITINERARY_RESPONSE_RECOVER=$(curl -s "$BASE_URL/roteiros/$ITINERARY_ID")
+echo "Itinerary details: $ITINERARY_RESPONSE_RECOVER"
+
+# Replace with your desired update data
+UPDATED_ITINERARY_DATA='{
+  "titulo": "Viagem atualizada para Florianópolis"
+}'
+
+echo "Updating the itinerary... $BASE_URL/roteiros/$ITINERARY_ID"
+curl -s -X POST -H "Content-Type: application/json" -d "$UPDATED_ITINERARY_DATA" "$BASE_URL/roteiros/$ITINERARY_ID"
+
+ITINERARY_RESPONSE_RECOVER=$(curl -s "$BASE_URL/roteiros/$ITINERARY_ID")
+echo "Itinerary details after update: $ITINERARY_RESPONSE_RECOVER"
 

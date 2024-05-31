@@ -30,7 +30,7 @@ async function getItineraryById(req, res) {
     }
 
     try {
-        const itinerary = await retrieve(Itinerary.collection, "_id", itineraryID);
+        const itinerary = await retrieve(Itinerary.collection, "_id", new ObjectId(itineraryID));
         if (!itinerary || itinerary.deleted) {
             return res.status(404).json({ error: 'Roteiro não encontrado' });
         }
@@ -42,16 +42,16 @@ async function getItineraryById(req, res) {
 }
 
 async function updateItinerary(req, res) {
-    const itineraryId = req.params.id;
+    const itineraryID = req.params.itineraryID;
 
-    if (!itineraryId) {
+    if (!itineraryID) {
         return res.status(400).json({ message: "ID do Roteiro não fornecido" });
     }
 
     const updatedItinerary = req.body;
 
     try {
-        let existingItinerary = await retrieve(Itinerary.collection, "_id", itineraryId);
+        let existingItinerary = await retrieve(Itinerary.collection, "_id", new ObjectId(itineraryID));
         if (!existingItinerary) {
             return res.status(404).json({ error: 'Roteiro não encontrado' });
         }
