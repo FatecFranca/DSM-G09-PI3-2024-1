@@ -1,32 +1,32 @@
-name: Deploy to Azure VM
+# name: Deploy to Azure VM
 
-on:
-  push:
-    branches:
-      - main
+# on:
+#   push:
+#     branches:
+#       - main
 
-jobs:
-  deploy:
-    runs-on: ubuntu-latest
+# jobs:
+#   deploy:
+#     runs-on: ubuntu-latest
 
-    steps:
-    - name: Checkout code
-      uses: actions/checkout@v2
+#     steps:
+#     - name: Checkout code
+#       uses: actions/checkout@v2
 
-    - name: Install Docker
-      run: sudo apt update && sudo apt install -y docker.io
+#     - name: Install Docker
+#       run: sudo apt update && sudo apt install -y docker.io
 
-    - name: Build and push Docker images
-      run: |
-        docker-compose build
-        docker-compose push
+#     - name: Build and push Docker images
+#       run: |
+#         docker-compose build
+#         docker-compose push
 
-    - name: SSH into Azure VM and pull Docker images
-      uses: appleboy/ssh-action@master
-      with:
-        host: ${{ secrets.SSH_HOST }}
-        username: ${{ secrets.SSH_USERNAME }}
-        password: ${{ secrets.SSH_PASSWORD }}
-        script: |
-          docker-compose -f docker-compose.yml pull
-          docker-compose -f docker-compose.yml up -d
+#     - name: SSH into Azure VM and pull Docker images
+#       uses: appleboy/ssh-action@master
+#       with:
+#         host: ${{ secrets.SSH_HOST }}
+#         username: ${{ secrets.SSH_USERNAME }}
+#         password: ${{ secrets.SSH_PASSWORD }}
+#         script: |
+#           docker-compose -f docker-compose.yml pull
+#           docker-compose -f docker-compose.yml up -d
