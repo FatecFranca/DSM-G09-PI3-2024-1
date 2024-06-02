@@ -1,0 +1,6 @@
+
+.content{
+    height: 50vh;
+    background: linear-gradient(to left, #D69C55 0%, #DEA35C 50%, #F1BB78 100%);
+    border-radius: 2.0rem;
+}
