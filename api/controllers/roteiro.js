@@ -6,10 +6,11 @@ const USER_COLLECTION = Usuario;
 
 async function createItinerary(req, res) {
     const itinerary = req.body;
-    itinerary.usuario = new ObjectId(itinerary.usuario)
+    user = new ObjectId(itinerary.usuario)
+    itinerary.usuario = user
     itinerary.data_criacao = new Date();
     try {
-        if (!await exists(USER_COLLECTION, "_id", itinerary.usuario)) {
+        if (!await exists(USER_COLLECTION, "_id", user)) {
             console.error('Usuário não encontrado');
             return res.status(404).json({ error: 'Usuário não encontrado' });
         }
@@ -21,6 +22,27 @@ async function createItinerary(req, res) {
         res.status(500).json({ error: 'Erro ao criar roteiro' });
     }
 }
+
+async function listItinerariesByUser(req, res) {
+    const userID = req.body.usuario;
+
+    if (!userID) {
+        return res.status(400).json({ error: 'ID do usuario não fornecido' });
+    }
+
+    try {
+        const itineraries = await retrieveAll(Itinerary.collection, "usuario", new ObjectId(userID));
+        if (!itineraries) {
+            return res.status(404).json({ error: 'Roteiros não encontrados' });
+        }
+        console.log(itineraries)
+        res.status(200).json(itineraries);
+    } catch (error) {
+        console.error('Erro ao buscar roteiros:', error);
+        res.status(500).json({ error: 'Erro ao buscar roteiros' });
+    }
+}
+
 
 async function getItineraryById(req, res) {
     const itineraryID = req.params.itineraryID;
@@ -68,21 +90,9 @@ async function updateItinerary(req, res) {
     }
 }
 
-async function listItineraries(req, res) {
-    const userID = req.params.userID;
-
-    try {
-        const itineraries = await retrieveAll(Itinerary.collection, 'usuario', userID);
-        res.status(200).json(itineraries);
-    } catch (error) {
-        console.error(error);
-        res.status(500).json({ message: error.message });
-    }
-}
-
 module.exports = {
     createItinerary,
+    listItinerariesByUser,
     getItineraryById,
     updateItinerary,
-    listItineraries
 };

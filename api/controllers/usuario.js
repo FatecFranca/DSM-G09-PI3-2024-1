@@ -21,15 +21,14 @@ async function createUser(req, res) {
         if (existingEmail || existingCpf) {
             console.error('Usuário com este Email ou CPF já existe');
             res.status(422).json({ error: 'Usuário com este Email ou CPF já existe' });
-        } else {
-
-            const hashedPassword = await hashPassword(user.senha);
-            user.senha = hashedPassword;
-
-            const result = await upsert(USER_COLLECTION, user);
-            console.info(result)
-            res.status(201).json(result);
         }
+        const hashedPassword = await hashPassword(user.senha);
+        user.senha = hashedPassword;
+
+        const result = await upsert(USER_COLLECTION, user);
+        console.info(result)
+        res.status(201).json(result);
+        
     } catch (error) {
         console.error('Erro ao criar usuário:', error);
         res.status(500).json({ error: 'Erro ao criar usuário' });
