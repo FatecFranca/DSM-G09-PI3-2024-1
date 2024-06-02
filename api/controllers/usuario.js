@@ -74,7 +74,7 @@ async function updateUser(req, res) {
             existingUser.deleted = true;
         } else {
             existingUser.nome = updatedUser.nome;
-            existingUser.data_nascimento = updatedUser.data_nascimento;
+            existingUser.dataNascimento = updatedUser.dataNascimento;
             existingUser.municipio = updatedUser.municipio;
             existingUser.uf = updatedUser.uf;
             existingUser.telefone = updatedUser.telefone;
