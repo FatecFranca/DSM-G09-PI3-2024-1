@@ -4,24 +4,31 @@ import 'bootstrap/dist/css/bootstrap.min.css';
 import 'bootstrap-icons/font/bootstrap-icons.css';
 function SignIn() {
     return (
-        <div className='container text-center'>
-            <div className='content d-flex flex-column '>
-                <button className='btn  text-start my-2'><i className="bi bi-chevron-left"></i>Voltar</button>
+        <div className='container base'>
+            <div className='content'>
+                <button className='btn return'><Link to="/"><i className="bi bi-chevron-left"></i>Voltar</Link></button>
                 <h1>Bem vindo de volta!</h1>
-                <div >
-                    <div>
-                        <h2>Wanderlust</h2>
+                <div className='container main'>
+                    <div className='title-message'>
+                        <h2 className='name-site'><Link to="/">Wanderlust</Link></h2>
                         <p>Publique e procure a viagem perfeita.</p>
                     </div>
-                    <div>
-                        <form>
-                            <label htmlFor="email">E-mail:</label>
-                            <input type="email" placeholder="Digite seu e-mail"/>
-                            <label htmlFor="password">Senha:</label>
-                            <input type="password" placeholder="Password"/>
-                            <button>Sign In</button>
+                    <div className='form-message'>
+                        <form className='form' method='post'> 
+                            <div className='form-group'>
+                                <label htmlFor="email">E-mail:</label>
+                                <input type="email" placeholder="Digite seu e-mail"/>
+                            </div>
+                            <div className='form-group'>    
+                                <label htmlFor="password">Senha:</label>
+                                <input type="password" placeholder="Digite sua senha"/>
+                            </div>
+                            <div className='form-forgot'>
+                                <p><Link to="/forgot">Esqueci minha senha</Link></p>
+                            </div>
+                            <button type="submit" className='btn login'>Login</button>
                         </form>
-                        <p>Não tem uma conta? Faça seu cadastro <Link to="/signup">aqui</Link></p>
+                        <p>Não tem uma conta? Faça seu <Link to="/signup">cadastro aqui</Link></p>
                     </div>
                 </div>
             </div>
