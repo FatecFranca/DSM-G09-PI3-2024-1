@@ -1,0 +1,49 @@
+.navbar{
+    width: 100%;
+    height: 6%;
+    padding-inline: 3rem;
+    color: #fff;
+    font-size: 12rem;
+    background-color: #373737;
+    box-shadow: 0px 2px 4px rgba(0, 0, 0, 0.1);
+}
+
+/*#navbarNav{
+    width: 100%;
+    height: 100%;
+    color: #F1BB78;
+}
+
+.nav-link{
+    color: #F1BB78;
+    font-size: 1.5rem;
+}
+
+button{
+    color: #F1BB78;
+    font-size: 1.5rem;
+}
+/* logo */
+.logo{
+    height: 5rem;}
+/* perfil 
+.dropdown-toggle {
+    background-color: transparent;
+    border: none;
+    color: #F1BB78;
+    font-size: 2rem;
+}
+
+.dropdown-toggle:hover {
+    color: #007bff;
+}
+
+.dropdown-menu {
+    min-width: 200px;
+}
+
+.dropdown-item {
+    font-size: 1rem;
+    padding: 10px 20px;
+}
+*/
