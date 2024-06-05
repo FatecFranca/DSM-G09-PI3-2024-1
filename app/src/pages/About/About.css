@@ -1,0 +1,40 @@
+.container {
+    width: 100%;
+    min-height: 100vh;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    padding: 2rem; 
+    font-family: 'League Spartan', sans-serif;
+    font-size: 3.2rem;
+}
+
+#about {
+    width: 75%;
+    max-width: 1200px; 
+    padding: 2rem; 
+    display: flex;
+    flex-direction: column;
+    background: linear-gradient(to left, #EE9879 0%, #E88E6D 50%, #D67856 100%);
+    border-radius: 2rem;
+    color: #E6E6E6;
+    text-align: center;
+    box-shadow: rgba(0, 0, 0, 0.25) 0.2rem 0.2rem 0.2rem;
+}
+
+.content h1 {
+    font-size: 4.8rem;
+    font-weight: normal;
+    text-align: center;
+    margin-bottom: 2rem; 
+}
+
+
+@media screen and (max-width: 768px) {
+    .container {
+        margin-top: 8rem;
+    }
+    #about{
+        width: 90%;
+    }
+}

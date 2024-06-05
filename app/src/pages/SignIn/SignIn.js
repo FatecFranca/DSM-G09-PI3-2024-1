@@ -5,15 +5,14 @@ import 'bootstrap/dist/css/bootstrap.min.css';
 import 'bootstrap-icons/font/bootstrap-icons.css';
 
 function SignIn() {
-
     const [email, setEmail] = useState('');
     const [password, setPassword] = useState('');
 
     const handleSubmit = async (event) => {
         event.preventDefault();
     
-        try{
-            const response = await fetch('http://localhost:3000/usuarios', { //Confirmar a URL correta
+        try {
+            const response = await fetch('http://localhost:3000/usuarios', {
                 method: 'POST',
                 headers: {
                     'Content-Type': 'application/json'
@@ -35,16 +34,18 @@ function SignIn() {
 
     return (
         <div className='container base'>
-            <div className='content'>
-                <button className='btn return'><Link to="/"><i className="bi bi-chevron-left"></i>Voltar</Link></button>
+            <div className='content' id='signin'>
+                <button className='btn return'>
+                    <Link to="/"><i className="bi bi-chevron-left"></i>Voltar</Link>
+                </button>
                 <h1>Bem vindo de volta!</h1>
-                <div className='container main'>
+                <div className='main'>
                     <div className='title-message'>
                         <h2 className='name-site'><Link to="/">Wanderlust</Link></h2>
                         <p>Publique e procure a viagem perfeita.</p>
                     </div>
                     <div className='form-message'>
-                        <form className='form' onSubmit={handleSubmit}> 
+                        <form className='form' onSubmit={handleSubmit}>
                             <div className='form-group'>
                                 <label htmlFor="email">E-mail:</label>
                                 <input 
@@ -68,7 +69,7 @@ function SignIn() {
                             </div>
                             <button type="submit" className='btn login'>Login</button>
                         </form>
-                        <p>Não tem uma conta? Faça seu <Link to="/signup">cadastro aqui</Link></p>
+                        <p>Não tem uma conta? Faça seu <Link to="/signup">cadastro aqui</Link></p>
                     </div>
                 </div>
             </div>

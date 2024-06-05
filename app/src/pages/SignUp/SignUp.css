@@ -9,13 +9,13 @@
     font-size: 3.2rem;
 }
 
-#signin {
+#signup {
     width: 75%;
     max-width: 1200px; 
     padding: 2rem; 
     display: flex;
     flex-direction: column;
-    background: linear-gradient(to left, #D69C55 0%, #DEA35C 50%, #F1BB78 100%);
+    background: linear-gradient(to right, #64C2DB 0%, #32647D 50%, #214253 100%);
     border-radius: 2rem;
     color: #E6E6E6;
     box-shadow: rgba(0, 0, 0, 0.25) 0.2rem 0.2rem 0.2rem;
@@ -40,7 +40,6 @@
     display: flex;
     flex-direction: row;
     align-items: center;
-    justify-content: space-around;
     gap: 2rem; 
 }
 
@@ -128,7 +127,7 @@
 .form button {
     width: 50%;
     padding: 1rem;
-    background-color: #5CB6E3;
+    background-color: #F1BB78;
     border: none;
     border-radius: 0.8rem;
     font-size: 1.6rem;

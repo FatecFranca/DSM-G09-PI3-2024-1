@@ -1,0 +1,41 @@
+.footer {
+    width: 100%;
+    height: 4rem;
+    position: fixed-bottom;
+    margin: 0;
+    padding-block: 0.5rem;
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: space-around;
+    font-family: 'montserrat', sans-serif;
+    font-size: 2rem;
+    color: #373737;
+    border-top: 1px solid #000;
+}
+
+.footer-text{
+    width: 15%;
+    display: flex;
+    justify-content: center;
+    gap: 1rem;
+    margin: 0;
+}
+
+a{
+    color: #373737;
+    text-decoration: none;
+}
+
+.footer-icons{
+    width: 15%;
+    display: flex;
+    flex-direction: row;
+    align-self: center;
+    justify-content: center;
+    gap: 2rem;
+}
+
+.footer-icons i{
+    font-size: 2rem;
+}
