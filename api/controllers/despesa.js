@@ -1,105 +1,83 @@
-const Expense = require('../models/despesa');
-const Itinerary = require('../models/roteiro')
+const mongoose = require('mongoose');
 const { ObjectId } = require('mongodb');
-const {
-    exists,
-    retrieve,
-    upsert,
-    retrieveAll
-} = require('../database/general');
 
-const ITINERARY_COLLECTION = Itinerary;
-const EXPENSE_COLLECTION = Expense;
+const Expense = require('../models/despesa');
 
 async function createExpense(req, res) {
-    const expense = req.body;
-    const itineraryID = req.params.itineraryID;
-    itineraryIDObject =  new ObjectId(itineraryID);
-    try {
+  const expenseData = req.body;
+  const itineraryID = req.params.itineraryID;
 
-        if (!await exists(ITINERARY_COLLECTION, "_id",itineraryIDObject)) {
-            return res.status(404).json({ message: "Roteiro não encontrado" });
-        }
+  try {
+    expenseData.roteiroId = new ObjectId(itineraryID);
 
-        expense['roteiroId'] = itineraryIDObject;
-
-        const result = await upsert(EXPENSE_COLLECTION, expense);
-        console.info(result)
-        res.status(201).json(result);
-    } catch (error) {
-        console.error('Erro ao criar despesa:', error);
-        res.status(500).json({ error: 'Erro ao criar despesa' });
-    }
+    const newExpense = new Expense(expenseData);
+    await newExpense.save();
+    console.info('Despesa criada com sucesso!');
+    res.status(201).json(newExpense);
+  } catch (error) {
+    console.error('Erro ao criar despesa:', error);
+    res.status(500).json({ error: 'Erro ao criar despesa' });
+  }
 }
-
 
 async function listExpenses(req, res) {
-    console.log("gorf", req.params)
+  const itineraryID = req.params.itineraryID;
 
-    const itineraryID = req.params.itineraryID;
-
-
-    try {
-        const expenses = await retrieveAll(EXPENSE_COLLECTION, "roteiroId", new ObjectId(itineraryID));
-        console.info(expenses)
-        res.status(200).json(expenses);
-    } catch (error) {
-        console.error(error);
-        res.status(500).json({ message: error.message });
-    }
+  try {
+    const expenses = await Expense.find({ roteiroId: new ObjectId(itineraryID) });
+    res.status(200).json(expenses);
+  } catch (error) {
+    console.error(error);
+    res.status(500).json({ message: error.message });
+  }
 }
 
-
 async function getExpenseById(req, res) {
-    const expenseID = req.params.expenseID;
-    try {
-        const expense = await retrieve(EXPENSE_COLLECTION, "_id", new ObjectId(expenseID));
-        if (!expense) {
-            return res.status(404).json({ message: "Despesa não encontrada" });
-        }
-        res.status(200).json(expense);
-    } catch (error) {
-        console.error(error);
-        res.status(500).json({ message: error.message });
+  const expenseID = req.params.expenseID;
+
+  try {
+    const expense = await Expense.findById(expenseID);
+    if (!expense) {
+      return res.status(404).json({ message: "Despesa não encontrada" });
     }
+    res.status(200).json(expense);
+  } catch (error) {
+    console.error(error);
+    res.status(500).json({ message: error.message });
+  }
 }
 
 async function updateExpense(req, res) {
-    let expenseID = req.params.expenseID;
+  const expenseID = req.params.expenseID;
+  const updatedData = req.body;
 
-    if (!expenseID) {
-        return res.status(400).json({ error: 'ID da despesa não fornecido' });
+  if (!expenseID) {
+    return res.status(400).json({ error: 'ID da despesa não fornecido' });
+  }
+
+  try {
+    let existingExpense = await Expense.findById(expenseID);
+    if (!existingExpense) {
+      return res.status(404).json({ message: "Despesa não encontrada" });
     }
 
-    const updatedExpense = req.body;
-
-    try {
-        let existingExpense = await retrieve(EXPENSE_COLLECTION, "_id", new ObjectId(expenseID));
-        if (!existingExpense) {
-            return res.status(404).json({ message: "Despesa não encontrada" });
-        }
-
-        existingExpense._id = expenseID;
-
-        if (req.method === 'DELETE') {
-            existingExpense.deleted = true;
-        } else {
-            console.info("faers56", existingExpense)
-            Object.assign(existingExpense, updatedExpense);
-            console.info("vmfixt", existingExpense)
-        }
-        const result = await upsert(EXPENSE_COLLECTION, existingExpense);
-        res.status(200).json(result);
-    } catch (error) {
-        console.error("Erro ao atualizar despesa:", error);
-        res.status(500).json({ message: "Erro ao atualizar despesa" });
+    if (req.method === 'DELETE') {
+      existingExpense.deleted = true;
+    } else {
+            existingExpense = Object.assign(existingExpense, { ...updatedData });
     }
+
+    await existingExpense.save();
+    res.status(200).json(existingExpense);
+  } catch (error) {
+    console.error("Erro ao atualizar despesa:", error);
+    res.status(500).json({ message: "Erro ao atualizar despesa" });
+  }
 }
 
-
 module.exports = {
-    listExpenses,
-    createExpense,
-    getExpenseById,
-    updateExpense,
+  listExpenses,
+  createExpense,
+  getExpenseById,
+  updateExpense,
 };
