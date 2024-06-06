@@ -1,39 +1,27 @@
-const { hashPassword } = require('./utils');
-const { ObjectId } = require('mongodb');
 const Usuario = require('../models/usuario');
-const {
-    exists,
-    retrieve,
-    upsert
-} = require('../database/general');
-
-const USER_COLLECTION = Usuario;
 
 
 async function createUser(req, res) {
     const user = req.body;
 
     try {
+        const newUser = new Usuario(user);
+        const savedUser = await newUser.save();
 
-        const existingEmail = await exists(USER_COLLECTION, "email", user.email)
-        const existingCpf = await exists(USER_COLLECTION, "cpf", user.cpf)
-
-        if (existingEmail || existingCpf) {
-            console.error('Usuário com este Email ou CPF já existe');
-            res.status(422).json({ error: 'Usuário com este Email ou CPF já existe' });
-        }
-        const hashedPassword = await hashPassword(user.senha);
-        user.senha = hashedPassword;
-
-        const result = await upsert(USER_COLLECTION, user);
-        console.info(result)
-        res.status(201).json(result);
-        
+        console.info('Usuário criado com sucesso!');
+        res.status(201).json(savedUser);
     } catch (error) {
+        if (error.name === 'ValidationError') {
+            if (error.errors.cpf || error.errors.email) {
+                console.error('Usuário com este Email ou CPF já existe');
+                return res.status(422).json({ error: 'Usuário com este Email ou CPF já existe' });
+            }
+        }
         console.error('Erro ao criar usuário:', error);
         res.status(500).json({ error: 'Erro ao criar usuário' });
     }
 }
+
 
 async function getUserById(req, res) {
     const userID = req.params.userID;
@@ -43,7 +31,7 @@ async function getUserById(req, res) {
     }
 
     try {
-        const user = await retrieve(USER_COLLECTION, "_id",new ObjectId(userID));
+        const user = await Usuario.findById(userID);
         if (!user || user.deleted) {
             return res.status(404).json({ error: 'Usuário não encontrado' });
         }
@@ -54,17 +42,17 @@ async function getUserById(req, res) {
     }
 }
 
+
 async function updateUser(req, res) {
     const userID = req.params.userID;
+    const updatedData = req.body;
 
     if (!userID) {
         return res.status(400).json({ error: 'ID do usuário não fornecido' });
     }
 
-    const updatedUser = req.body;
-
     try {
-        let existingUser = await retrieve(USER_COLLECTION, "_id", new ObjectId(userID));
+        let existingUser = await Usuario.findById(userID);
         if (!existingUser) {
             return res.status(404).json({ error: 'Usuário não encontrado' });
         }
@@ -72,16 +60,11 @@ async function updateUser(req, res) {
         if (req.method === 'DELETE') {
             existingUser.deleted = true;
         } else {
-            existingUser.nome = updatedUser.nome;
-            existingUser.dataNascimento = updatedUser.dataNascimento;
-            existingUser.municipio = updatedUser.municipio;
-            existingUser.uf = updatedUser.uf;
-            existingUser.telefone = updatedUser.telefone;
-            existingUser.bio = updatedUser.bio;
+            existingUser = Object.assign(existingUser, { ...updatedData });
         }
 
-        const result = await upsert(USER_COLLECTION, existingUser);
-        res.status(200).json(result);
+        const updatedUser = await existingUser.save();
+        res.status(200).json(updatedUser);
     } catch (error) {
         console.error('Erro ao atualizar usuário:', error);
         res.status(500).json({ error: 'Erro ao atualizar usuário' });
