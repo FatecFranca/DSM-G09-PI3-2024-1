@@ -2,6 +2,7 @@ const express = require('express');
 const healthCheckController = require('./controllers/health-check');
 const userControllers = require('./controllers/usuario');
 const itineraryControllers = require('./controllers/roteiro')
+const itineraryStepControllers = require('./controllers/etapa-roteiro')
 const expenseControllers = require('./controllers/despesa')
 
 const router = express.Router();
@@ -36,5 +37,11 @@ router.get('/despesas/:itineraryID', expenseControllers.listExpenses);
 router.get('/despesas/:itineraryID/:expenseID', expenseControllers.getExpenseById);
 router.post('/despesas/:itineraryID/:expenseID', expenseControllers.updateExpense);
 router.delete('/despesas/:itineraryID/:expenseID', expenseControllers.updateExpense);
+
+router.post('/roteiros/:itineraryID/etapas', itineraryStepControllers.createStep);
+router.get('/roteiros/:itineraryID/etapas', itineraryStepControllers.listSteps);
+router.get('/roteiros/:itineraryID/etapas/:stepID', itineraryStepControllers.getStepById);
+router.post('/roteiros/:itineraryID/etapas/:stepID', itineraryStepControllers.updateStep);
+router.delete('/roteiros/:itineraryID/etapas/:stepID', itineraryStepControllers.updateStep);
 
 module.exports = router;
