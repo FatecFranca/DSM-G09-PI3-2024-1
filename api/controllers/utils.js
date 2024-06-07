@@ -9,4 +9,15 @@ function hashPassword(password) {
   });
 }
 
-module.exports = { hashPassword };
+
+async function comparePassword(plainTextPassword, hashedPassword) {
+  const hasher = crypto.createHash('md5');
+  hasher.update(plainTextPassword);
+  const newHash = hasher.digest('hex');
+  return newHash === hashedPassword;
+}
+
+module.exports = {
+  hashPassword,
+  comparePassword,
+};
