@@ -1,6 +1,6 @@
 const express = require('express');
 const routes = require('./routes');
-const connectToMongoDB = require('./database/connect');
+const connectToMongoDB = require('./database')
 require('dotenv').config();
 
 connectToMongoDB();
