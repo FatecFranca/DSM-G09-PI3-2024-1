@@ -6,6 +6,7 @@ const userControllers = require('./controllers/usuario');
 const itineraryControllers = require('./controllers/roteiro')
 const itineraryStepControllers = require('./controllers/etapa-roteiro')
 const expenseControllers = require('./controllers/despesa');
+const journalControllers = require('./controllers/folha-diario')
 const jwt = require('jsonwebtoken');
 
 const router = express.Router();
@@ -71,5 +72,11 @@ router.get('/roteiros/:itineraryID/etapas', authMiddleware, itineraryStepControl
 router.get('/roteiros/:itineraryID/etapas/:stepID', authMiddleware, itineraryStepControllers.getStepById);
 router.post('/roteiros/:itineraryID/etapas/:stepID', authMiddleware, itineraryStepControllers.updateStep);
 router.delete('/roteiros/:itineraryID/etapas/:stepID', authMiddleware, itineraryStepControllers.updateStep);
+
+router.post('/roteiros/:itineraryID/diario', authMiddleware, journalControllers.createJournalRecord);
+router.get('/roteiros/:itineraryID/diario', authMiddleware, journalControllers.listJournalRecords);
+router.get('/roteiros/:itineraryID/diario/:journalRecordID', authMiddleware, journalControllers.getJournalRecordById);
+router.post('/roteiros/:itineraryID/diario/:journalRecordID', authMiddleware, journalControllers.updateJournalRecord);
+router.delete('/roteiros/:itineraryID/diario/:journalRecordID', authMiddleware, journalControllers.updateJournalRecord);
 
 module.exports = router;
