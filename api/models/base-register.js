@@ -1,13 +1,5 @@
 const mongoose = require('mongoose');
 
-const RegisterType = {
-    ITINERARY: "ITINERARY",
-    ITINERARY_STEP: "ITINERARY_STEP",
-    DIARY_PAGE: "DIARY_PAGE",
-    BLOG_POST: "BLOG_POST",
-  }
-  
-
 const registerSchema = new mongoose.Schema({
     data_criacao: {
         type: Date,
@@ -24,11 +16,6 @@ const registerSchema = new mongoose.Schema({
         type: String,
     },
     deleted: { type: Boolean, default: false },
-    tipo: {
-        type: String,
-        enum: Object.values(RegisterType),
-        required: true,
-      },
     usuario: {
         type: mongoose.Schema.Types.ObjectId,
         ref: 'Usuario',
@@ -39,6 +26,5 @@ const Register = mongoose.model('Register', registerSchema);
 
 module.exports = {
     Register,
-    registerSchema,
-    RegisterType
+    registerSchema
 };
