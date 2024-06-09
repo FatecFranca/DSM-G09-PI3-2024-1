@@ -8,8 +8,7 @@ async function createExpense(req, res) {
   const itineraryID = req.params.itineraryID;
 
   try {
-    expenseData.roteiroId = new ObjectId(itineraryID);
-
+    expenseData.roteiroId = itineraryID;
     const newExpense = new Expense(expenseData);
     await newExpense.save();
     console.info('Despesa criada com sucesso!');
@@ -62,13 +61,19 @@ async function updateExpense(req, res) {
     }
 
     if (req.method === 'DELETE') {
-      existingExpense.deleted = true;
+      try {
+        await Expense.findByIdAndDelete(expenseID);
+        res.status(200).json({ message: "Despesa deletada com sucesso!" });
+      } catch (error) {
+        console.error("Erro ao deletar despesa:", error);
+        res.status(500).json({ message: "Erro ao deletar despesa" });
+      }
     } else {
-            existingExpense = Object.assign(existingExpense, { ...updatedData });
-    }
 
-    await existingExpense.save();
-    res.status(200).json(existingExpense);
+      existingExpense = Object.assign(existingExpense, { ...updatedData });
+      await existingExpense.save();
+      res.status(200).json(existingExpense);
+    }
   } catch (error) {
     console.error("Erro ao atualizar despesa:", error);
     res.status(500).json({ message: "Erro ao atualizar despesa" });
