@@ -53,7 +53,10 @@ async function refreshAuthToken(req, res) {
       { new: false }
     );
 
-    res.status(200).json({ refreshToken: refreshtoken });
+    res.status(200).json({
+      token: accesstoken,
+      refreshToken: refreshtoken
+    });
   } catch (error) {
     console.error('Erro ao atualizar token:', error);
     res.status(500).json({ error: 'Erro ao atualizar token' });
