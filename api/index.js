@@ -1,8 +1,14 @@
 const express = require('express');
 const routes = require('./routes');
 const connectToMongoDB = require('./database/connect');
+require('dotenv').config();
 
 connectToMongoDB();
+
+if (!process.env.ACCESS_SECRET_KEY || !process.env.REFRESH_SECRET_KEY) {
+  console.error('Error: Missing required environment variables. Set ACCESS_SECRET_KEY and REFRESH_SECRET_KEY.');
+  process.exit(1);
+}
 
 const app = express();
 const PORT = process.env.PORT || 3000;
