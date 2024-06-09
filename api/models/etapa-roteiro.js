@@ -1,6 +1,5 @@
 const mongoose = require('mongoose');
 const { Register } = require('./base-register');
-const Expense = require('./despesa');
 
 const itineraryStepSchema = new mongoose.Schema({
   local: {

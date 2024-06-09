@@ -56,7 +56,8 @@ router.get('/usuarios/:userID', authMiddleware, userControllers.getUserById);
 router.post('/usuarios/:userID', authMiddleware, userControllers.updateUser);
 router.delete('/usuarios/:userID', authMiddleware, userControllers.updateUser);
 
-router.post('/postagens', postControllers.createBlogPost);
+router.get('/postagens', postControllers.listPublicPostsSortedByRating);
+router.post('/postagens', authMiddleware, postControllers.createBlogPost);
 router.get('/postagens/:postID', authMiddleware, postControllers.getBlogPost);
 router.post('/postagens/:postID', authMiddleware, postControllers.updateBlogPost);
 router.delete('/postagens/:postID', authMiddleware, postControllers.updateBlogPost);

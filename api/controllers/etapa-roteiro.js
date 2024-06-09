@@ -8,8 +8,8 @@ async function createStep(req, res) {
     const step = req.body;
 
     step.roteiroId = itineraryID;
-    step['data_criacao'] = Date.now();
-    step['data_atualizacao'] = step.data_criacao
+    step.data_criacao = Date.now();
+    step.data_atualizacao = step.data_criacao;
     const newStep = new ItineraryStep(step);
     const savedStep = await newStep.save();
 
@@ -25,7 +25,7 @@ async function listSteps(req, res) {
   try {
     const itineraryID = req.params.itineraryID;
 
-    const steps = await ItineraryStep.find({ roteiroId: itineraryID });
+    const steps = await ItineraryStep.find({ roteiroId: itineraryID, deleted: false });
     console.info(steps);
     res.status(200).json(steps);
   } catch (error) {
@@ -39,10 +39,9 @@ async function getStepById(req, res) {
     const stepID = req.params.stepID;
 
     const step = await ItineraryStep.findById(stepID);
-    if (!step) {
+    if (!step || step.deleted) {
       return res.status(404).json({ message: 'Etapa não encontrada' });
     }
-
     res.status(200).json(step);
   } catch (error) {
     console.error('Erro ao obter etapa por ID:', error);
@@ -54,7 +53,7 @@ async function updateStep(req, res) {
   try {
     const stepID = req.params.stepID;
     const updatedStep = req.body;
-    updatedStep['data_atualizacao'] = Date.now();
+    updatedStep.data_atualizacao = Date.now();
 
     let existingStep = await ItineraryStep.findById(stepID);
     if (!existingStep) {
@@ -64,7 +63,7 @@ async function updateStep(req, res) {
     if (req.method === 'DELETE') {
       existingStep.deleted = true;
     } else {
-      existingStep.set(updatedStep);
+      existingStep = Object.assign(existingStep, { ...updatedStep });
     }
 
     const updatedDoc = await existingStep.save();
