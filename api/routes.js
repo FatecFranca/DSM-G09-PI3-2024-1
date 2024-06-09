@@ -61,11 +61,11 @@ router.get('/roteiros/:itineraryID', authMiddleware, itineraryControllers.getIti
 router.post('/roteiros/:itineraryID', authMiddleware, itineraryControllers.updateItinerary);
 router.delete('/roteiros/:itineraryID', authMiddleware, itineraryControllers.updateItinerary);
 
-router.post('/despesas/:itineraryID', authMiddleware, expenseControllers.createExpense);
-router.get('/despesas/:itineraryID', authMiddleware, expenseControllers.listExpenses);
-router.get('/despesas/:itineraryID/:expenseID', authMiddleware, expenseControllers.getExpenseById);
-router.post('/despesas/:itineraryID/:expenseID', authMiddleware, expenseControllers.updateExpense);
-router.delete('/despesas/:itineraryID/:expenseID', authMiddleware, expenseControllers.updateExpense);
+router.post('/roteiros/:itineraryID/despesas/', authMiddleware, expenseControllers.createExpense);
+router.get('/roteiros/:itineraryID/despesas/', authMiddleware, expenseControllers.listExpenses);
+router.get('/roteiros/:itineraryID/despesas/:expenseID', authMiddleware, expenseControllers.getExpenseById);
+router.post('/roteiros/:itineraryID/despesas/:expenseID', authMiddleware, expenseControllers.updateExpense);
+router.delete('/roteiros/:itineraryID/despesas/:expenseID', authMiddleware, expenseControllers.updateExpense);
 
 router.post('/roteiros/:itineraryID/etapas', authMiddleware, itineraryStepControllers.createStep);
 router.get('/roteiros/:itineraryID/etapas', authMiddleware, itineraryStepControllers.listSteps);
