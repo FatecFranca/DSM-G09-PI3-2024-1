@@ -3,6 +3,7 @@ const cors = require('cors');
 const healthCheckController = require('./controllers/health-check');
 const authControllers = require('./controllers/auth')
 const userControllers = require('./controllers/usuario');
+const postControllers = require('./controllers/postagem');
 const itineraryControllers = require('./controllers/roteiro')
 const itineraryStepControllers = require('./controllers/etapa-roteiro')
 const expenseControllers = require('./controllers/despesa');
@@ -54,6 +55,12 @@ router.post('/usuarios', userControllers.createUser);
 router.get('/usuarios/:userID', authMiddleware, userControllers.getUserById);
 router.post('/usuarios/:userID', authMiddleware, userControllers.updateUser);
 router.delete('/usuarios/:userID', authMiddleware, userControllers.updateUser);
+
+router.post('/postagens', postControllers.createBlogPost);
+router.get('/postagens/:postID', authMiddleware, postControllers.getBlogPost);
+router.post('/postagens/:postID', authMiddleware, postControllers.updateBlogPost);
+router.delete('/postagens/:postID', authMiddleware, postControllers.updateBlogPost);
+router.post('/postagens/:postID/publicar', authMiddleware, postControllers.publishBlogPost);
 
 router.post('/roteiros', authMiddleware, itineraryControllers.createItinerary);
 router.get('/roteiros', authMiddleware, itineraryControllers.listItinerariesByUser);

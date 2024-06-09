@@ -113,8 +113,8 @@
 					"listen": "test",
 					"script": {
 						"exec": [
-							"pm.globals.set('userId', pm.response.json().usuario._id);",
-							"pm.globals.set('token', pm.response.json().token);"
+							"pm.globals.set('token', pm.response.json().token);",
+							"pm.globals.set('refreshToken', pm.response.json().refreshToken);"
 						],
 						"type": "text/javascript",
 						"packages": {}
@@ -332,6 +332,231 @@
 					"path": [
 						"usuarios",
 						"{{userId}}"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "CreateBlogPost",
+			"event": [
+				{
+					"listen": "prerequest",
+					"script": {
+						"exec": [
+							""
+						],
+						"type": "text/javascript",
+						"packages": {}
+					}
+				},
+				{
+					"listen": "test",
+					"script": {
+						"exec": [
+							"pm.globals.set('postId', pm.response.json()._id);"
+						],
+						"type": "text/javascript",
+						"packages": {}
+					}
+				}
+			],
+			"request": {
+				"auth": {
+					"type": "bearer",
+					"bearer": [
+						{
+							"key": "token",
+							"value": "{{token}}",
+							"type": "string"
+						}
+					]
+				},
+				"method": "POST",
+				"header": [],
+				"body": {
+					"mode": "raw",
+					"raw": "{\n  \"titulo\": \"My Awesome Blog Post\",\n  \"descricao\": \"This is a great blog post about something interesting.\",\n  \"usuario\": \"{{userId}}\",\n  \"local\": \"New York City\",\n//   \"gasto\": [],\n  \"urls_imagem\": [\n    \"https://example.com/image1.jpg\",\n    \"https://example.com/image2.jpg\"\n  ]\n}\n",
+					"options": {
+						"raw": {
+							"language": "json"
+						}
+					}
+				},
+				"url": {
+					"raw": "http://localhost:3000/postagens",
+					"protocol": "http",
+					"host": [
+						"localhost"
+					],
+					"port": "3000",
+					"path": [
+						"postagens"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "GetPost",
+			"protocolProfileBehavior": {
+				"disableBodyPruning": true
+			},
+			"request": {
+				"auth": {
+					"type": "bearer",
+					"bearer": [
+						{
+							"key": "token",
+							"value": "{{token}}",
+							"type": "string"
+						}
+					]
+				},
+				"method": "GET",
+				"header": [],
+				"body": {
+					"mode": "raw",
+					"raw": "",
+					"options": {
+						"raw": {
+							"language": "json"
+						}
+					}
+				},
+				"url": {
+					"raw": "http://localhost:3000/postagens/{{postId}}",
+					"protocol": "http",
+					"host": [
+						"localhost"
+					],
+					"port": "3000",
+					"path": [
+						"postagens",
+						"{{postId}}"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "UpdatePost",
+			"event": [
+				{
+					"listen": "prerequest",
+					"script": {
+						"exec": [
+							""
+						],
+						"type": "text/javascript",
+						"packages": {}
+					}
+				},
+				{
+					"listen": "test",
+					"script": {
+						"exec": [
+							""
+						],
+						"type": "text/javascript",
+						"packages": {}
+					}
+				}
+			],
+			"request": {
+				"auth": {
+					"type": "bearer",
+					"bearer": [
+						{
+							"key": "token",
+							"value": "{{token}}",
+							"type": "string"
+						}
+					]
+				},
+				"method": "POST",
+				"header": [],
+				"body": {
+					"mode": "raw",
+					"raw": "{\n  \"titulo\": \"My Awesome Blog Post\",\n  \"descricao\": \"This is a great blog post about something interesting. vaguobfcgads8fcgasf \\n bflgvpgvfzxfdgiuardgvc\",\n  \"usuario\": \"{{userId}}\"\n}\n",
+					"options": {
+						"raw": {
+							"language": "json"
+						}
+					}
+				},
+				"url": {
+					"raw": "http://localhost:3000/postagens/{{postId}}",
+					"protocol": "http",
+					"host": [
+						"localhost"
+					],
+					"port": "3000",
+					"path": [
+						"postagens",
+						"{{postId}}"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "PublishPost",
+			"event": [
+				{
+					"listen": "prerequest",
+					"script": {
+						"exec": [
+							""
+						],
+						"type": "text/javascript",
+						"packages": {}
+					}
+				},
+				{
+					"listen": "test",
+					"script": {
+						"exec": [
+							""
+						],
+						"type": "text/javascript",
+						"packages": {}
+					}
+				}
+			],
+			"request": {
+				"auth": {
+					"type": "bearer",
+					"bearer": [
+						{
+							"key": "token",
+							"value": "{{token}}",
+							"type": "string"
+						}
+					]
+				},
+				"method": "POST",
+				"header": [],
+				"body": {
+					"mode": "raw",
+					"raw": "",
+					"options": {
+						"raw": {
+							"language": "json"
+						}
+					}
+				},
+				"url": {
+					"raw": "http://localhost:3000/postagens/{{postId}}/publicar",
+					"protocol": "http",
+					"host": [
+						"localhost"
+					],
+					"port": "3000",
+					"path": [
+						"postagens",
+						"{{postId}}",
+						"publicar"
 					]
 				}
 			},
@@ -597,6 +822,16 @@
 				}
 			],
 			"request": {
+				"auth": {
+					"type": "bearer",
+					"bearer": [
+						{
+							"key": "token",
+							"value": "{{token}}",
+							"type": "string"
+						}
+					]
+				},
 				"method": "POST",
 				"header": [],
 				"body": {
@@ -609,15 +844,16 @@
 					}
 				},
 				"url": {
-					"raw": "http://localhost:3000/despesas/{{itineraryId}}",
+					"raw": "http://localhost:3000/roteiros/{{itineraryId}}/despesas",
 					"protocol": "http",
 					"host": [
 						"localhost"
 					],
 					"port": "3000",
 					"path": [
-						"despesas",
-						"{{itineraryId}}"
+						"roteiros",
+						"{{itineraryId}}",
+						"despesas"
 					]
 				}
 			},
@@ -638,18 +874,29 @@
 				}
 			],
 			"request": {
+				"auth": {
+					"type": "bearer",
+					"bearer": [
+						{
+							"key": "token",
+							"value": "{{token}}",
+							"type": "string"
+						}
+					]
+				},
 				"method": "GET",
 				"header": [],
 				"url": {
-					"raw": "http://localhost:3000/despesas/{{itineraryId}}/{{expenseId}}",
+					"raw": "http://localhost:3000/roteiros/{{itineraryId}}/despesas/{{expenseId}}",
 					"protocol": "http",
 					"host": [
 						"localhost"
 					],
 					"port": "3000",
 					"path": [
-						"despesas",
+						"roteiros",
 						"{{itineraryId}}",
+						"despesas",
 						"{{expenseId}}"
 					]
 				}
@@ -681,6 +928,16 @@
 				}
 			],
 			"request": {
+				"auth": {
+					"type": "bearer",
+					"bearer": [
+						{
+							"key": "token",
+							"value": "{{token}}",
+							"type": "string"
+						}
+					]
+				},
 				"method": "POST",
 				"header": [],
 				"body": {
@@ -693,15 +950,16 @@
 					}
 				},
 				"url": {
-					"raw": "http://localhost:3000/despesas/{{itineraryId}}/{{expenseId}}",
+					"raw": "http://localhost:3000/roteiros/{{itineraryId}}/despesas/{{expenseId}}",
 					"protocol": "http",
 					"host": [
 						"localhost"
 					],
 					"port": "3000",
 					"path": [
-						"despesas",
+						"roteiros",
 						"{{itineraryId}}",
+						"despesas",
 						"{{expenseId}}"
 					]
 				}
@@ -745,15 +1003,16 @@
 					}
 				},
 				"url": {
-					"raw": "http://localhost:3000/despesas/{{itineraryId}}/{{expenseId}}",
+					"raw": "http://localhost:3000/roteiros/{{itineraryId}}/despesas/{{expenseId}}",
 					"protocol": "http",
 					"host": [
 						"localhost"
 					],
 					"port": "3000",
 					"path": [
-						"despesas",
+						"roteiros",
 						"{{itineraryId}}",
+						"despesas",
 						"{{expenseId}}"
 					]
 				}
@@ -775,18 +1034,29 @@
 				}
 			],
 			"request": {
+				"auth": {
+					"type": "bearer",
+					"bearer": [
+						{
+							"key": "token",
+							"value": "{{token}}",
+							"type": "string"
+						}
+					]
+				},
 				"method": "GET",
 				"header": [],
 				"url": {
-					"raw": "http://localhost:3000/despesas/{{itineraryId}}",
+					"raw": "http://localhost:3000/roteiros/{{itineraryId}}/despesas",
 					"protocol": "http",
 					"host": [
 						"localhost"
 					],
 					"port": "3000",
 					"path": [
-						"despesas",
-						"{{itineraryId}}"
+						"roteiros",
+						"{{itineraryId}}",
+						"despesas"
 					]
 				}
 			},
@@ -832,7 +1102,7 @@
 				"header": [],
 				"body": {
 					"mode": "raw",
-					"raw": "{\n    \"usuario\": \"{{userId}}\",\n    \"descricao\": \"hgvfcrsedfg\",\n    \"local\": \"Copacabana\",\n    \"previsaoGasto\": \"{{expenseId}}\"\n}",
+					"raw": "{\n    \"usuario\": \"{{userId}}\",\n    \"descricao\": \"hgvfcrsedfg\",\n    \"local\": \"Copacabana cvrsdusfgvd\"\n    // \"previsaoGasto\": \"{{expenseId}}\"\n}",
 					"options": {
 						"raw": {
 							"language": "json"
@@ -870,6 +1140,16 @@
 				}
 			],
 			"request": {
+				"auth": {
+					"type": "bearer",
+					"bearer": [
+						{
+							"key": "token",
+							"value": "{{token}}",
+							"type": "string"
+						}
+					]
+				},
 				"method": "GET",
 				"header": [],
 				"url": {
@@ -904,6 +1184,16 @@
 				}
 			],
 			"request": {
+				"auth": {
+					"type": "bearer",
+					"bearer": [
+						{
+							"key": "token",
+							"value": "{{token}}",
+							"type": "string"
+						}
+					]
+				},
 				"method": "GET",
 				"header": [],
 				"url": {
@@ -952,6 +1242,177 @@
 						"{{itineraryId}}",
 						"etapas",
 						"{{stepId}}"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "CreateJournalRecord",
+			"event": [
+				{
+					"listen": "test",
+					"script": {
+						"exec": [
+							"pm.globals.set('journalRecordId', pm.response.json()._id);",
+							""
+						],
+						"type": "text/javascript",
+						"packages": {}
+					}
+				},
+				{
+					"listen": "prerequest",
+					"script": {
+						"exec": [
+							""
+						],
+						"type": "text/javascript",
+						"packages": {}
+					}
+				}
+			],
+			"request": {
+				"auth": {
+					"type": "bearer",
+					"bearer": [
+						{
+							"key": "token",
+							"value": "{{token}}",
+							"type": "string"
+						}
+					]
+				},
+				"method": "POST",
+				"header": [],
+				"body": {
+					"mode": "raw",
+					"raw": "{\n    \"local\": \"Copacabana\",\n    \"gasto\": \"{{expenseId}}\",\n    \"usuario\": \"{{userId}}\",\n    \"descricao\": \"hgvfcrsedfg\",\n    \"urls_imagem\":[\"cgasyfgseda\", \"vcbaluyrfvd\"]\n}",
+					"options": {
+						"raw": {
+							"language": "json"
+						}
+					}
+				},
+				"url": {
+					"raw": "http://localhost:3000/roteiros/{{itineraryId}}/diario",
+					"protocol": "http",
+					"host": [
+						"localhost"
+					],
+					"port": "3000",
+					"path": [
+						"roteiros",
+						"{{itineraryId}}",
+						"diario"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "GetJournalStep",
+			"event": [
+				{
+					"listen": "test",
+					"script": {
+						"exec": [
+							""
+						],
+						"type": "text/javascript",
+						"packages": {}
+					}
+				}
+			],
+			"request": {
+				"auth": {
+					"type": "bearer",
+					"bearer": [
+						{
+							"key": "token",
+							"value": "{{token}}",
+							"type": "string"
+						}
+					]
+				},
+				"method": "GET",
+				"header": [],
+				"url": {
+					"raw": "http://localhost:3000/roteiros/{{itineraryId}}/diario/{{journalRecordId}}",
+					"protocol": "http",
+					"host": [
+						"localhost"
+					],
+					"port": "3000",
+					"path": [
+						"roteiros",
+						"{{itineraryId}}",
+						"diario",
+						"{{journalRecordId}}"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "UpdateJournalRecord",
+			"event": [
+				{
+					"listen": "test",
+					"script": {
+						"exec": [
+							"pm.globals.set('journalRecordId', pm.response.json()._id);",
+							""
+						],
+						"type": "text/javascript",
+						"packages": {}
+					}
+				},
+				{
+					"listen": "prerequest",
+					"script": {
+						"exec": [
+							""
+						],
+						"type": "text/javascript",
+						"packages": {}
+					}
+				}
+			],
+			"request": {
+				"auth": {
+					"type": "bearer",
+					"bearer": [
+						{
+							"key": "token",
+							"value": "{{token}}",
+							"type": "string"
+						}
+					]
+				},
+				"method": "POST",
+				"header": [],
+				"body": {
+					"mode": "raw",
+					"raw": "{\n    \"local\": \"Copacabana\",\n    \"gasto\": \"{{expenseId}}\",\n    \"usuario\": \"{{userId}}\",\n    \"descricao\": \"hgvfcrsedfg \\n gfaorfogfdsgfzsdf \\n fghçpizdgtf7aedtfg\",\n    \"urls_imagem\":[\"cgasyfgseda\", \"vcbaluyrfvd\", \"cvogefdosfg\", \"cbzldfugvldshf\"]\n}",
+					"options": {
+						"raw": {
+							"language": "json"
+						}
+					}
+				},
+				"url": {
+					"raw": "http://localhost:3000/roteiros/{{itineraryId}}/diario/{{journalRecordId}}",
+					"protocol": "http",
+					"host": [
+						"localhost"
+					],
+					"port": "3000",
+					"path": [
+						"roteiros",
+						"{{itineraryId}}",
+						"diario",
+						"{{journalRecordId}}"
 					]
 				}
 			},
