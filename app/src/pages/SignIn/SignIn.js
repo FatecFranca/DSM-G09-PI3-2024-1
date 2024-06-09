@@ -12,7 +12,7 @@ function SignIn() {
         event.preventDefault();
     
         try {
-            const response = await fetch('http://localhost:3000/usuarios', {
+            const response = await fetch('http://localhost:3000/login', {
                 method: 'POST',
                 headers: {
                     'Content-Type': 'application/json'
