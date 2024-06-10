@@ -1,0 +1,161 @@
+.container {
+    width: 100%;
+    min-height: 100vh;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    padding: 2rem; 
+    font-family: 'League Spartan', sans-serif;
+    font-size: 3.2rem;
+}
+
+.base {
+    margin-top: 8rem;
+    width: 100%;
+    height: max-content;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+}
+
+#roteiro {
+    width: 75%;
+    max-width: 1200px;
+    max-height: max-content;
+    padding: 2rem; 
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    padding-inline: 10rem;
+    gap: 2rem;
+    background: linear-gradient(to right, #6478EB 0%, #3E4C9C 100%);
+    border-radius: 2rem;
+    color: #E6E6E6;
+    text-align: center;
+    box-shadow: rgba(0, 0, 0, 0.25) 0.2rem 0.2rem 0.2rem;
+}
+
+.return, .return i {
+    color: #E6E6E6;
+    font-size: 3.2rem;
+    line-height: 0;
+    margin-top: 1rem;
+    align-self: flex-start;
+}
+
+.content h1 {
+    font-size: 2.8rem;
+    font-weight: normal;
+    text-align: center;
+    margin-bottom: 1rem; 
+}
+
+#roteiro img {
+    width: 100%;
+    height: 50rem;
+    object-fit: cover;
+    border-radius: 2rem;
+}
+
+.main-roteiro {
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: space-around;
+    gap: 1rem; 
+}
+
+#header-roteiro {
+    font-size: 2.4rem;
+}
+#body-roteiro {
+    font-size: 1.8rem;
+}
+
+.content img {
+    width: 100%;
+    height: 5rem;
+    object-fit: cover;
+    border-radius: 2rem;
+}
+
+#header-gastos {
+    font-size: 2.4rem;
+}
+
+#body-gastos {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: start;
+}
+
+#body-gastos li {
+    font-size: 1.8rem;
+}
+
+@media screen and (max-width: 1200px) {
+    .main {
+        flex-direction: column;
+        gap: 5rem;
+        margin-top: 5rem;
+    }
+}
+
+@media screen and (min-width: 1200px) {
+    .title-message {
+        width: 40%;
+    }
+
+    .form-message {
+        width: 40%;
+    }
+}
+
+@media screen and (max-width: 768px) {
+    .container {
+        padding: 5rem 2rem;
+    }
+
+    .content {
+        width: 90%;
+        padding: 1rem;
+    }
+
+    .title-message {
+        gap: 1rem;
+    }
+
+    .form-group {
+        width: 100%;
+        gap: 1rem;
+    }
+
+    .form input {
+        width: 100%;
+        padding: 1rem;
+    }
+
+    .form button {
+        width: 100%;
+        padding: 1rem;
+    }
+
+    .form-forgot {
+        width: 100%;
+    }
+}
+
+@media screen and (max-height: 700px) {
+    .main {
+        gap: 3rem;
+        margin-top: 2rem;
+    }
+
+    .content {
+        gap: 1rem;
+    }
+}
