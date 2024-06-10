@@ -12,7 +12,6 @@ const commentSchema = new mongoose.Schema({
   usuario: { type: mongoose.Schema.Types.ObjectId, ref: 'Usuario', required: true },
   data_criacao: { type: Date, required: true },
   data_atualizacao: { type: Date, required: true },
-  respostas: [{ type: mongoose.Schema.ObjectId, ref: 'Comment' }]
 });
 
 const blogPostSchema = new mongoose.Schema({
