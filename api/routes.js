@@ -67,6 +67,7 @@ router.post('/roteiros', authMiddleware, itineraryControllers.createItinerary);
 router.get('/roteiros', authMiddleware, itineraryControllers.listItinerariesByUser);
 router.get('/roteiros/:itineraryID', authMiddleware, itineraryControllers.getItineraryById);
 router.post('/roteiros/:itineraryID', authMiddleware, itineraryControllers.updateItinerary);
+router.post('/roteiros/:itineraryID/criar-postagem', authMiddleware, postControllers.createBlogPostFromItinerary);
 router.delete('/roteiros/:itineraryID', authMiddleware, itineraryControllers.updateItinerary);
 
 router.post('/roteiros/:itineraryID/despesas/', authMiddleware, expenseControllers.createExpense);
@@ -79,12 +80,14 @@ router.post('/roteiros/:itineraryID/etapas', authMiddleware, itineraryStepContro
 router.get('/roteiros/:itineraryID/etapas', authMiddleware, itineraryStepControllers.listSteps);
 router.get('/roteiros/:itineraryID/etapas/:stepID', authMiddleware, itineraryStepControllers.getStepById);
 router.post('/roteiros/:itineraryID/etapas/:stepID', authMiddleware, itineraryStepControllers.updateStep);
+router.post('/roteiros/:itineraryID/etapas/:stepID/criar-postagem', authMiddleware, postControllers.createBlogPostFromItineraryStep);
 router.delete('/roteiros/:itineraryID/etapas/:stepID', authMiddleware, itineraryStepControllers.updateStep);
 
 router.post('/roteiros/:itineraryID/diario', authMiddleware, journalControllers.createJournalRecord);
 router.get('/roteiros/:itineraryID/diario', authMiddleware, journalControllers.listJournalRecords);
 router.get('/roteiros/:itineraryID/diario/:journalRecordID', authMiddleware, journalControllers.getJournalRecordById);
 router.post('/roteiros/:itineraryID/diario/:journalRecordID', authMiddleware, journalControllers.updateJournalRecord);
+router.post('/roteiros/:itineraryID/diario/:journalRecordID/criar-postagem', authMiddleware, postControllers.createBlogPostFromJournalRecord);
 router.delete('/roteiros/:itineraryID/diario/:journalRecordID', authMiddleware, journalControllers.updateJournalRecord);
 
 module.exports = router;

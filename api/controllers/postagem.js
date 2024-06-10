@@ -1,4 +1,7 @@
 const BlogPost = require('../models/postagem');
+const Itinerary = require('../models/roteiro');
+const ItineraryStep = require('../models/etapa-roteiro');
+const JournalRecord = require('../models/folha-diario');
 
 async function createBlogPost(req, res) {
   try {
@@ -14,6 +17,87 @@ async function createBlogPost(req, res) {
   } catch (error) {
     console.error('Erro ao criar postagem:', error);
     res.status(500).json({ error: 'Erro ao criar postagem' });
+  }
+}
+
+async function createBlogPostFromItinerary(req, res) {
+  try {
+    const itineraryID = req.params.itineraryID;
+    const blogPostData = req.body;
+
+    const itinerary = await Itinerary.findById(itineraryID);
+    if (!itinerary) {
+      return res.status(404).json({ message: 'Roteiro não encontrado' });
+    }
+
+    const newBlogPost = new BlogPost({
+      ...blogPostData,
+      ...itinerary._doc,
+    });
+
+    delete newBlogPost._id;
+    delete newBlogPost.__t;
+
+    const savedPost = await newBlogPost.save();
+
+    res.status(201).json(savedPost);
+  } catch (error) {
+    console.error('Erro ao criar postagem a partir de roteiro:', error);
+    res.status(500).json({ error: 'Erro ao criar postagem a partir de roteiro' });
+  }
+}
+
+async function createBlogPostFromItineraryStep(req, res) {
+  try {
+    const stepID = req.params.stepID;
+    const blogPostData = req.body;
+
+    const step = await ItineraryStep.findById(stepID);
+    if (!step) {
+      return res.status(404).json({ message: 'Etapa de roteiro não encontrada' });
+    }
+
+    const newBlogPost = new BlogPost({
+      ...blogPostData,
+      ...step._doc,
+    });
+
+    delete newBlogPost._id;
+    delete newBlogPost.__t;
+
+    const savedBlogPost = await newBlogPost.save();
+
+    res.status(201).json(savedBlogPost);
+  } catch (error) {
+    console.error('Erro ao criar postagem a partir de etapa de roteiro', error);
+    res.status(500).json({ error: 'Erro ao criar postagem a partir de etapa de roteiro' });
+  }
+}
+
+async function createBlogPostFromJournalRecord(req, res) {
+  try {
+    const journalRecordID = req.params.journalRecordID;
+    const blogPostData = req.body;
+
+    const step = await JournalRecord.findById(journalRecordID);
+    if (!step) {
+      return res.status(404).json({ message: 'Etapa de roteiro não encontrada' });
+    }
+
+    const newBlogPost = new BlogPost({
+      ...blogPostData,
+      ...step._doc,
+    });
+
+    delete newBlogPost._id;
+    delete newBlogPost.__t;
+
+    const savedBlogPost = await newBlogPost.save();
+
+    res.status(201).json(savedBlogPost);
+  } catch (error) {
+    console.error('Erro ao criar postagem a partir de etapa de roteiro', error);
+    res.status(500).json({ error: 'Erro ao criar postagem a partir de etapa de roteiro' });
   }
 }
 
@@ -95,6 +179,9 @@ async function listPublicPostsSortedByRating(req, res) {
 
 module.exports = {
   createBlogPost,
+  createBlogPostFromItinerary,
+  createBlogPostFromItineraryStep,
+  createBlogPostFromJournalRecord,
   getBlogPost,
   updateBlogPost,
   publishBlogPost,
