@@ -12,7 +12,7 @@ function Roteiros() {
                     <Link to="/homeroteiros"><i className="bi bi-chevron-left"></i>Voltar</Link>
                 </button>
                 <h1>Cidade</h1>
-                <img src="https://images.unsplash.com/photo-1499951360447-b19be8fe80f5?ixlib=rb-4.0.3&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=870&q=80"></img>
+                <img id='img-roteiro' src="https://images.unsplash.com/photo-1499951360447-b19be8fe80f5?ixlib=rb-4.0.3&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=870&q=80"></img>
                 <div className='main-roteiro'>
                     <h2 id='header-roteiro'>Planejamento de Viagem</h2>
                     <h2 id='header-roteiro'>Destino</h2>

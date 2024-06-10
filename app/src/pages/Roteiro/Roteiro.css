@@ -75,7 +75,7 @@
     font-size: 1.8rem;
 }
 
-.content img {
+#img-roteiro img {
     width: 100%;
     height: 5rem;
     object-fit: cover;
