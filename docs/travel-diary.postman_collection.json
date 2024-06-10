@@ -7,6 +7,57 @@
 	},
 	"item": [
 		{
+			"name": "HealthCheck",
+			"event": [
+				{
+					"listen": "prerequest",
+					"script": {
+						"exec": [
+							""
+						],
+						"type": "text/javascript",
+						"packages": {}
+					}
+				},
+				{
+					"listen": "test",
+					"script": {
+						"exec": [
+							"pm.globals.set('userId', pm.response.json()._id);"
+						],
+						"type": "text/javascript",
+						"packages": {}
+					}
+				}
+			],
+			"request": {
+				"method": "POST",
+				"header": [],
+				"body": {
+					"mode": "raw",
+					"raw": "{\n  \"nome\": \"Isabela\",\n  \"cpf\": \"138.913.780-06\",\n  \"dataNascimento\": \"1990-01-01\",\n  \"municipio\": \"São Paulo\",\n  \"uf\": \"SP\",\n  \"telefone\": \"11999999999\",\n  \"email\": \"vgsfz@exavsrmple.com\",\n  \"senha\": \"senha123\",\n  \"bio\": \"Bio de Isabela\"\n}",
+					"options": {
+						"raw": {
+							"language": "json"
+						}
+					}
+				},
+				"url": {
+					"raw": "http://localhost:3000/usuarios/",
+					"protocol": "http",
+					"host": [
+						"localhost"
+					],
+					"port": "3000",
+					"path": [
+						"usuarios",
+						""
+					]
+				}
+			},
+			"response": []
+		},
+		{
 			"name": "CreateUser",
 			"event": [
 				{
@@ -373,6 +424,69 @@
 					]
 				},
 				"method": "POST",
+				"header": [],
+				"body": {
+					"mode": "raw",
+					"raw": "{\n  \"titulo\": \"My Awesome Blog Post\",\n  \"descricao\": \"This is a great blog post about something interesting.\",\n  \"usuario\": \"{{userId}}\",\n  \"local\": \"New York City\",\n//   \"gasto\": [],\n  \"urls_imagem\": [\n    \"https://example.com/image1.jpg\",\n    \"https://example.com/image2.jpg\"\n  ]\n}\n",
+					"options": {
+						"raw": {
+							"language": "json"
+						}
+					}
+				},
+				"url": {
+					"raw": "http://localhost:3000/postagens",
+					"protocol": "http",
+					"host": [
+						"localhost"
+					],
+					"port": "3000",
+					"path": [
+						"postagens"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "ListTopBlogPost",
+			"event": [
+				{
+					"listen": "prerequest",
+					"script": {
+						"exec": [
+							""
+						],
+						"type": "text/javascript",
+						"packages": {}
+					}
+				},
+				{
+					"listen": "test",
+					"script": {
+						"exec": [
+							""
+						],
+						"type": "text/javascript",
+						"packages": {}
+					}
+				}
+			],
+			"protocolProfileBehavior": {
+				"disableBodyPruning": true
+			},
+			"request": {
+				"auth": {
+					"type": "bearer",
+					"bearer": [
+						{
+							"key": "token",
+							"value": "{{token}}",
+							"type": "string"
+						}
+					]
+				},
+				"method": "GET",
 				"header": [],
 				"body": {
 					"mode": "raw",
