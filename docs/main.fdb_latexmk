@@ -1,5 +1,5 @@
 # Fdb version 4
-["pdflatex"] 1717098424.50421 "c:/Users/jkaue/OneDrive/Documentos/PI3/docs/docs/main.tex" "main.pdf" "main" 1717098425.79027 0
+["pdflatex"] 1718065120.52099 "c:/Users/jkaue/OneDrive/Documentos/PI3/docs/docs/main.tex" "main.pdf" "main" 1718065122.57383 0
   "C:/Users/jkaue/AppData/Local/MiKTeX/fonts/map/pdftex/pdftex.map" 1713293489 80909 eab91d9745dd2edfd62a31d53cd5fe15 ""
   "C:/Users/jkaue/AppData/Local/MiKTeX/fonts/pk/ljfour/jknappen/ec/dpi600/tcrm1000.pk" 1711990693 11548 bdf3b1f8c723e041b977e1adadcbba61 ""
   "C:/Users/jkaue/AppData/Local/MiKTeX/miktex/data/le/pdftex/pdflatex.fmt" 1710955356 24236006 badcf1783951bdf6f933c334a0b51d82 ""
@@ -43,16 +43,20 @@
   "IMGDOC/Dificuldades achar.png" 1713291344 8960 2e903d9c89b4519a0b7b1a3bbc7c6661 ""
   "IMGDOC/Dificuldades planejar.png" 1713291264 10165 d637aea080c13c33cb8b6a6280f7d5aa ""
   "IMGDOC/Fim pesquisa.png" 1713291389 6392 639627e16c13900261297b8fbcae31ae ""
+  "IMGDOC/Mapa1.png" 1718049609 122929 6d21b9b030bf87e32364ec7ddfd168f7 ""
+  "IMGDOC/Mapa2.png" 1718049625 91004 40800e4efb0748d4a6360361efa9c567 ""
+  "IMGDOC/Mapa3.png" 1718049642 97692 a728f9d54c9c1ba52df10f5210c5cbd1 ""
   "IMGDOC/MapaSemA1.png" 1712256580 60453 4e8544f08cf0701c09a9394aa63a7197 ""
   "IMGDOC/MapaSemA2.png" 1712256600 43739 0880f379be95040efd774acdac8a0d98 ""
   "IMGDOC/MapaSemA3.png" 1712256610 58931 9b37328bc56134dcab093ffeba81374d ""
   "IMGDOC/Matriz CSD.png" 1711995161 334842 77d32130d55c079056a2aeb902493fb4 ""
   "IMGDOC/Quanto Gosta.png" 1713291079 16837 abc2f968709d50fa712385efdc675edb ""
+  "IMGDOC/RabiscoFrame.png" 1718048112 311243 f115fc1dbbb8c1128914cd64882a960f ""
   "IMGDOC/Redes sociais.png" 1713291226 8376 3e58e74fda0efd47f0554a8d50613753 ""
   "IMGDOC/participantes.png" 1713292224 12557 eb6680bc06288498e1ab1b5944a44062 ""
-  "c:/Users/jkaue/OneDrive/Documentos/PI3/docs/docs/main.tex" 1717098422 33685 97545ecf95443eb16259b4d7e1da3a5d ""
-  "main.aux" 1717098425 2672 21091401d737cda1cc9aca21fd65fb96 "pdflatex"
-  "main.tex" 1717098422 33685 97545ecf95443eb16259b4d7e1da3a5d ""
+  "c:/Users/jkaue/OneDrive/Documentos/PI3/docs/docs/main.tex" 1718065117 41062 db4c11cafc83ba91244fd8c7c43f74f9 ""
+  "main.aux" 1718065122 2812 7195a8f75e7ac832bbbe3bcb85f09464 "pdflatex"
+  "main.tex" 1718065117 41062 db4c11cafc83ba91244fd8c7c43f74f9 ""
   (generated)
   "main.aux"
   "main.log"

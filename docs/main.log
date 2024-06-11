@@ -1,4 +1,4 @@
-This is pdfTeX, Version 3.141592653-2.6-1.40.26 (MiKTeX 24.3) (preloaded format=pdflatex 2024.3.20)  30 MAY 2024 16:47
+This is pdfTeX, Version 3.141592653-2.6-1.40.26 (MiKTeX 24.3) (preloaded format=pdflatex 2024.3.20)  10 JUN 2024 21:18
 entering extended mode
  restricted \write18 enabled.
  file:line:error style messages enabled.
@@ -98,142 +98,180 @@ LaTeX Font Info:    External font `cmex10' loaded for size
 
 {C:/Users/jkaue/AppData/Local/MiKTeX/fonts/map/pdftex/pdftex.map}] [2] [3]
 LaTeX Font Info:    External font `cmex10' loaded for size
-(Font)              <7> on input line 101.
+(Font)              <7> on input line 100.
 LaTeX Font Info:    External font `cmex10' loaded for size
-(Font)              <5> on input line 101.
+(Font)              <5> on input line 100.
  [4] [5] [6]
-Overfull \hbox (23.40811pt too wide) in paragraph at lines 154--155
+Overfull \hbox (23.40811pt too wide) in paragraph at lines 153--154
 []\OT1/cmr/m/n/10 Nosso time ado-tou uma abor-dagem abrangente para criar per-sonas. Come^^Xcamos
  []
 
 
-Overfull \hbox (2.19502pt too wide) in paragraph at lines 158--159
+Overfull \hbox (2.19502pt too wide) in paragraph at lines 157--158
 \OT1/cmr/m/n/10 ais para ori-en-tar nos-sas es-trat^^Segias de de-sign e de-sen-volvi-mento, garantindo
  []
 
 <IMGDOC/Matriz CSD.png, id=27, 1179.65718pt x 517.18219pt>
 File: IMGDOC/Matriz CSD.png Graphic file (type png)
 <use IMGDOC/Matriz CSD.png>
-Package pdftex.def Info: IMGDOC/Matriz CSD.png  used on input line 171.
+Package pdftex.def Info: IMGDOC/Matriz CSD.png  used on input line 170.
 (pdftex.def)             Requested size: 345.0pt x 151.25742pt.
 [7 <./IMGDOC/Matriz CSD.png>]
 <IMGDOC/Quanto Gosta.png, id=34, 484.05844pt x 170.88844pt>
 File: IMGDOC/Quanto Gosta.png Graphic file (type png)
 <use IMGDOC/Quanto Gosta.png>
-Package pdftex.def Info: IMGDOC/Quanto Gosta.png  used on input line 182.
+Package pdftex.def Info: IMGDOC/Quanto Gosta.png  used on input line 181.
 (pdftex.def)             Requested size: 345.0pt x 121.801pt.
 <IMGDOC/Redes sociais.png, id=35, 368.87813pt x 167.87718pt>
 File: IMGDOC/Redes sociais.png Graphic file (type png)
 <use IMGDOC/Redes sociais.png>
-Package pdftex.def Info: IMGDOC/Redes sociais.png  used on input line 189.
+Package pdftex.def Info: IMGDOC/Redes sociais.png  used on input line 188.
 (pdftex.def)             Requested size: 345.0pt x 157.01047pt.
 <IMGDOC/Dificuldades planejar.png, id=36, 413.29407pt x 176.15813pt>
 File: IMGDOC/Dificuldades planejar.png Graphic file (type png)
 <use IMGDOC/Dificuldades planejar.png>
-Package pdftex.def Info: IMGDOC/Dificuldades planejar.png  used on input line 196.
+Package pdftex.def Info: IMGDOC/Dificuldades planejar.png  used on input line 195.
 (pdftex.def)             Requested size: 345.0pt x 147.05252pt.
  [8 <./IMGDOC/Quanto Gosta.png> <./IMGDOC/Redes sociais.png>]
 <IMGDOC/Demora planejar.png, id=42, 430.60875pt x 173.14688pt>
 File: IMGDOC/Demora planejar.png Graphic file (type png)
 <use IMGDOC/Demora planejar.png>
-Package pdftex.def Info: IMGDOC/Demora planejar.png  used on input line 203.
+Package pdftex.def Info: IMGDOC/Demora planejar.png  used on input line 202.
 (pdftex.def)             Requested size: 345.0pt x 138.7264pt.
 <IMGDOC/Dificuldades achar.png, id=43, 348.55219pt x 162.6075pt>
 File: IMGDOC/Dificuldades achar.png Graphic file (type png)
 <use IMGDOC/Dificuldades achar.png>
-Package pdftex.def Info: IMGDOC/Dificuldades achar.png  used on input line 210.
+Package pdftex.def Info: IMGDOC/Dificuldades achar.png  used on input line 209.
 (pdftex.def)             Requested size: 345.0pt x 160.95958pt.
  [9 <./IMGDOC/Dificuldades planejar.png> <./IMGDOC/Demora planejar.png>]
 <IMGDOC/Fim pesquisa.png, id=49, 340.27126pt x 174.6525pt>
 File: IMGDOC/Fim pesquisa.png Graphic file (type png)
 <use IMGDOC/Fim pesquisa.png>
-Package pdftex.def Info: IMGDOC/Fim pesquisa.png  used on input line 217.
+Package pdftex.def Info: IMGDOC/Fim pesquisa.png  used on input line 216.
 (pdftex.def)             Requested size: 345.0pt x 177.08784pt.
 <IMGDOC/participantes.png, id=50, 179.92218pt x 313.17pt>
 File: IMGDOC/participantes.png Graphic file (type png)
 <use IMGDOC/participantes.png>
-Package pdftex.def Info: IMGDOC/participantes.png  used on input line 224.
+Package pdftex.def Info: IMGDOC/participantes.png  used on input line 223.
 (pdftex.def)             Requested size: 172.5pt x 300.2766pt.
  [10 <./IMGDOC/Dificuldades achar.png> <./IMGDOC/Fim pesquisa.png>] [11 <./IMGDOC/participantes.png>] [12]
 <IMGDOC/AnaliseTrivago1.png, id=63, 774.64406pt x 422.32782pt>
 File: IMGDOC/AnaliseTrivago1.png Graphic file (type png)
 <use IMGDOC/AnaliseTrivago1.png>
-Package pdftex.def Info: IMGDOC/AnaliseTrivago1.png  used on input line 280.
+Package pdftex.def Info: IMGDOC/AnaliseTrivago1.png  used on input line 279.
 (pdftex.def)             Requested size: 345.0pt x 188.09317pt.
 <IMGDOC/AnaliseTrivago2.png, id=64, 779.16093pt x 350.05782pt>
 File: IMGDOC/AnaliseTrivago2.png Graphic file (type png)
 <use IMGDOC/AnaliseTrivago2.png>
-Package pdftex.def Info: IMGDOC/AnaliseTrivago2.png  used on input line 285.
+Package pdftex.def Info: IMGDOC/AnaliseTrivago2.png  used on input line 284.
 (pdftex.def)             Requested size: 345.0pt x 154.99805pt.
 <IMGDOC/AnaliseMochileiros1.png, id=65, 776.9025pt x 476.53032pt>
 File: IMGDOC/AnaliseMochileiros1.png Graphic file (type png)
 <use IMGDOC/AnaliseMochileiros1.png>
-Package pdftex.def Info: IMGDOC/AnaliseMochileiros1.png  used on input line 293.
+Package pdftex.def Info: IMGDOC/AnaliseMochileiros1.png  used on input line 292.
 (pdftex.def)             Requested size: 345.0pt x 211.61542pt.
 <IMGDOC/AnaliseMochileiros2.png, id=66, 760.34062pt x 403.5075pt>
 File: IMGDOC/AnaliseMochileiros2.png Graphic file (type png)
 <use IMGDOC/AnaliseMochileiros2.png>
-Package pdftex.def Info: IMGDOC/AnaliseMochileiros2.png  used on input line 298.
+Package pdftex.def Info: IMGDOC/AnaliseMochileiros2.png  used on input line 297.
 (pdftex.def)             Requested size: 345.0pt x 183.09132pt.
  [13 <./IMGDOC/AnaliseTrivago1.png> <./IMGDOC/AnaliseTrivago2.png>] [14 <./IMGDOC/AnaliseMochileiros1.png> <./IMGDOC/AnaliseMochileiros2.png>]
-Overfull \hbox (1.63943pt too wide) in paragraph at lines 309--310
+Overfull \hbox (1.63943pt too wide) in paragraph at lines 308--309
 \OT1/cmr/m/n/10 rel-e-vantes em nosso mer-cado ou ind^^Sustria, bus-cando or-ga-niza^^Xc~oes e servi^^Xcos
  []
 
 <IMGDOC/MapaSemA1.png, id=78, 598.48593pt x 471.26062pt>
 File: IMGDOC/MapaSemA1.png Graphic file (type png)
 <use IMGDOC/MapaSemA1.png>
-Package pdftex.def Info: IMGDOC/MapaSemA1.png  used on input line 327.
+Package pdftex.def Info: IMGDOC/MapaSemA1.png  used on input line 326.
 (pdftex.def)             Requested size: 345.0pt x 271.66307pt.
 <IMGDOC/MapaSemA2.png, id=79, 562.35094pt x 467.49657pt>
 File: IMGDOC/MapaSemA2.png Graphic file (type png)
 <use IMGDOC/MapaSemA2.png>
-Package pdftex.def Info: IMGDOC/MapaSemA2.png  used on input line 332.
+Package pdftex.def Info: IMGDOC/MapaSemA2.png  used on input line 331.
 (pdftex.def)             Requested size: 345.0pt x 286.80603pt.
 [15]
 <IMGDOC/MapaSemA3.png, id=83, 439.6425pt x 471.26062pt>
 File: IMGDOC/MapaSemA3.png Graphic file (type png)
 <use IMGDOC/MapaSemA3.png>
-Package pdftex.def Info: IMGDOC/MapaSemA3.png  used on input line 336.
+Package pdftex.def Info: IMGDOC/MapaSemA3.png  used on input line 335.
 (pdftex.def)             Requested size: 345.0pt x 369.82535pt.
- [16 <./IMGDOC/MapaSemA1.png>] [17 <./IMGDOC/MapaSemA2.png>] [18 <./IMGDOC/MapaSemA3.png>]
-Overfull \hbox (2.11174pt too wide) in paragraph at lines 371--372
+ [16 <./IMGDOC/MapaSemA1.png>] [17 <./IMGDOC/MapaSemA2.png>]
+<IMGDOC/Mapa1.png, id=92, 1059.20718pt x 536.0025pt>
+File: IMGDOC/Mapa1.png Graphic file (type png)
+<use IMGDOC/Mapa1.png>
+Package pdftex.def Info: IMGDOC/Mapa1.png  used on input line 343.
+(pdftex.def)             Requested size: 345.0pt x 174.58315pt.
+<IMGDOC/Mapa2.png, id=93, 982.42032pt x 523.20468pt>
+File: IMGDOC/Mapa2.png Graphic file (type png)
+<use IMGDOC/Mapa2.png>
+Package pdftex.def Info: IMGDOC/Mapa2.png  used on input line 348.
+(pdftex.def)             Requested size: 345.0pt x 183.73112pt.
+ [18 <./IMGDOC/MapaSemA3.png>]
+<IMGDOC/Mapa3.png, id=98, 980.16188pt x 499.8675pt>
+File: IMGDOC/Mapa3.png Graphic file (type png)
+<use IMGDOC/Mapa3.png>
+Package pdftex.def Info: IMGDOC/Mapa3.png  used on input line 352.
+(pdftex.def)             Requested size: 345.0pt x 175.94017pt.
+ [19 <./IMGDOC/Mapa1.png> <./IMGDOC/Mapa2.png>]
+Overfull \hbox (6.58392pt too wide) in paragraph at lines 371--372
+[]\OT1/cmr/m/n/10 Pela vis~ao do de-sign, todo site de-ver^^Sa fo-car bas-tante na quest~ao de avalia^^Xc~oes
+ []
+
+[20 <./IMGDOC/Mapa3.png>]
+<IMGDOC/RabiscoFrame.png, id=109, 1051.67906pt x 385.44pt>
+File: IMGDOC/RabiscoFrame.png Graphic file (type png)
+<use IMGDOC/RabiscoFrame.png>
+Package pdftex.def Info: IMGDOC/RabiscoFrame.png  used on input line 379.
+(pdftex.def)             Requested size: 345.0pt x 126.44278pt.
+
+Overfull \hbox (2.11174pt too wide) in paragraph at lines 388--389
 []\OT1/cmr/m/n/10 Qual a es-trat^^Segia ado-tada pelo time Wan-der-lust para fazer o Ra-bis-coframe? 
  []
 
-
-Overfull \hbox (40.47313pt too wide) in paragraph at lines 386--387
-\OT1/cmr/m/n/10 Link do Figma: https://www.figma.com/design/moQhturIxW4SQgz3IZib6S/Wireframe-
+[21 <./IMGDOC/RabiscoFrame.png>]
+Overfull \hbox (8.52855pt too wide) in paragraph at lines 405--406
+[]\OT1/cmr/m/n/10 https://www.figma.com/design/moQhturIxW4SQgz3IZib6S/Wireframe-e-Sty 
  []
 
-[19]
-Overfull \hbox (21.64409pt too wide) in paragraph at lines 400--401
+
+Overfull \hbox (11.4591pt too wide) in paragraph at lines 411--412
+[]\OT1/cmr/m/n/10 Link do Medium StyleGuide: https://medium.com/@jkaue986/pi3-wonderlust-
+ []
+
+
+Overfull \hbox (21.64409pt too wide) in paragraph at lines 428--429
 []\OT1/cmr/m/n/10 Nosso time de-sen-volveu o Style Guide de forma abrangente e efi-caz. Come^^Xcamos
  []
 
-
-Overfull \hbox (51.25095pt too wide) in paragraph at lines 413--414
+[22]
+Overfull \hbox (51.25095pt too wide) in paragraph at lines 441--442
 \OT1/cmr/m/n/10 Link do Figma: https://www.figma.com/design/PQnKKkcY3oaeLRCQjt7QCQ/Prot^^Sotipo-
  []
 
-[20] [21] (main.aux)
+[23] [24]
+Overfull \hbox (3.80904pt too wide) in paragraph at lines 509--510
+[]\OT1/cmr/m/n/10 TODO ESSE DOC-U-MENTO FOI FEITO EM La-TeX E EST[]A NO GITHUB. 
+ []
+
+[25] (main.aux)
  ***********
 LaTeX2e <2023-11-01> patch level 1
 L3 programming layer <2024-03-14>
  ***********
  ) 
 Here is how much of TeX's memory you used:
- 1506 strings out of 474424
- 26607 string characters out of 5741739
+ 1539 strings out of 474424
+ 27339 string characters out of 5741739
  1936496 words of memory out of 5000000
- 23884 multiletter control sequences out of 15000+600000
+ 23917 multiletter control sequences out of 15000+600000
  562659 words of font info for 51 fonts, out of 8000000 for 9000
  1141 hyphenation exceptions out of 8191
  57i,7n,65p,1247b,230s stack positions out of 10000i,1000n,20000p,200000b,200000s
  <C:\Users\jkaue\AppData\Local\MiKTeX\fonts/pk/ljfour/jknappen/ec/dpi600\tcrm1000.pk><C:/Users/jkaue/AppData/Local/Programs/MiKTeX/fonts/type1/public/amsfonts/cm/cmbx10.pfb><C:/Users/jkaue/AppData/Local/Programs/MiKTeX/fonts/type1/public/amsfonts/cm/cmbx12.pfb><C:/Users/jkaue/AppData/Local/Programs/MiKTeX/fonts/type1/public/amsfonts/cm/cmr10.pfb><C:/Users/jkaue/AppData/Local/Programs/MiKTeX/fonts/type1/public/amsfonts/cm/cmr12.pfb><C:/Users/jkaue/AppData/Local/Programs/MiKTeX/fonts/type1/public/amsfonts/cm/cmr17.pfb><C:/Users/jkaue/AppData/Local/Programs/MiKTeX/fonts/type1/public/amsfonts/cm/cmsy10.pfb>
-Output written on main.pdf (21 pages, 641865 bytes).
+Output written on main.pdf (25 pages, 1137578 bytes).
 PDF statistics:
- 136 PDF objects out of 1000 (max. 8388607)
+ 157 PDF objects out of 1000 (max. 8388607)
  0 named destinations out of 1000 (max. 500000)
- 76 words of extra memory for PDF output out of 10000 (max. 10000000)
+ 96 words of extra memory for PDF output out of 10000 (max. 10000000)
 
