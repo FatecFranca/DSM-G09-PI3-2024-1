@@ -12,7 +12,7 @@ const jwt = require('jsonwebtoken');
 
 const router = express.Router();
 
-const allowedOrigins = ['http://localhost:80', 'http://192.168.100.91'];
+const allowedOrigins = ['http://localhost:3000'];
 
 const corsOptions = {
   origin: allowedOrigins,
