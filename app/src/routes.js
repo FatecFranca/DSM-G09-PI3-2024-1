@@ -9,6 +9,8 @@ import SignUp from './pages/SignUp/SignUp';
 import About from './pages/About/About';
 import HomeRoteiros from './pages/Roteiro/Home';
 import Roteiros from './pages/Roteiro/Roteiro';
+import HomePosts from './pages/Post/Home';
+import Post from './pages/Post/Post';
 
 
 
@@ -23,6 +25,8 @@ function RoutesApp() {
                 <Route path="/about" element={<About/>} />
                 <Route path="/homeroteiros" element={<HomeRoteiros/>} />
                 <Route path="/roteiro" element={<Roteiros/>} />
+                <Route path="/publicacoes" element={<HomePosts/>} />
+                <Route path="/post/:id" element={<Post/>} />
             </Routes>
             <Footer/>
         </BrowserRouter>

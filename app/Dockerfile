@@ -6,7 +6,7 @@
 #EXPOSE 80
 
 # Stage 1: Build the React app
-FROM node:14-alpine AS build
+FROM  node:18-alpine AS build
 
 WORKDIR /app
 

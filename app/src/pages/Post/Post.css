@@ -19,7 +19,7 @@
     justify-content: center;
 }
 
-#roteiro {
+#post {
     width: 75%;
     max-width: 1200px;
     max-height: max-content;
@@ -30,7 +30,7 @@
     justify-content: center;
     padding-inline: 5rem;
     gap: 2rem;
-    background: linear-gradient(to right, #6478EB 0%, #3E4C9C 100%);
+    background: linear-gradient(to left, #D69C55 0%, #DEA35C 50%, #F1BB78 100%);
     border-radius: 2rem;
     color: #E6E6E6;
     text-align: center;
@@ -47,19 +47,33 @@
 
 .content h1 {
     font-size: 2.8rem;
-    font-weight: normal;
+    font-weight: 500;
     text-align: center;
     margin-bottom: 1rem; 
 }
 
-#roteiro img {
+.content h2 {
+    font-size: 2.2rem;
+    font-weight: 500;
+    text-align: center;
+    margin-bottom: 1rem; 
+}
+
+.content p, .content a, .content li, .content ul {
+    font-size: 1.8rem; 
+    list-style: none;
+    margin: 0;
+    padding: 0;
+}
+
+#post img {
     width: 100%;
     height: 50rem;
     object-fit: cover;
     border-radius: 2rem;
 }
 
-.main-roteiro {
+.main-post {
     width: 100%;
     display: flex;
     flex-direction: column;
@@ -68,33 +82,42 @@
     gap: 1rem; 
 }
 
-#header-roteiro {
-    font-size: 2.4rem;
-}
-#body-roteiro {
-    font-size: 1.8rem;
-}
-
-#img-roteiro img {
+.btns-post, .btns-modal {
     width: 100%;
-    height: 5rem;
-    object-fit: cover;
-    border-radius: 2rem;
-}
-
-#header-gastos {
-    font-size: 2.4rem;
-}
-
-#body-gastos {
     display: flex;
     flex-direction: column;
     align-items: center;
-    justify-content: start;
+    justify-content: space-around;
+    gap: 1rem;
+    padding-block: 2rem;
 }
 
-#body-gastos li {
+.btns-post button {
+    width: 20%;
+    padding: 1rem;
     font-size: 1.8rem;
+    border-radius: 1rem;
+    border: none;
+    background-color: #E6E6E6;
+    color: #000;
+    cursor: pointer;
+    transition: all 0.2s ease-in-out
+}
+
+.btns-modal{
+    flex-direction: row;
+}
+
+.btns-modal button {
+    width: 40%;
+    padding: 1rem;
+    font-size: 1.8rem;
+    border-radius: 1rem;
+    border: none;
+    background-color: #E6E6E6;
+    color: #000;
+    cursor: pointer;
+    transition: all 0.2s ease-in-out
 }
 
 @media screen and (max-width: 1200px) {
