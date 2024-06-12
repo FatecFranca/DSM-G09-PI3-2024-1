@@ -40,6 +40,16 @@ const Post = () => {
     }
   };
 
+  const handlePublish = async () => {
+    try {
+      await axios.post(`http://localhost:5000/postagens/${id}/publicar`);
+      // Atualiza o estado da publicação para refletir que foi publicada
+      setPublicacao({ ...publicacao, publicada: true });
+    } catch (error) {
+      console.error('Erro ao publicar:', error);
+    }
+  };
+
   const handleInputChange = (event, index) => {
     const { name, value } = event.target;
 
@@ -79,7 +89,7 @@ const Post = () => {
 
       <div className="btns-post">
         <Button variant="primary" onClick={handleShow}>Alterar</Button>
-        <Button variant="success" className="mt-3">Publicar</Button>
+        {publicacao.publicada ? null : <Button variant="success" className="mt-3" onClick={handlePublish}>Publicar</Button>}
       </div>
 
       </div>
