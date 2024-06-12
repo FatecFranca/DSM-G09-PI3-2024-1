@@ -43,12 +43,12 @@
 					}
 				},
 				"url": {
-					"raw": "http://localhost:3000/usuarios/",
+					"raw": "http://localhost:5000/usuarios/",
 					"protocol": "http",
 					"host": [
 						"localhost"
 					],
-					"port": "3000",
+					"port": "5000",
 					"path": [
 						"usuarios",
 						""
@@ -94,12 +94,12 @@
 					}
 				},
 				"url": {
-					"raw": "http://localhost:3000/usuarios/",
+					"raw": "http://localhost:5000/usuarios/",
 					"protocol": "http",
 					"host": [
 						"localhost"
 					],
-					"port": "3000",
+					"port": "5000",
 					"path": [
 						"usuarios",
 						""
@@ -143,12 +143,12 @@
 					}
 				},
 				"url": {
-					"raw": "http://localhost:3000/login/",
+					"raw": "http://localhost:5000/login/",
 					"protocol": "http",
 					"host": [
 						"localhost"
 					],
-					"port": "3000",
+					"port": "5000",
 					"path": [
 						"login",
 						""
@@ -192,12 +192,12 @@
 					}
 				},
 				"url": {
-					"raw": "http://localhost:3000/refresh/",
+					"raw": "http://localhost:5000/refresh/",
 					"protocol": "http",
 					"host": [
 						"localhost"
 					],
-					"port": "3000",
+					"port": "5000",
 					"path": [
 						"refresh",
 						""
@@ -254,12 +254,12 @@
 					}
 				},
 				"url": {
-					"raw": "http://localhost:3000/logout/",
+					"raw": "http://localhost:5000/logout/",
 					"protocol": "http",
 					"host": [
 						"localhost"
 					],
-					"port": "3000",
+					"port": "5000",
 					"path": [
 						"logout",
 						""
@@ -296,12 +296,12 @@
 				"method": "GET",
 				"header": [],
 				"url": {
-					"raw": "http://localhost:3000/usuarios/{{userId}}",
+					"raw": "http://localhost:5000/usuarios/{{userId}}",
 					"protocol": "http",
 					"host": [
 						"localhost"
 					],
-					"port": "3000",
+					"port": "5000",
 					"path": [
 						"usuarios",
 						"{{userId}}"
@@ -335,12 +335,12 @@
 					}
 				},
 				"url": {
-					"raw": "http://localhost:3000/usuarios/{{userId}}",
+					"raw": "http://localhost:5000/usuarios/{{userId}}",
 					"protocol": "http",
 					"host": [
 						"localhost"
 					],
-					"port": "3000",
+					"port": "5000",
 					"path": [
 						"usuarios",
 						"{{userId}}"
@@ -374,12 +374,12 @@
 					}
 				},
 				"url": {
-					"raw": "http://localhost:3000/usuarios/{{userId}}",
+					"raw": "http://localhost:5000/usuarios/{{userId}}",
 					"protocol": "http",
 					"host": [
 						"localhost"
 					],
-					"port": "3000",
+					"port": "5000",
 					"path": [
 						"usuarios",
 						"{{userId}}"
@@ -435,12 +435,12 @@
 					}
 				},
 				"url": {
-					"raw": "http://localhost:3000/postagens",
+					"raw": "http://localhost:5000/postagens",
 					"protocol": "http",
 					"host": [
 						"localhost"
 					],
-					"port": "3000",
+					"port": "5000",
 					"path": [
 						"postagens"
 					]
@@ -498,12 +498,12 @@
 					}
 				},
 				"url": {
-					"raw": "http://localhost:3000/postagens",
+					"raw": "http://localhost:5000/postagens",
 					"protocol": "http",
 					"host": [
 						"localhost"
 					],
-					"port": "3000",
+					"port": "5000",
 					"path": [
 						"postagens"
 					]
@@ -539,12 +539,12 @@
 					}
 				},
 				"url": {
-					"raw": "http://localhost:3000/postagens/{{postId}}",
+					"raw": "http://localhost:5000/postagens/{{postId}}",
 					"protocol": "http",
 					"host": [
 						"localhost"
 					],
-					"port": "3000",
+					"port": "5000",
 					"path": [
 						"postagens",
 						"{{postId}}"
@@ -600,12 +600,12 @@
 					}
 				},
 				"url": {
-					"raw": "http://localhost:3000/postagens/{{postId}}",
+					"raw": "http://localhost:5000/postagens/{{postId}}",
 					"protocol": "http",
 					"host": [
 						"localhost"
 					],
-					"port": "3000",
+					"port": "5000",
 					"path": [
 						"postagens",
 						"{{postId}}"
@@ -661,12 +661,12 @@
 					}
 				},
 				"url": {
-					"raw": "http://localhost:3000/postagens/{{postId}}/publicar",
+					"raw": "http://localhost:5000/postagens/{{postId}}/publicar",
 					"protocol": "http",
 					"host": [
 						"localhost"
 					],
-					"port": "3000",
+					"port": "5000",
 					"path": [
 						"postagens",
 						"{{postId}}",
@@ -723,12 +723,12 @@
 					}
 				},
 				"url": {
-					"raw": "http://localhost:3000/roteiros",
+					"raw": "http://localhost:5000/roteiros",
 					"protocol": "http",
 					"host": [
 						"localhost"
 					],
-					"port": "3000",
+					"port": "5000",
 					"path": [
 						"roteiros"
 					]
@@ -764,12 +764,12 @@
 					}
 				},
 				"url": {
-					"raw": "http://localhost:3000/roteiros/{{itineraryId}}",
+					"raw": "http://localhost:5000/roteiros/{{itineraryId}}",
 					"protocol": "http",
 					"host": [
 						"localhost"
 					],
-					"port": "3000",
+					"port": "5000",
 					"path": [
 						"roteiros",
 						"{{itineraryId}}"
@@ -825,12 +825,12 @@
 					}
 				},
 				"url": {
-					"raw": "http://localhost:3000/roteiros/{{itineraryId}}",
+					"raw": "http://localhost:5000/roteiros/{{itineraryId}}",
 					"protocol": "http",
 					"host": [
 						"localhost"
 					],
-					"port": "3000",
+					"port": "5000",
 					"path": [
 						"roteiros",
 						"{{itineraryId}}"
@@ -867,12 +867,12 @@
 					}
 				},
 				"url": {
-					"raw": "http://localhost:3000/roteiros/",
+					"raw": "http://localhost:5000/roteiros/",
 					"protocol": "http",
 					"host": [
 						"localhost"
 					],
-					"port": "3000",
+					"port": "5000",
 					"path": [
 						"roteiros",
 						""
@@ -896,12 +896,12 @@
 					}
 				},
 				"url": {
-					"raw": "http://localhost:3000/roteiros/{{itineraryId}}",
+					"raw": "http://localhost:5000/roteiros/{{itineraryId}}",
 					"protocol": "http",
 					"host": [
 						"localhost"
 					],
-					"port": "3000",
+					"port": "5000",
 					"path": [
 						"roteiros",
 						"{{itineraryId}}"
@@ -958,12 +958,12 @@
 					}
 				},
 				"url": {
-					"raw": "http://localhost:3000/roteiros/{{itineraryId}}/despesas",
+					"raw": "http://localhost:5000/roteiros/{{itineraryId}}/despesas",
 					"protocol": "http",
 					"host": [
 						"localhost"
 					],
-					"port": "3000",
+					"port": "5000",
 					"path": [
 						"roteiros",
 						"{{itineraryId}}",
@@ -1001,12 +1001,12 @@
 				"method": "GET",
 				"header": [],
 				"url": {
-					"raw": "http://localhost:3000/roteiros/{{itineraryId}}/despesas/{{expenseId}}",
+					"raw": "http://localhost:5000/roteiros/{{itineraryId}}/despesas/{{expenseId}}",
 					"protocol": "http",
 					"host": [
 						"localhost"
 					],
-					"port": "3000",
+					"port": "5000",
 					"path": [
 						"roteiros",
 						"{{itineraryId}}",
@@ -1064,12 +1064,12 @@
 					}
 				},
 				"url": {
-					"raw": "http://localhost:3000/roteiros/{{itineraryId}}/despesas/{{expenseId}}",
+					"raw": "http://localhost:5000/roteiros/{{itineraryId}}/despesas/{{expenseId}}",
 					"protocol": "http",
 					"host": [
 						"localhost"
 					],
-					"port": "3000",
+					"port": "5000",
 					"path": [
 						"roteiros",
 						"{{itineraryId}}",
@@ -1117,12 +1117,12 @@
 					}
 				},
 				"url": {
-					"raw": "http://localhost:3000/roteiros/{{itineraryId}}/despesas/{{expenseId}}",
+					"raw": "http://localhost:5000/roteiros/{{itineraryId}}/despesas/{{expenseId}}",
 					"protocol": "http",
 					"host": [
 						"localhost"
 					],
-					"port": "3000",
+					"port": "5000",
 					"path": [
 						"roteiros",
 						"{{itineraryId}}",
@@ -1161,12 +1161,12 @@
 				"method": "GET",
 				"header": [],
 				"url": {
-					"raw": "http://localhost:3000/roteiros/{{itineraryId}}/despesas",
+					"raw": "http://localhost:5000/roteiros/{{itineraryId}}/despesas",
 					"protocol": "http",
 					"host": [
 						"localhost"
 					],
-					"port": "3000",
+					"port": "5000",
 					"path": [
 						"roteiros",
 						"{{itineraryId}}",
@@ -1224,12 +1224,12 @@
 					}
 				},
 				"url": {
-					"raw": "http://localhost:3000/roteiros/{{itineraryId}}/etapas",
+					"raw": "http://localhost:5000/roteiros/{{itineraryId}}/etapas",
 					"protocol": "http",
 					"host": [
 						"localhost"
 					],
-					"port": "3000",
+					"port": "5000",
 					"path": [
 						"roteiros",
 						"{{itineraryId}}",
@@ -1267,12 +1267,12 @@
 				"method": "GET",
 				"header": [],
 				"url": {
-					"raw": "http://localhost:3000/roteiros/{{itineraryId}}/etapas/{{stepId}}",
+					"raw": "http://localhost:5000/roteiros/{{itineraryId}}/etapas/{{stepId}}",
 					"protocol": "http",
 					"host": [
 						"localhost"
 					],
-					"port": "3000",
+					"port": "5000",
 					"path": [
 						"roteiros",
 						"{{itineraryId}}",
@@ -1311,12 +1311,12 @@
 				"method": "GET",
 				"header": [],
 				"url": {
-					"raw": "http://localhost:3000/roteiros/{{itineraryId}}/etapas/",
+					"raw": "http://localhost:5000/roteiros/{{itineraryId}}/etapas/",
 					"protocol": "http",
 					"host": [
 						"localhost"
 					],
-					"port": "3000",
+					"port": "5000",
 					"path": [
 						"roteiros",
 						"{{itineraryId}}",
@@ -1345,12 +1345,12 @@
 				"method": "DELETE",
 				"header": [],
 				"url": {
-					"raw": "http://localhost:3000/roteiros/{{itineraryId}}/etapas/{{stepId}}",
+					"raw": "http://localhost:5000/roteiros/{{itineraryId}}/etapas/{{stepId}}",
 					"protocol": "http",
 					"host": [
 						"localhost"
 					],
-					"port": "3000",
+					"port": "5000",
 					"path": [
 						"roteiros",
 						"{{itineraryId}}",
@@ -1409,12 +1409,12 @@
 					}
 				},
 				"url": {
-					"raw": "http://localhost:3000/roteiros/{{itineraryId}}/diario",
+					"raw": "http://localhost:5000/roteiros/{{itineraryId}}/diario",
 					"protocol": "http",
 					"host": [
 						"localhost"
 					],
-					"port": "3000",
+					"port": "5000",
 					"path": [
 						"roteiros",
 						"{{itineraryId}}",
@@ -1452,12 +1452,12 @@
 				"method": "GET",
 				"header": [],
 				"url": {
-					"raw": "http://localhost:3000/roteiros/{{itineraryId}}/diario/{{journalRecordId}}",
+					"raw": "http://localhost:5000/roteiros/{{itineraryId}}/diario/{{journalRecordId}}",
 					"protocol": "http",
 					"host": [
 						"localhost"
 					],
-					"port": "3000",
+					"port": "5000",
 					"path": [
 						"roteiros",
 						"{{itineraryId}}",
@@ -1516,12 +1516,12 @@
 					}
 				},
 				"url": {
-					"raw": "http://localhost:3000/roteiros/{{itineraryId}}/diario/{{journalRecordId}}",
+					"raw": "http://localhost:5000/roteiros/{{itineraryId}}/diario/{{journalRecordId}}",
 					"protocol": "http",
 					"host": [
 						"localhost"
 					],
-					"port": "3000",
+					"port": "5000",
 					"path": [
 						"roteiros",
 						"{{itineraryId}}",
