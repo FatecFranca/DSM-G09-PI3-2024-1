@@ -1,17 +1,14 @@
 import './Home.css';
 import React from 'react';
+import { Link } from 'react-router-dom';
 
 
 function Home() {
 
 return (
-    <div className="container text-center">
-      <div className="row mt-5">
-        <div className="col">
-          <img src="/home-image.png" alt="Airplane" className="img-fluid" />
-        </div>
-      </div>
-      <div className="row mt-4">
+    <div className="container text-center" id='main'>
+
+      <div className="row mt-4 main">
         <div className="col">
           <h1 className="text-primary">Bem vindo!</h1>
           <p>Conheça o nosso site:</p>
@@ -22,10 +19,10 @@ return (
       </div>
       <div className="row mt-4">
         <div className="col-md-6">
-          <button className="btn btn-outline-primary btn-block">Crie seu roteiro de viagens ou anote.</button>
+          <Link to={'/roteiros'}><button className="btn btn-outline-primary btn-block">Crie seu roteiro de viagens ou anote.</button></Link>
         </div>
         <div className="col-md-6">
-          <button className="btn btn-outline-primary btn-block">Faça seu primeiro post ou pesquise nas publicações</button>
+          <Link to={'/publicacoes'}><button className="btn btn-outline-primary btn-block">Faça seu primeiro post ou pesquise nas publicações</button></Link>
         </div>
       </div>
       <div className="row mt-5">
