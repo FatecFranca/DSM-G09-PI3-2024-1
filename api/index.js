@@ -5,10 +5,10 @@ const connectToMongoDB = require('./database')
 require('dotenv').config();
 
 connectToMongoDB();
-if (!process.env.ACCESS_SECRET_KEY || !process.env.REFRESH_SECRET_KEY) {
+/*if (!process.env.ACCESS_SECRET_KEY || !process.env.REFRESH_SECRET_KEY) {
   console.error('Error: Missing required environment variables. Set ACCESS_SECRET_KEY and REFRESH_SECRET_KEY.');
   process.exit(1);
-}
+}*/
 const app = express();
 const cors = require('cors');
 
