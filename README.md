@@ -7,7 +7,7 @@ Alunos: Isabela Maria de Oliveira, Izabela Tayná Reis Coimbra, Kauê José Abda
 
 ## Link do site :fire:
 API: https://dsm-g09-pi3-2024-1.onrender.com/
-APP:
+APP: https://splendorous-taffy-6a7dda.netlify.app/
 
 ## Sobre o projeto :bookmark_tabs:
 
