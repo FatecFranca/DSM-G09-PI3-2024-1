@@ -9,6 +9,9 @@ Alunos: Isabela Maria de Oliveira, Izabela Tayná Reis Coimbra, Kauê José Abda
 API: https://dsm-g09-pi3-2024-1.onrender.com/
 APP: https://splendorous-taffy-6a7dda.netlify.app/
 
+## Pitch :fire:
+https://youtu.be/z6vHX2_H9cU
+
 ## Sobre o projeto :bookmark_tabs:
 
 Uma aplicação web para viagens, onde o usuário poderá se planejar, documentar, registrar os gastos, compartilhar momentos e trocar experiências. O objetivo é tornar o processo de viagem mais fácil, reunindo em um só lugar atividades como escolher o destino, descobrir as melhores rotas, realizar estimativas de custos, ver dicas, criar anotações e publicar sobre os lugares. Queremos criar uma comunidade de viajantes, onde todos possam compartilhar dicas e histórias sobre suas viagens. A aplicação é gratuita para todos os usuários e o sistema de monetização se dará através de parcerias e propagandas. Viajar está cada vez mais popular e muitas pessoas precisam desse tipo de ajuda!
