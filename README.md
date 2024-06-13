@@ -1,11 +1,13 @@
 # DSM-G09-PI3-2024-1
 
 Repositório do GRUPO 09 do Projeto Interdisciplinar do 3º semestre DSM 2024/1. <br/>
-Alunos: Isabela Maria de Oliveira, Izabela Tayná Reis Coimbra, Kauê José Abdalla Leal, Pedro Victor Virgino da Cunha e Victor Ferreira Neves.
+Alunos: Isabela Maria de Oliveira, Izabela Tayná Reis Coimbra, Kauê José Abdalla Leal e Victor Ferreira Neves.
 
 # Wanderlust :luggage:
 
 ## Link do site :fire:
+API: https://dsm-g09-pi3-2024-1.onrender.com/
+APP:
 
 ## Sobre o projeto :bookmark_tabs:
 
@@ -13,9 +15,32 @@ Uma aplicação web para viagens, onde o usuário poderá se planejar, documenta
 
 ## Layout :sparkles:
 
-### Nome página
+### Home
+![Home](image.png)
 
-- Print de tela
+### Login
+![Login](image-2.png)
+
+### Cadastro
+![Cadastro](image-3.png)
+
+### Publicações - Home
+![Publicações](image-1.png)
+
+### Publicações - Criação
+![Publicações - Criação](image-4.png)
+
+### Publicações - Edição
+![Publicações - Edição](image-5.png)
+
+### Roteiro - Home
+![Roteiro - Home](image-6.png)
+
+### Roteiro - Criação
+![Roteiro - Criação](image-7.png)
+
+### Sobre
+![Sobre](image-8.png)
 
 ## Tecnologias utilizadas :zap:
 
@@ -42,7 +67,8 @@ Uma aplicação web para viagens, onde o usuário poderá se planejar, documenta
 
 - HTML: Para a estruturação da página web. <br />
 - CSS: Para estilização e design. <br />
-- XXX: Para utilizar como framework.
+- React: Para utilizar como framework. <br/>
+- Bootstrap: Para utilizar como framework. <br/>
 
 ### Back end
 
@@ -91,8 +117,8 @@ GitHub: https://github.com/Kaue404
 
 ### Frot-End
 
-Pedro Victor Virgino da Cunha <br/>
-GitHub: <br/><br/>
+Izabela Tayná Reis Coimbra <br/>
+GitHub: https://github.com/izabelatrc
 
 Victor Ferreira Neves <br/>
 GitHub: https://github.com/McPlayerV2
@@ -101,6 +127,3 @@ GitHub: https://github.com/McPlayerV2
 
 Isabela Maria de Oliveira <br/>
 GitHub: https://github.com/bodelha <br/><br/>
-
-Victor Ferreira Neves<br/>
-GitHub: https://github.com/McPlayerV2
