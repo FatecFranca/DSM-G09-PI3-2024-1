@@ -19,7 +19,7 @@ return (
       </div>
       <div className="row mt-4">
         <div className="col-md-6">
-          <Link to={'/roteiros'}><button className="btn btn-outline-primary btn-block">Crie seu roteiro de viagens ou anote.</button></Link>
+          <Link to={'/homeroteiros'}><button className="btn btn-outline-primary btn-block">Crie seu roteiro de viagens ou anote.</button></Link>
         </div>
         <div className="col-md-6">
           <Link to={'/publicacoes'}><button className="btn btn-outline-primary btn-block">Faça seu primeiro post ou pesquise nas publicações</button></Link>
